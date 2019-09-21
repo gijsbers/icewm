@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 [icewm -- read me first file.  2018-12-20]: #
+=======
+[icewm -- read me first file.  2019-08-22]: #
+>>>>>>> upstream/icewm-1-4-BRANCH
 
 Ice Window Manager (IceWM)
 ==========================
@@ -16,7 +20,11 @@ list, and various other GitHub forks.
 Release
 -------
 
+<<<<<<< HEAD
 This is the `icewm-1.5.0` package, released 2018-12-20.  This release, and
+=======
+This is the `icewm-1.6.1` package, released 2019-08-22.  This release, and
+>>>>>>> upstream/icewm-1-4-BRANCH
 the latest version, can be obtained from [GitHub][1], using a command such as:
 
     $> git clone https://github.com/bbidulock/icewm.git
@@ -44,7 +52,11 @@ following commands:
     $> git clone https://github.com/bbidulock/icewm.git
     $> cd icewm
     $> ./autogen.sh
+<<<<<<< HEAD
     $> ./configure 
+=======
+    $> ./configure
+>>>>>>> upstream/icewm-1-4-BRANCH
     $> make
     $> make DESTDIR="$pkgdir" install
 
@@ -161,6 +173,7 @@ translations.  If you have difficulties using the tools, just send me the update
 
 [1]: https://github.com/bbidulock/icewm
 [2]: https://github.com/bbidulock/icewm/issues
+<<<<<<< HEAD
 [3]: https://github.com/ice-wm/icewm/blob/1.5.0/NEWS
 [4]: https://github.com/ice-wm/icewm/blob/1.5.0/ChangeLog
 [5]: https://github.com/ice-wm/icewm/blob/1.5.0/TODO
@@ -168,11 +181,21 @@ translations.  If you have difficulties using the tools, just send me the update
 [7]: https://github.com/ice-wm/icewm/blob/1.5.0/INSTALL
 [8]: https://github.com/ice-wm/icewm/blob/1.5.0/BUGS
 [9]: https://github.com/ice-wm/icewm/blob/1.5.0/COPYING
+=======
+[3]: https://github.com/bbidulock/icewm/blob/icewm-1-4-BRANCH/NEWS
+[4]: https://github.com/bbidulock/icewm/blob/icewm-1-4-BRANCH/ChangeLog
+[5]: https://github.com/bbidulock/icewm/blob/icewm-1-4-BRANCH/TODO
+[6]: https://github.com/bbidulock/icewm/blob/icewm-1-4-BRANCH/COMPLIANCE
+[7]: https://github.com/bbidulock/icewm/blob/icewm-1-4-BRANCH/INSTALL
+[8]: https://github.com/bbidulock/icewm/blob/icewm-1-4-BRANCH/BUGS
+[9]: https://github.com/bbidulock/icewm/blob/icewm-1-4-BRANCH/COPYING
+>>>>>>> upstream/icewm-1-4-BRANCH
 [10]: https://github.com/
 [11]: https://l10n.opensuse.org/
 [12]: https://sourceforge.net/projects/icewm/
 [13]: https://ice-wm.org/
 [14]: https://ice-wm.org/FAQ/
+<<<<<<< HEAD
 [15]: https://github.com/ice-wm/icewm/blob/1.5.0/doc/icewm.adoc
 [16]: https://github.com/bbidulock/bbkeys/
 [17]: https://github.com/ice-wm/icewm/blob/1.5.0/lib/icewm.desktop
@@ -187,5 +210,21 @@ translations.  If you have difficulties using the tools, just send me the update
 [26]: https://github.com/ice-wm/icewm/blob/1.5.0/man/icewm.pod
 [27]: https://github.com/ice-wm/icewm/blob/1.5.0/man/icewm-session.pod
 [28]: https://github.com/ice-wm/icewm/blob/1.5.0/man/icewmtray.pod
+=======
+[15]: https://github.com/bbidulock/icewm/blob/icewm-1-4-BRANCH/doc/icewm.adoc
+[16]: https://github.com/bbidulock/bbkeys/
+[17]: https://github.com/bbidulock/icewm/blob/icewm-1-4-BRANCH/lib/icewm.desktop
+[18]: https://github.com/bbidulock/icewm/blob/icewm-1-4-BRANCH/lib/icewm-session.desktop
+[19]: https://github.com/bbidulock/icewm/blob/icewm-1-4-BRANCH/INSTALL-cmakebuild.md
+[20]: https://github.com/bbidulock/xde-menu/
+[21]: https://github.com/bbidulock/icewm/blob/icewm-1-4-BRANCH/man/icesound.pod
+[22]: https://github.com/bbidulock/icewm/blob/icewm-1-4-BRANCH/man/icewmbg.pod
+[23]: https://github.com/bbidulock/icewm/blob/icewm-1-4-BRANCH/man/icewmhint.pod
+[24]: https://github.com/bbidulock/icewm/blob/icewm-1-4-BRANCH/man/icewm-menu-fdo.pod
+[25]: https://github.com/bbidulock/icewm/blob/icewm-1-4-BRANCH/man/icewm-menu-gnome2.pod
+[26]: https://github.com/bbidulock/icewm/blob/icewm-1-4-BRANCH/man/icewm.pod
+[27]: https://github.com/bbidulock/icewm/blob/icewm-1-4-BRANCH/man/icewm-session.pod
+[28]: https://github.com/bbidulock/icewm/blob/icewm-1-4-BRANCH/man/icewmtray.pod
+>>>>>>> upstream/icewm-1-4-BRANCH
 
 [ vim: set ft=markdown sw=4 tw=80 nocin nosi fo+=tcqlorn spell: ]: #

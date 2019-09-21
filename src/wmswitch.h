@@ -59,13 +59,15 @@ public:
                  ISwitchItems *items = 0, bool verticalStyle=true);
     virtual ~SwitchWindow();
 
-    virtual void paint(Graphics &g, const YRect &r);
+    virtual void paint(Graphics &g, const YRect &r) OVERRIDE;
+    virtual void repaint() OVERRIDE;
 
     void begin(bool zdown, int mods, char* wmclass = 0);
 
-    virtual void activatePopup(int flags);
-    virtual void deactivatePopup();
+    virtual void activatePopup(int flags) OVERRIDE;
+    virtual void deactivatePopup() OVERRIDE;
 
+    virtual void handleExpose(const XExposeEvent &expose) OVERRIDE {}
     virtual bool handleKey(const XKeyEvent &key) OVERRIDE;
     virtual void handleButton(const XButtonEvent &button) OVERRIDE;
     void handleMotion(const XMotionEvent &motion) OVERRIDE;
@@ -99,7 +101,7 @@ private:
     void resize(int xiscreen);
 
     void cancel();
-    bool close();
+    virtual bool close() OVERRIDE;
     void accept();
     void displayFocus(int itemIdx);
     //YFrameWindow *nextWindow(YFrameWindow *from, bool zdown, bool next);

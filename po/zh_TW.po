@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: icewm 1.2.30\n"
 "Report-Msgid-Bugs-To: https://github.com/bbidulock/icewm/issues\n"
-"POT-Creation-Date: 2018-12-17 23:55+0100\n"
-"PO-Revision-Date: 2018-10-05 18:01+0000\n"
+"POT-Creation-Date: 2019-08-17 12:39+0200\n"
+"PO-Revision-Date: 2019-06-25 07:49+0000\n"
 "Last-Translator: Yi-Jyun Pan <pan93412@gmail.com>\n"
 "Language-Team: Chinese (Taiwan) <https://l10n.opensuse.org/projects/icewm/"
 "icewm-1-4-branch/zh_TW/>\n"
@@ -18,29 +18,29 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.6.1\n"
 
-#: src/aapm.cc:177 src/aapm.cc:459 src/aapm.cc:681 src/aapm.cc:806
+#: src/aapm.cc:187 src/aapm.cc:469 src/aapm.cc:691 src/aapm.cc:816
 msgid " - Power"
 msgstr " - 供電中"
 
-#: src/aapm.cc:179 src/aapm.cc:462 src/aapm.cc:684
+#: src/aapm.cc:189 src/aapm.cc:472 src/aapm.cc:694
 msgid "P"
 msgstr "P"
 
-#: src/aapm.cc:183 src/aapm.cc:436 src/aapm.cc:664 src/aapm.cc:774
+#: src/aapm.cc:193 src/aapm.cc:446 src/aapm.cc:674 src/aapm.cc:784
 msgid " - Charging"
 msgstr " - 充電中"
 
-#: src/aapm.cc:185 src/aapm.cc:438 src/aapm.cc:666
+#: src/aapm.cc:195 src/aapm.cc:448 src/aapm.cc:676
 msgid "C"
 msgstr "C"
 
-#: src/aapm.cc:440
+#: src/aapm.cc:450
 msgid " - Full"
 msgstr " - 電池已滿"
 
-#: src/aapm.cc:985
+#: src/aapm.cc:998
 #, c-format
 msgid "power:\t%s"
 msgstr "電量︰\t%s"
@@ -53,11 +53,11 @@ msgstr "時鐘"
 msgid "Date"
 msgstr "日期"
 
-#: src/aclock.cc:178 src/themes.cc:85
+#: src/aclock.cc:178 src/themes.cc:78
 msgid "Default"
 msgstr "預設"
 
-#: src/aclock.cc:179 src/acpustatus.cc:862 src/amailbox.cc:938
+#: src/aclock.cc:179 src/acpustatus.cc:862 src/amailbox.cc:952
 #: src/amemstatus.cc:264
 msgid "_Disable"
 msgstr "停用(_D)"
@@ -206,48 +206,48 @@ msgstr "執行 %s 失敗"
 msgid "Write to socket failed: %s"
 msgstr "寫入通訊端失敗：%s"
 
-#: src/amailbox.cc:680
+#: src/amailbox.cc:681
 #, c-format
 msgid "Using MailBox \"%s\"\n"
 msgstr "使用信箱「%s」\n"
 
-#: src/amailbox.cc:794
+#: src/amailbox.cc:808
 msgid "Suspended"
 msgstr "已暫停"
 
-#: src/amailbox.cc:798
+#: src/amailbox.cc:812
 msgid "Error checking mailbox."
 msgstr "在檢查信箱時發生錯誤。"
 
-#: src/amailbox.cc:805
+#: src/amailbox.cc:819
 #, c-format
 msgid "%ld mail message, %ld unread."
 msgstr "%ld 封郵件，%ld 封未讀。"
 
-#: src/amailbox.cc:806
+#: src/amailbox.cc:820
 #, c-format
 msgid "%ld mail messages, %ld unread."
 msgstr "%ld 封郵件，%ld 封未讀。"
 
-#: src/amailbox.cc:812
+#: src/amailbox.cc:826
 #, c-format
 msgid "%ld mail message."
 msgstr "%ld 封郵件。"
 
-#: src/amailbox.cc:813
+#: src/amailbox.cc:827
 #, c-format
 msgid "%ld mail messages."
 msgstr "%ld 封郵件。"
 
-#: src/amailbox.cc:936
+#: src/amailbox.cc:950
 msgid "MAIL"
 msgstr "郵件"
 
-#: src/amailbox.cc:937
+#: src/amailbox.cc:951
 msgid "_Check"
 msgstr "檢查(_C)"
 
-#: src/amailbox.cc:939
+#: src/amailbox.cc:953
 msgid "_Suspend"
 msgstr "暫停(_S)"
 
@@ -291,7 +291,7 @@ msgstr "使用者︰ "
 msgid "MEM"
 msgstr "MEM"
 
-#: src/apppstatus.cc:203
+#: src/apppstatus.cc:199
 #, c-format
 msgid ""
 "Interface %s:\n"
@@ -306,7 +306,7 @@ msgstr ""
 "  已 傳 送（入/出）：\t%lli %s/%lli %s\n"
 "  上線時間：\t%ld：%02ld：%02ld%s%s"
 
-#: src/apppstatus.cc:215
+#: src/apppstatus.cc:211
 msgid ""
 "\n"
 "  Caller id:\t"
@@ -314,130 +314,130 @@ msgstr ""
 "\n"
 "  執行者 id：\t"
 
-#: src/apppstatus.cc:717
+#: src/apppstatus.cc:712
 msgid "NET"
 msgstr "NET"
 
-#: src/aworkspaces.cc:294 src/wmstatus.cc:163
+#: src/aworkspaces.cc:584 src/wmstatus.cc:200
 msgid "Workspace: "
 msgstr "工作區："
 
-#: src/icehelp.cc:1201
+#: src/icehelp.cc:1210
 msgid "Back"
 msgstr "後退"
 
-#: src/icehelp.cc:1201
+#: src/icehelp.cc:1210
 msgid "Alt+Left"
 msgstr "Alt+Left"
 
-#: src/icehelp.cc:1203
+#: src/icehelp.cc:1212
 msgid "Forward"
 msgstr "前進"
 
-#: src/icehelp.cc:1203
+#: src/icehelp.cc:1212
 msgid "Alt+Right"
 msgstr "Alt+Right"
 
-#: src/icehelp.cc:1206
+#: src/icehelp.cc:1215
 msgid "Previous"
 msgstr "上一個"
 
-#: src/icehelp.cc:1207
+#: src/icehelp.cc:1216
 msgid "Next"
 msgstr "下一個"
 
-#: src/icehelp.cc:1209
+#: src/icehelp.cc:1218
 msgid "Contents"
 msgstr "內容"
 
-#: src/icehelp.cc:1210
+#: src/icehelp.cc:1219
 msgid "Index"
 msgstr "索引"
 
-#: src/icehelp.cc:1213 src/icesame.cc:62 src/iceview.cc:74 src/wmtitle.cc:99
+#: src/icehelp.cc:1222 src/icesame.cc:62 src/iceview.cc:74 src/wmtitle.cc:102
 msgid "Close"
 msgstr "關閉"
 
-#: src/icehelp.cc:1213 src/icesame.cc:62 src/iceview.cc:74
+#: src/icehelp.cc:1222 src/icesame.cc:62 src/iceview.cc:74
 msgid "Ctrl+Q"
 msgstr "Ctrl+Q"
 
-#: src/icehelp.cc:1218
+#: src/icehelp.cc:1227
 msgid "Icewm(1)"
 msgstr "Icewm(1)"
 
-#: src/icehelp.cc:1220
+#: src/icehelp.cc:1229
 msgid "Icewmbg(1)"
 msgstr "Icewmbg(1)"
 
-#: src/icehelp.cc:1222
+#: src/icehelp.cc:1231
 msgid "Icesound(1)"
 msgstr "Icesound(1)"
 
-#: src/icehelp.cc:1224
+#: src/icehelp.cc:1233
 msgid "FAQ"
 msgstr "FAQ"
 
-#: src/icehelp.cc:1226
+#: src/icehelp.cc:1235
 msgid "Manual"
 msgstr "手動"
 
-#: src/icehelp.cc:1228
+#: src/icehelp.cc:1237
 msgid "Support"
 msgstr "支援"
 
-#: src/icehelp.cc:1230
+#: src/icehelp.cc:1239
 msgid "Theme Howto"
 msgstr "佈景主題 Howto"
 
-#: src/icehelp.cc:1232
+#: src/icehelp.cc:1241
 msgid "Website"
 msgstr "網站"
 
-#: src/icehelp.cc:1234
+#: src/icehelp.cc:1243
 msgid "Github"
 msgstr "Github"
 
-#: src/icehelp.cc:1936
+#: src/icehelp.cc:1944
 msgid "Unsupported protocol."
 msgstr "不支援的通訊協定。"
 
-#: src/icehelp.cc:1961
+#: src/icehelp.cc:1969
 #, c-format
 msgid "Invalid path: %s\n"
 msgstr "路徑無效：%s\n"
 
-#: src/icehelp.cc:1984
+#: src/icehelp.cc:1992
 msgid "Path does not refer to a file."
 msgstr "路徑未參考檔案。"
 
-#: src/icehelp.cc:1989
+#: src/icehelp.cc:1997
 msgid "Failed to open file for reading."
 msgstr "無法開啟要閱讀的檔案。"
 
-#: src/icehelp.cc:2018
+#: src/icehelp.cc:2026
 msgid "Failed to create a temporary file"
 msgstr "建立臨時檔案失敗"
 
-#: src/icehelp.cc:2110
+#: src/icehelp.cc:2118
 #, c-format
 msgid "Failed to execute system(%s) (%d)"
 msgstr "執行系統 (%s) (%d) 失敗"
 
-#: src/icehelp.cc:2133
+#: src/icehelp.cc:2141
 #, c-format
 msgid "Failed to decompress %s"
 msgstr "解壓縮 %s 失敗"
 
-#: src/icehelp.cc:2141
+#: src/icehelp.cc:2149
 msgid "Could not locate curl or wget in PATH"
 msgstr "在 PATH 中找不到 curl 或 wget"
 
-#: src/icehelp.cc:2145
+#: src/icehelp.cc:2153
 msgid "Unsafe characters in URL"
 msgstr "URL 中存在不安全的字元"
 
-#: src/icehelp.cc:2182
+#: src/icehelp.cc:2190
 #, c-format
 msgid ""
 "Usage: %s [OPTIONS] [ FILENAME | URL ]\n"
@@ -507,7 +507,7 @@ msgstr ""
 "%s\n"
 "\n"
 
-#: src/icehelp.cc:2259
+#: src/icehelp.cc:2267
 #, c-format
 msgid "Ignoring option '%s'"
 msgstr "正在忽略選項「%s」"
@@ -552,185 +552,93 @@ msgstr "Ctrl+R"
 msgid "Same Game"
 msgstr "Same 遊戲"
 
-#: src/icesh.cc:191
-#, c-format
-msgid "Action `%s' requires at least %d arguments."
-msgstr "動作「%s」需要至少 %d 個引數。"
+#: src/icesh.cc:63
+msgid "For help please consult the man page icesh(1).\n"
+msgstr "若要取得說明，請參考 man 頁面 icesh(1)。\n"
 
-#: src/icesh.cc:198
-#, c-format
-msgid "Invalid expression: `%s'"
-msgstr "表示式無效：「%s」"
-
-#: src/icesh.cc:319
+#: src/icesh.cc:1095
 #, c-format
 msgid "Named symbols of the domain `%s' (numeric range: %ld-%ld):\n"
 msgstr "網域「%s」的命名符號（數值範圍：%ld-%ld）：\n"
 
-#: src/icesh.cc:435
+#: src/icesh.cc:1232
 #, c-format
 msgid "Invalid workspace name: `%s'"
 msgstr "無效的工作區名稱：「%s」"
 
-#: src/icesh.cc:440
+#: src/icesh.cc:1236
 #, c-format
 msgid "Workspace out of range: %ld"
 msgstr "工作區超出範圍︰%ld"
 
-#: src/icesh.cc:605
-#, c-format
-msgid ""
-"Usage: %s [OPTIONS] ACTIONS\n"
-"\n"
-"Options:\n"
-"  -d, -display DISPLAY        Connects to the X server specified by "
-"DISPLAY.\n"
-"                              Default: $DISPLAY or :0.0 when not set.\n"
-"  -w, -window WINDOW_ID       Specifies the window to manipulate. Special\n"
-"                              identifiers are `root' for the root window "
-"and\n"
-"                              `focus' for the currently focused window.\n"
-"  -c, -class WM_CLASS         Window management class of the window(s) to\n"
-"                              manipulate. If WM_CLASS contains a period, "
-"only\n"
-"                              windows with exactly the same WM_CLASS "
-"property\n"
-"                              are matched. If there is no period, windows "
-"of\n"
-"                              the same class and windows of the same "
-"instance\n"
-"                              (aka. `-name') are selected.\n"
-"\n"
-"Actions:\n"
-"  setIconTitle   TITLE        Set the icon title.\n"
-"  setWindowTitle TITLE        Set the window title.\n"
-"  setGeometry    geometry     Set the window geometry\n"
-"  setState       MASK STATE   Set the GNOME window state to STATE.\n"
-"                              Only the bits selected by MASK are affected.\n"
-"                              STATE and MASK are expressions of the domain\n"
-"                              `GNOME window state'.\n"
-"  toggleState    STATE        Toggle the GNOME window state bits specified "
-"by\n"
-"                              the STATE expression.\n"
-"  setHints       HINTS        Set the GNOME window hints to HINTS.\n"
-"  setLayer       LAYER        Moves the window to another GNOME window "
-"layer.\n"
-"  setWorkspace   WORKSPACE    Moves the window to another workspace. Select\n"
-"                              the root window to change the current "
-"workspace.\n"
-"                              Select 0xFFFFFFFF or \"All\" for all "
-"workspaces.\n"
-"  listWorkspaces              Lists the names of all workspaces.\n"
-"  setTrayOption  TRAYOPTION   Set the IceWM tray option hint.\n"
-"  logout                      Tell IceWM to logout.\n"
-"  reboot                      Tell IceWM to reboot.\n"
-"  shutdown                    Tell IceWM to shutdown.\n"
-"  cancel                      Tell IceWM to cancel the logout/reboot/"
-"shutdown.\n"
-"  about                       Tell IceWM to show the about window.\n"
-"  windowlist                  Tell IceWM to show the window list.\n"
-"  restart                     Tell IceWM to restart.\n"
-"  suspend                     Tell IceWM to suspend.\n"
-"\n"
-"Expressions:\n"
-"  Expressions are list of symbols of one domain concatenated by `+' or `|':\n"
-"\n"
-"  EXPRESSION ::= SYMBOL | EXPRESSION ( `+' | `|' ) SYMBOL\n"
-"\n"
-msgstr ""
-"用法：%s [選項] 動作\n"
-"\n"
-"選項：\n"
-"  -d、-display DISPLAY            連接到 DISPLAY 所指定的 X 伺服器。\n"
-"                              預設值：$DISPLAY 或是 :0.0 (未指定時)\n"
-"  -w、-window WINDOW_ID           指定要操作的視窗。特殊識別字「root」用於 "
-"root 視\n"
-"                              窗；而「focus」用於當前的焦點視窗。\n"
-"  -c、-class WM_CLASS             指定要操作的視窗的視窗管理類別。如果 "
-"WM_CLASS 包\n"
-"                              含了小數點，那只會套用於完全符合 WM_CLASS 資訊"
-"的\n"
-"                              視窗。但如果沒有小數點，那麼會套用於相同類別以"
-"及\n"
-"                              具有相同實體 (亦即「-name」) 的視窗。\n"
-"\n"
-"動作：\n"
-"  setIconTitle   TITLE        設定圖示標題。\n"
-"  setWindowTitle TITLE        設定視窗標題。\n"
-"  setGeometry    geometry     設定視窗位置大小。\n"
-"  setState       MASK STATE   設定 GNOME 視窗狀態為 STATE。\n"
-"                              只會作用於由 MASK 所指定的位元。\n"
-"                              STATE 與 MASK 都是「GNOME 視窗狀態」領域中的表"
-"示\n"
-"                              式。\n"
-"  toggleState    STATE        切換由 STATE 所指定的 GNOME 視窗狀態。\n"
-"  setHints       HINTS        設定 GNOME 的視窗提示為 HINTS。\n"
-"  setLayer       LAYER        移動視窗到其他的 GNOME 視窗層次。\n"
-"  setWorkspace   WORKSPACE    移動視窗到其他的工作區。\n"
-"                              選取 root 視窗以變更目前的工作區。\n"
-"                              選取 0xFFFFFFFF 或「All」指定所有工作區。\n"
-"  listWorkspaces              列出所有工作區的名稱。\n"
-"  setTrayOption  TRAYOPTION   設定 IceWM 系統列的選項提示。\n"
-"  logout                      指示 IceWM 登出。\n"
-"  reboot                      指示 IceWM 重新開機。\n"
-"  shutdown                    指示 IceWM 關閉。\n"
-"  cancel                      指示 IceWM 取消登出/重新開機/關閉。\n"
-"  about                       指示 IceWM 顯示「關於」視窗。\n"
-"  windowlist                  指示 IceWM 顯示視窗清單。\n"
-"  restart                     指示 IceWM 重新啟動。\n"
-"  suspend                     指示 IceWM 暫停。\n"
-"\n"
-"表示式：\n"
-"  表示式是一串單一領域符號的列表，彼此由 '+' 或 '-' 所連接：\n"
-"\n"
-"  EXPRESSION ::= SYMBOL | EXPRESSION ( `+' | `|' ) SYMBOL\n"
-"\n"
-
-#: src/icesh.cc:653
+#: src/icesh.cc:1442
 msgid "GNOME window state"
 msgstr "GNOME 視窗狀態"
 
-#: src/icesh.cc:654
+#: src/icesh.cc:1443
 msgid "GNOME window hint"
 msgstr "GNOME 視窗提示"
 
-#: src/icesh.cc:655
+#: src/icesh.cc:1444
 msgid "GNOME window layer"
 msgstr "GNOME 視窗層次"
 
-#: src/icesh.cc:656
+#: src/icesh.cc:1445
 msgid "IceWM tray option"
 msgstr "IceWM 系統列選項"
 
-#: src/icesh.cc:661
-msgid "Usage error: "
-msgstr "用法錯誤："
+#: src/icesh.cc:1446
+msgid "Gravity symbols"
+msgstr ""
 
-#: src/icesh.cc:747
-#, c-format
-msgid "Invalid argument: `%s'."
-msgstr "引數無效：「%s」。"
+#: src/icesh.cc:1447
+#, fuzzy
+#| msgid "Save Modifications"
+msgid "Motif functions"
+msgstr "儲存修改"
 
-#: src/icesh.cc:753
-msgid "No actions specified."
-msgstr "未指定動作。"
+#: src/icesh.cc:1448
+#, fuzzy
+#| msgid "Save Modifications"
+msgid "Motif decorations"
+msgstr "儲存修改"
 
-#: src/icesh.cc:760 src/icesound.cc:945 src/icewmhint.cc:36 src/yxapp.cc:925
-#, c-format
-msgid "Can't open display: %s. X must be running and $DISPLAY set."
-msgstr "無法開啟顯示：%s。X 必須正在執行且需設定 $DISPLAY。"
-
-#: src/icesh.cc:801
-#, c-format
-msgid "Invalid window identifier: `%s'"
-msgstr "無效的視窗識別碼：「%s」"
-
-#: src/icesh.cc:955
+#: src/icesh.cc:1527
 #, c-format
 msgid "workspace #%d: `%s'\n"
 msgstr "工作區 #%d：「%s」\n"
 
-#: src/icesh.cc:974
+#: src/icesh.cc:2328
+#, c-format
+msgid "Action `%s' requires at least %d arguments."
+msgstr "動作「%s」需要至少 %d 個引數。"
+
+#: src/icesh.cc:2338
+#, c-format
+msgid "Invalid expression: `%s'"
+msgstr "表示式無效：「%s」"
+
+#: src/icesh.cc:2349 src/icesound.cc:801 src/icewmhint.cc:36 src/wmapp.cc:1120
+#: src/yxapp.cc:997
+#, c-format
+msgid "Can't open display: %s. X must be running and $DISPLAY set."
+msgstr "無法開啟顯示：%s。X 必須正在執行且需設定 $DISPLAY。"
+
+#: src/icesh.cc:2362
+#, c-format
+msgid "Invalid argument: `%s'"
+msgstr "引數無效：「%s」"
+
+#: src/icesh.cc:2402
+msgid "No actions specified."
+msgstr "未指定動作。"
+
+#: src/icesh.cc:2541
+#, c-format
+msgid "Invalid window identifier: `%s'"
+msgstr "無效的視窗識別碼：「%s」"
+
+#: src/icesh.cc:3039
 #, c-format
 msgid "Unknown action: `%s'"
 msgstr "未知動作：「%s」"
@@ -741,14 +649,27 @@ msgid "Socket error: %d"
 msgstr "Socket 錯誤：%d"
 
 #: src/icesm.cc:57
+#, fuzzy
+#| msgid ""
+#| "  -c, --config=FILE   Let IceWM load preferences from FILE.\n"
+#| "  -t, --theme=FILE    Let IceWM load the theme from FILE.\n"
+#| "\n"
+#| "  -d, --display=NAME  Use NAME to connect to the X server.\n"
+#| "  --sync              Synchronize communication with X11 server.\n"
+#| "\n"
+#| "  -i, --icewm=FILE    Use FILE as the IceWM window manager.\n"
+#| "  -n, --notray        Do not start icewmtray.\n"
+#| "  -s, --sound         Also start icesound.\n"
 msgid ""
 "  -c, --config=FILE   Let IceWM load preferences from FILE.\n"
 "  -t, --theme=FILE    Let IceWM load the theme from FILE.\n"
 "\n"
 "  -d, --display=NAME  Use NAME to connect to the X server.\n"
+"  -a, --alpha         Use a 32-bit visual for translucency.\n"
 "  --sync              Synchronize communication with X11 server.\n"
 "\n"
 "  -i, --icewm=FILE    Use FILE as the IceWM window manager.\n"
+"  -b, --nobg          Do not start icewmbg.\n"
 "  -n, --notray        Do not start icewmtray.\n"
 "  -s, --sound         Also start icesound.\n"
 msgstr ""
@@ -762,22 +683,28 @@ msgstr ""
 "  -n、--notray        不啟動 icewmtray。\n"
 "  -s、--sound         同時啟動 icesound。\n"
 
-#: src/icesm.cc:120
+#: src/icesm.cc:135
 #, c-format
 msgid "Unknown option '%s'"
 msgstr "未知選項「%s」"
 
-#: src/icesm.cc:308
+#: src/icesm.cc:331 src/icesm.cc:449
+#, fuzzy, c-format
+#| msgid "Restart"
+msgid "restart %s."
+msgstr "重新啟動"
+
+#: src/icesm.cc:337
 #, c-format
 msgid "%s exited with status %d."
 msgstr "%s 已離開，狀態為 %d。"
 
-#: src/icesm.cc:314
+#: src/icesm.cc:343 src/icesm.cc:455
 #, c-format
 msgid "%s was killed by signal %d."
 msgstr "%s 被訊號 %d 強行中止。"
 
-#: src/icesm.cc:348
+#: src/icesm.cc:377
 msgid ""
 " IceWM crashed for the second time in 10 seconds. \n"
 " Do you wish to:\n"
@@ -791,102 +718,78 @@ msgstr ""
 "\t1: 重新啟動 IceWM？\n"
 "\t2: 中止此工作階段？\n"
 
-#: src/icesm.cc:353
+#: src/icesm.cc:382
 msgid "IceWM crash response"
 msgstr "IceWM 當機回應"
 
-#: src/icesound.cc:219 src/icesound.cc:327 src/icesound.cc:631
+#: src/icesound.cc:216 src/icesound.cc:324 src/icesound.cc:484
 #, c-format
 msgid "Playing sample #%d (%s)"
 msgstr "正在播放樣本 #%d（%s）"
 
-#: src/icesound.cc:337
+#: src/icesound.cc:334
 #, c-format
 msgid "%s: Invalid number of channels"
 msgstr "%s︰通道編號無效"
 
-#: src/icesound.cc:343 src/icesound.cc:348
+#: src/icesound.cc:340 src/icesound.cc:345
 msgid "Could not set OSS channels"
 msgstr "無法設定 OSS 通道"
 
-#: src/icesound.cc:353 src/icesound.cc:381
+#: src/icesound.cc:350 src/icesound.cc:378
 msgid "Could not sync OSS"
 msgstr "無法同步 OSS"
 
-#: src/icesound.cc:365
+#: src/icesound.cc:362
 msgid "OSS write failed"
 msgstr "OSS 寫入失敗"
 
-#: src/icesound.cc:369
+#: src/icesound.cc:366
 #, c-format
 msgid "OSS incomplete write (%d/%d)"
 msgstr "OSS 未完全寫入 (%d/%d)"
 
-#: src/icesound.cc:376
+#: src/icesound.cc:373
 msgid "Could not post OSS"
 msgstr "無法張貼 OSS"
 
-#: src/icesound.cc:405
+#: src/icesound.cc:402
 #, c-format
 msgid "Could not open OSS device %s"
 msgstr "無法開啟 OSS 裝置 %s"
 
-#: src/icesound.cc:410
+#: src/icesound.cc:407
 msgid "Could not set OSS stereo"
 msgstr "無法設定 OSS 立體聲"
 
-#: src/icesound.cc:415
+#: src/icesound.cc:412
 msgid "Could not reset OSS DSP"
 msgstr "無法重試 OSS DSP"
 
-#: src/icesound.cc:420
+#: src/icesound.cc:417
 msgid "Could not set OSS format"
 msgstr "無法設定 OSS 格式"
 
-#: src/icesound.cc:493
-#, c-format
-msgid "Can't connect to ESound daemon: %s"
-msgstr "無法連線到 ESound 服務程式：%s"
-
-#: src/icesound.cc:494 src/icewmhint.cc:38 src/yxapp.cc:926
-msgid "<none>"
-msgstr "<無>"
-
-#: src/icesound.cc:512
-#, c-format
-msgid "Error <%d> while uploading `%s:%s'"
-msgstr "時發生錯誤 <%d>在上傳「%s:%s」"
-
-#: src/icesound.cc:518
-#, c-format
-msgid "Sample <%d> uploaded as `%s:%s'"
-msgstr "樣本 <%d> 上傳為「%s:%s」"
-
-#: src/icesound.cc:576
-#, c-format
-msgid "Playing sample #%d: %d"
-msgstr "正在播放樣本 #%d︰%d"
-
-#: src/icesound.cc:651
+#: src/icesound.cc:504
 #, c-format
 msgid "ao_open_live failed with %d"
 msgstr "ao_open_live 失敗，錯誤︰%d"
 
-#: src/icesound.cc:662
+#: src/icesound.cc:515
 msgid "ao_play failed"
 msgstr "ao_play 失敗"
 
-#: src/icesound.cc:824
+#: src/icesound.cc:683
 #, c-format
 msgid "Unrecognized option: %s\n"
 msgstr "無法識別的選項：%s\n"
 
-#: src/icesound.cc:827 src/icesound.cc:1130
+#: src/icesound.cc:686 src/icesound.cc:979
 #, c-format
 msgid "Unrecognized argument: %s\n"
 msgstr "無法識別的引數：%s\n"
 
-#: src/icesound.cc:836
+#: src/icesound.cc:695
 #, c-format
 msgid ""
 "Usage: %s [OPTION]...\n"
@@ -911,9 +814,6 @@ msgid ""
 " -O, --oss=DEVICE        Specifies the OSS device (default: \"%s\").\n"
 "\n"
 " -A, --alsa=DEVICE       Specifies the ALSA device (default: \"%s\").\n"
-"\n"
-" -S, --server=ADDR:PORT  Specifies the ESD server address and port number.\n"
-"                         For ESD the default is \"localhost:16001\".\n"
 "\n"
 " -z, --snooze=millisecs  Specifies the snooze interval between sound events\n"
 "                         in milliseconds. Default is 500 milliseconds.\n"
@@ -962,8 +862,6 @@ msgstr ""
 "\n"
 "-A、--alsa=DEVICE             指定 ALSA 裝置 (預設值為「%s」)。\n"
 "\n"
-"-S、--server=ADDR：PORT       指定 ESD 伺服器位址和連接埠號碼。\n"
-"                              對於 ESD，預設值為「localhost：16001」。\n"
 " -z、--snooze=millisecs       指定聲音事件的延期間隔 (以毫秒計)。\n"
 "                              預設值為 500 毫秒。\n"
 "\n"
@@ -989,51 +887,51 @@ msgstr ""
 "3     子系統錯誤 (例如︰無法連接至伺服器)。\n"
 "\n"
 
-#: src/icesound.cc:930
+#: src/icesound.cc:786
 #, c-format
 msgid "No audio for %s"
 msgstr "沒有用於 %s 的音效"
 
-#: src/icesound.cc:1007
+#: src/icesound.cc:863
 msgid "Could not get GUI event property"
 msgstr "無法獲取 GUI 事件內容"
 
-#: src/icesound.cc:1011
+#: src/icesound.cc:867
 #, c-format
 msgid "Received invalid GUI event %d"
 msgstr "收到無效的 GUI 事件 %d"
 
-#: src/icesound.cc:1015
+#: src/icesound.cc:871
 #, c-format
 msgid "Received GUI event %s"
 msgstr "收到 GUI 事件 %s"
 
-#: src/icesound.cc:1029
+#: src/icesound.cc:885
 #, c-format
 msgid "Too quick; ignoring %s."
 msgstr "太快；正在忽略 %s。"
 
-#: src/icesound.cc:1033
+#: src/icesound.cc:889
 #, c-format
 msgid "Support for the %s interface not compiled."
 msgstr "對於 %s 介面的支援未編譯。"
 
-#: src/icesound.cc:1073
+#: src/icesound.cc:922
 #, c-format
 msgid "Unsupported interface: %s."
 msgstr "不支援的介面：%s。"
 
-#: src/icesound.cc:1082
+#: src/icesound.cc:931
 #, c-format
 msgid "Using %s audio."
 msgstr "正在使用 %s 音效。"
 
-#: src/icesound.cc:1086
+#: src/icesound.cc:935
 #, c-format
 msgid "Failed to connect to audio interfaces %s."
 msgstr "連接至音效介面 %s 失敗。"
 
-#: src/icesound.cc:1098
+#: src/icesound.cc:947
 #, c-format
 msgid "Received signal %s: Terminating..."
 msgstr "接收到訊號 %s︰正在中止..."
@@ -1078,57 +976,12 @@ msgstr "換列"
 msgid "Ctrl+W"
 msgstr "Ctrl+W"
 
-#: src/icewmbg.cc:78
+#: src/icewmbg.cc:79
 #, c-format
 msgid "Failed to load image '%s'."
 msgstr "載入影像「%s」失敗。"
 
-#: src/icewmbg.cc:885
-#, fuzzy
-#| msgid ""
-#| "Usage: icewmbg [OPTIONS]\n"
-#| "Where multiple values can be given they are separated by commas.\n"
-#| "When image is a directory then all images from that directory are used.\n"
-#| "\n"
-#| "Options:\n"
-#| "  -p, --replace        Replace an existing icewmbg.\n"
-#| "  -q, --quit           Tell the running icewmbg to quit.\n"
-#| "  -r, --restart        Tell the running icewmbg to restart itself.\n"
-#| "\n"
-#| "  -c, --config=FILE    Load preferences from FILE.\n"
-#| "  -t, --theme=NAME     Load the theme with name NAME.\n"
-#| "\n"
-#| "  -i, --image=FILE(S)  Load background image(s) from FILE(S).\n"
-#| "  -k, --color=NAME(S)  Use background color(s) from NAME(S).\n"
-#| "\n"
-#| "  -s, --semis=FILE(S)  Load transparency image(s) from FILE(S).\n"
-#| "  -x, --trans=NAME(S)  Use transparency color(s) from NAME(S).\n"
-#| "\n"
-#| "  -e, --center=0/1     Disable/Enable centering background.\n"
-#| "  -a, --scaled=0/1     Disable/Enable scaling background.\n"
-#| "  -m, --multi=0/1      Disable/Enable multihead background.\n"
-#| "\n"
-#| "  --display=NAME       Use NAME to connect to the X server.\n"
-#| "  --sync               Synchronize communication with X11 server.\n"
-#| "\n"
-#| "  -h, --help           Print this usage screen and exit.\n"
-#| "  -V, --version        Prints version information and exits.\n"
-#| "\n"
-#| "Loads desktop background according to preferences file:\n"
-#| " DesktopBackgroundCenter  - Display desktop background centered\n"
-#| " DesktopBackgroundScaled  - Display desktop background scaled\n"
-#| " DesktopBackgroundColor   - Desktop background color(s)\n"
-#| " DesktopBackgroundImage   - Desktop background image(s)\n"
-#| " SupportSemitransparency  - Support for semitransparent terminals\n"
-#| " DesktopTransparencyColor - Semitransparency background color(s)\n"
-#| " DesktopTransparencyImage - Semitransparency background image(s)\n"
-#| " DesktopBackgroundMultihead - One background over all monitors\n"
-#| "\n"
-#| " center:0 scaled:0 = tiled\n"
-#| " center:1 scaled:0 = centered\n"
-#| " center:1 scaled:1 = fill one dimension and keep aspect ratio\n"
-#| " center:0 scaled:1 = fill both dimensions and keep aspect ratio\n"
-#| "\n"
+#: src/icewmbg.cc:886
 msgid ""
 "Usage: icewmbg [OPTIONS]\n"
 "Where multiple values can be given they are separated by commas.\n"
@@ -1186,6 +1039,7 @@ msgstr ""
 "  -p、--replace        取代已存在的 icewmbg。\n"
 "  -q、--quit           通知執行中的 icewmbg 離開。\n"
 "  -r、--restart        通知執行中的 icewmbg 重新啟動。\n"
+"  -u、--shuffle        輪換/重新輪換底圖清單。\n"
 "\n"
 "  -c、--config=FILE    從 FILE 中載入優先設定。\n"
 "  -t、--theme=NAME     載入名稱為 NAME 的主題。\n"
@@ -1196,9 +1050,10 @@ msgstr ""
 "  -s、--semis=FILE(S)  從 FILE 中載入透明圖案。\n"
 "  -x、--trans=NAME(S)  使用 NAME 做為透明顏色。\n"
 "\n"
-"  -e、--center=0/1     停用/啟用置中地圖。\n"
+"  -e、--center=0/1     停用/啟用置中底圖。\n"
 "  -a、--scaled=0/1     停用/啟用縮放底圖。\n"
 "  -m、--multi=0/1      停用/啟用多頭底圖。\n"
+"  -y、--cycle=SECONDS  每隔指定的秒數循環顯示底圖。\n"
 "\n"
 "  --display=NAME       使用 NAME 連接 X 伺服器。\n"
 "  --sync               與 X11 伺服器同步通訊資訊。\n"
@@ -1211,10 +1066,12 @@ msgstr ""
 " DesktopBackgroundScaled  - 縮放桌面底圖\n"
 " DesktopBackgroundColor   - 桌面底圖顏色\n"
 " DesktopBackgroundImage   - 桌面底圖圖案\n"
+" ShuffleBackgroundImages  - 輪換底圖清單\n"
 " SupportSemitransparency  - 支援半透明背景的終端機\n"
 " DesktopTransparencyColor - 半透明底圖顏色\n"
 " DesktopTransparencyImage - 半透明底圖圖案\n"
 " DesktopBackgroundMultihead – 所有顯示器使用同一個底圖\n"
+" CycleBackgroundsPeriod   - 循環顯示底圖間隔的秒數\n"
 "\n"
 " center:0 scaled:0 = 並列\n"
 " center:0 scaled:0 = 置中\n"
@@ -1222,24 +1079,24 @@ msgstr ""
 " center:1 scaled:1 = 沿兩個方向填充並保持長寬比率\n"
 "\n"
 
-#: src/icewmbg.cc:1100
+#: src/icewmbg.cc:1101
 msgid "Cannot start, because another icewmbg is still running."
 msgstr "無法啟動，因為另一個 icewmbg 仍在執行中。"
 
-#: src/icewmhint.cc:23
+#: src/icewmhint.cc:19
 msgid "Usage: icewmhint class.instance option arg\n"
 msgstr "用法：icewmhint 類別.實體 選項 引數\n"
 
-#: src/icewmhint.cc:57
+#: src/icewmhint.cc:56
 #, c-format
 msgid "Out of memory (len=%d)."
 msgstr "記憶體不足（長度＝%d）。"
 
-#: src/misc.cc:466 src/misc.cc:478
+#: src/misc.cc:559 src/misc.cc:571
 msgid "Warning: "
 msgstr "警告："
 
-#: src/misc.cc:754
+#: src/misc.cc:847
 #, c-format
 msgid ""
 "Usage: %s [OPTIONS]\n"
@@ -1258,214 +1115,210 @@ msgstr ""
 "  -h、--help          列印此用法螢幕並離開。\n"
 "\n"
 
-#: src/movesize.cc:876
+#: src/movesize.cc:875
 #, c-format
 msgid "Unknown direction in move/resize request: %d"
 msgstr "在要求移動/改變大小時方向未知：%d"
 
-#: src/wmabout.cc:26 src/wmabout.cc:28
+#: src/wmabout.cc:23 src/wmabout.cc:25
 msgid "(C)"
 msgstr "©"
 
-#: src/wmabout.cc:34
+#: src/wmabout.cc:31
 msgid "Theme:"
 msgstr "佈景主題："
 
-#: src/wmabout.cc:35
+#: src/wmabout.cc:32
 msgid "Theme Description:"
 msgstr "佈景主題描述："
 
-#: src/wmabout.cc:36
+#: src/wmabout.cc:33
 msgid "Theme Author:"
 msgstr "佈景主題作者："
 
-#: src/wmabout.cc:40
+#: src/wmabout.cc:37
 msgid "CodeSet:"
 msgstr "字碼集："
 
-#: src/wmabout.cc:41
+#: src/wmabout.cc:38
 msgid "Language:"
 msgstr "語言："
 
-#: src/wmabout.cc:67
+#: src/wmabout.cc:64
 msgid "icewm - About"
 msgstr "icewm - 關於"
 
-#: src/wmapp.cc:90
+#: src/wmapp.cc:83
 msgid "A window manager is already running, use --replace to replace it"
 msgstr "已有另一個視窗管理程式正在執行，使用 --replace 可取代它"
 
-#: src/wmapp.cc:108
+#: src/wmapp.cc:101
 #, c-format
 msgid "Failed to become the owner of the %s selection"
 msgstr "無法成為 %s 選擇的擁有者"
 
-#: src/wmapp.cc:112
+#: src/wmapp.cc:105
 msgid "Waiting to replace the old window manager"
 msgstr "正在等待取代先前的視窗管理程式"
 
-#: src/wmapp.cc:117
+#: src/wmapp.cc:110
 msgid "done."
 msgstr "完成。"
 
-#: src/wmapp.cc:403
+#: src/wmapp.cc:415
 msgid "Unable to get current font path."
 msgstr "無法取得目前字型路徑。"
 
-#: src/wmapp.cc:430
+#: src/wmapp.cc:442
 msgid "Unexpected format of ICEWM_FONT_PATH property"
 msgstr "非預期格式的 ICEWM_FONT_PATH 特性"
 
-#: src/wmapp.cc:508
+#: src/wmapp.cc:512
 msgid "_Logout"
 msgstr "登出(_L)"
 
-#: src/wmapp.cc:509
+#: src/wmapp.cc:513
 msgid "_Cancel logout"
 msgstr "取消登出(_C)"
 
-#: src/wmapp.cc:514
+#: src/wmapp.cc:518
 msgid "Lock _Workstation"
 msgstr "鎖定工作站(_W)"
 
-#: src/wmapp.cc:516 src/wmdialog.cc:78
+#: src/wmapp.cc:520 src/wmdialog.cc:78
 msgid "Re_boot"
 msgstr "重開機(_B)"
 
-#: src/wmapp.cc:518 src/wmdialog.cc:79
+#: src/wmapp.cc:522 src/wmdialog.cc:79
 msgid "Shut_down"
 msgstr "關機(_D)"
 
 #. TRANSLATORS: This means "energy saving mode" or "suspended system". Not "interrupt". Not "hibernate".
-#: src/wmapp.cc:520 src/wmdialog.cc:75
+#: src/wmapp.cc:524 src/wmdialog.cc:75
 msgid "_Sleep mode"
 msgstr "睡眠模式(_S)"
 
-#: src/wmapp.cc:525
+#: src/wmapp.cc:529
 msgid "Restart _Icewm"
 msgstr "重新啟動 _Icewm"
 
-#: src/wmapp.cc:527
+#: src/wmapp.cc:531
 msgid "Restart _Xterm"
 msgstr "重新啟動 _Xterm"
 
-#: src/wmapp.cc:540
+#: src/wmapp.cc:541
 msgid "_Menu"
 msgstr "選單(_M)"
 
-#: src/wmapp.cc:541
+#: src/wmapp.cc:542
 msgid "_Above Dock"
 msgstr "停靠區之上(_A)"
 
-#: src/wmapp.cc:542
+#: src/wmapp.cc:543
 msgid "_Dock"
 msgstr "停靠區(_D)"
 
-#: src/wmapp.cc:543
+#: src/wmapp.cc:544
 msgid "_OnTop"
 msgstr "上層(_O)"
 
-#: src/wmapp.cc:544
+#: src/wmapp.cc:545
 msgid "_Normal"
 msgstr "正常(_N)"
 
-#: src/wmapp.cc:545
+#: src/wmapp.cc:546
 msgid "_Below"
 msgstr "下層(_B)"
 
-#: src/wmapp.cc:546
+#: src/wmapp.cc:547
 msgid "D_esktop"
 msgstr "桌面(_E)"
 
-#: src/wmapp.cc:571 src/wmwinlist.cc:349
+#: src/wmapp.cc:582 src/wmwinlist.cc:379
 msgid "_Restore"
 msgstr "還原(_R)"
 
-#: src/wmapp.cc:573
+#: src/wmapp.cc:584
 msgid "_Move"
 msgstr "移動(_M)"
 
-#: src/wmapp.cc:575
+#: src/wmapp.cc:586
 msgid "_Size"
 msgstr "大小(_S)"
 
-#: src/wmapp.cc:577 src/wmwinlist.cc:350
+#: src/wmapp.cc:588 src/wmwinlist.cc:380
 msgid "Mi_nimize"
 msgstr "縮小(_N)"
 
-#: src/wmapp.cc:579 src/wmwinlist.cc:351
+#: src/wmapp.cc:590 src/wmwinlist.cc:381
 msgid "Ma_ximize"
 msgstr "放大(_X)"
 
-#: src/wmapp.cc:580 src/wmwinlist.cc:352
-#, fuzzy
-#| msgid "Maximize"
+#: src/wmapp.cc:591 src/wmwinlist.cc:382
 msgid "Maximize_Vert"
-msgstr "放到最大"
+msgstr "垂直最大化(_V)"
 
-#: src/wmapp.cc:581
-#, fuzzy
-#| msgid "Maximize"
+#: src/wmapp.cc:592
 msgid "MaximizeHori_z"
-msgstr "放到最大"
+msgstr "水平最大化(_Z)"
 
-#: src/wmapp.cc:584 src/wmwinlist.cc:353
+#: src/wmapp.cc:595 src/wmwinlist.cc:383
 msgid "_Fullscreen"
 msgstr "全螢幕(_F)"
 
-#: src/wmapp.cc:587 src/wmwinlist.cc:355
+#: src/wmapp.cc:598 src/wmwinlist.cc:385
 msgid "_Hide"
 msgstr "隱藏(_H)"
 
-#: src/wmapp.cc:589 src/wmwinlist.cc:356
+#: src/wmapp.cc:600 src/wmwinlist.cc:386
 msgid "Roll_up"
 msgstr "向上循環(_U)"
 
-#: src/wmapp.cc:596
+#: src/wmapp.cc:607
 msgid "R_aise"
 msgstr "提升(_A)"
 
-#: src/wmapp.cc:598 src/wmwinlist.cc:358
+#: src/wmapp.cc:609 src/wmwinlist.cc:388
 msgid "_Lower"
 msgstr "降低(_L)"
 
-#: src/wmapp.cc:600
+#: src/wmapp.cc:611 src/wmwinlist.cc:389
 msgid "La_yer"
 msgstr "層次(_Y)"
 
-#: src/wmapp.cc:604 src/wmwinlist.cc:360
+#: src/wmapp.cc:615 src/wmwinlist.cc:391
 msgid "Move _To"
 msgstr "移至(_T)"
 
-#: src/wmapp.cc:605 src/wmwinlist.cc:361
+#: src/wmapp.cc:616 src/wmwinlist.cc:392
 msgid "Occupy _All"
 msgstr "全部佔據(_A)"
 
-#: src/wmapp.cc:611
+#: src/wmapp.cc:622
 msgid "Limit _Workarea"
 msgstr "限制工作區域(_W)"
 
-#: src/wmapp.cc:615 src/wmwinlist.cc:362
+#: src/wmapp.cc:626 src/wmwinlist.cc:393
 msgid "Tray _icon"
 msgstr "系統列圖示(_I)"
 
-#: src/wmapp.cc:620 src/wmwinlist.cc:339 src/wmwinlist.cc:373
+#: src/wmapp.cc:631 src/wmwinlist.cc:369 src/wmwinlist.cc:404
 msgid "_Close"
 msgstr "關閉(_C)"
 
-#: src/wmapp.cc:622 src/wmwinlist.cc:341
+#: src/wmapp.cc:633 src/wmwinlist.cc:371
 msgid "_Kill Client"
 msgstr "砍掉客戶端(_K)"
 
-#: src/wmapp.cc:625 src/wmdialog.cc:80 src/wmwinmenu.cc:131
+#: src/wmapp.cc:636 src/wmdialog.cc:80 src/wmwinmenu.cc:134
 msgid "_Window list"
 msgstr "視窗清單(_W)"
 
-#: src/wmapp.cc:639
+#: src/wmapp.cc:669
 msgid "Another window manager already running, exiting..."
 msgstr "已有另一個視窗管理程式正在執行，離開中..."
 
-#: src/wmapp.cc:724
+#: src/wmapp.cc:743
 #, c-format
 msgid ""
 "Could not restart: %s\n"
@@ -1474,16 +1327,20 @@ msgstr ""
 "無法重新啟動：%s\n"
 "$PATH 是否指向 %s？"
 
-#: src/wmapp.cc:849
+#: src/wmapp.cc:871
 msgid "Kill IceWM, replace with Xterm"
 msgstr "強行中止 IceWM，以 Xterm 取代"
 
-#: src/wmapp.cc:1394
+#: src/wmapp.cc:1121 src/yxapp.cc:998
+msgid "<none>"
+msgstr "<無>"
+
+#: src/wmapp.cc:1466
 msgid ""
 "  --client-id=ID      Client id to use when contacting session manager.\n"
 msgstr "  --client-id=ID      聯絡工作階段管理程式時要使用的用戶端 ID。\n"
 
-#: src/wmapp.cc:1400
+#: src/wmapp.cc:1472
 msgid ""
 "\n"
 "  --debug             Print generic debug messages.\n"
@@ -1493,11 +1350,19 @@ msgstr ""
 "  --debug             列印一般除錯訊息。\n"
 "  --debug-z           列印有關視窗堆疊的除錯訊息。\n"
 
-#: src/wmapp.cc:1408
+#: src/wmapp.cc:1480
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "  -c, --config=FILE   Load preferences from FILE.\n"
+#| "  -t, --theme=FILE    Load theme from FILE.\n"
+#| "  --postpreferences   Print preferences after all processing.\n"
 msgid ""
 "\n"
+"  -a, --alpha         Use a 32-bit visual for translucency.\n"
 "  -c, --config=FILE   Load preferences from FILE.\n"
 "  -t, --theme=FILE    Load theme from FILE.\n"
+"  --splash=IMAGE      Briefly show IMAGE on startup.\n"
 "  --postpreferences   Print preferences after all processing.\n"
 msgstr ""
 "\n"
@@ -1505,7 +1370,7 @@ msgstr ""
 "  -t、--theme=FILE    從 FILE 中載入主題。\n"
 "  --postpreferences   所有程序結束後列印優先設定。\n"
 
-#: src/wmapp.cc:1413
+#: src/wmapp.cc:1487
 #, c-format
 msgid ""
 "Usage: %s [OPTIONS]\n"
@@ -1564,26 +1429,26 @@ msgstr ""
 "%s\n"
 "\n"
 
-#: src/wmapp.cc:1474
+#: src/wmapp.cc:1548
 #, c-format
 msgid "%s configuration directories:\n"
 msgstr "%s 組態目錄︰\n"
 
-#: src/wmapp.cc:1559
+#: src/wmapp.cc:1633
 #, c-format
 msgid "%s configured options:%s\n"
 msgstr "%s 設定的選項：%s\n"
 
-#: src/wmapp.cc:1612
+#: src/wmapp.cc:1695
 #, c-format
 msgid "Unrecognized option '%s'."
 msgstr "無法識別選項「%s」。"
 
-#: src/wmapp.cc:1645
+#: src/wmapp.cc:1767
 msgid "Confirm Logout"
 msgstr "確定登出"
 
-#: src/wmapp.cc:1646
+#: src/wmapp.cc:1768
 msgid ""
 "Logout will close all active applications.\n"
 "Proceed?"
@@ -1591,27 +1456,27 @@ msgstr ""
 "登出會關閉所有進行中的應用程式。\n"
 "要繼續？"
 
-#: src/wmconfig.cc:40
+#: src/wmconfig.cc:37
 #, c-format
 msgid "Failed to load theme %s"
 msgstr "載入主題 %s 失敗"
 
-#: src/wmconfig.cc:103
+#: src/wmconfig.cc:92
 #, c-format
 msgid "Unknown value '%s' for option '%s'."
 msgstr "未知值「%s」(對於選項「%s」)。"
 
-#: src/wmconfig.cc:111
+#: src/wmconfig.cc:100
 #, c-format
 msgid "Unable to create directory %s"
 msgstr "無法建立目錄 %s"
 
-#: src/wmconfig.cc:138 src/wmprog.cc:564 src/wmprog.cc:686 src/wmprog.cc:690
+#: src/wmconfig.cc:127 src/wmprog.cc:569 src/wmprog.cc:691 src/wmprog.cc:695
 #, c-format
 msgid "Unable to write to %s"
 msgstr "無法寫入 %s"
 
-#: src/wmconfig.cc:165 src/wmprog.cc:694
+#: src/wmconfig.cc:154 src/wmprog.cc:699
 #, c-format
 msgid "Unable to rename %s to %s"
 msgstr "無法將 %s 重新命名為 %s"
@@ -1620,12 +1485,12 @@ msgstr "無法將 %s 重新命名為 %s"
 msgid "Loc_k Workstation"
 msgstr "鎖定工作站(_K)"
 
-#: src/wmdialog.cc:76 src/ymsgbox.cc:44
+#: src/wmdialog.cc:76 src/ymsgbox.cc:43
 msgid "_Cancel"
 msgstr "取消(_C)"
 
-#: src/wmdialog.cc:77 src/wmprog.cc:844 src/wmprog.cc:846 src/wmtaskbar.cc:297
-#: src/wmtaskbar.cc:299
+#: src/wmdialog.cc:77 src/wmprog.cc:849 src/wmprog.cc:851 src/wmtaskbar.cc:270
+#: src/wmtaskbar.cc:272
 msgid "_Logout..."
 msgstr "登出(_L)..."
 
@@ -1633,16 +1498,15 @@ msgstr "登出(_L)..."
 msgid "_Restart icewm"
 msgstr "重新啟動 icewm(_R)"
 
-#: src/wmdialog.cc:82 src/wmprog.cc:805 src/wmtaskbar.cc:290
-#: src/wmtaskbar.cc:293
+#: src/wmdialog.cc:82 src/wmprog.cc:810 src/wmtaskbar.cc:266
 msgid "_About"
 msgstr "關於(_A)"
 
-#: src/wmframe.cc:1400
+#: src/wmframe.cc:1408
 msgid "Kill Client: "
 msgstr "砍掉客戶端："
 
-#: src/wmframe.cc:1407
+#: src/wmframe.cc:1415
 msgid ""
 "WARNING! All unsaved changes will be lost when\n"
 "this client is killed. Do you wish to proceed?"
@@ -1650,235 +1514,215 @@ msgstr ""
 "【警告】！當這個客戶端程式被砍掉時，將會失去所有未儲存的變更。\n"
 "您希望繼續進行嗎？"
 
-#: src/wmframe.cc:3001
+#: src/wmframe.cc:3011
 msgid "Restore"
 msgstr "還原"
 
-#: src/wmframe.cc:3004 src/wmtitle.cc:69
+#: src/wmframe.cc:3014 src/wmtitle.cc:72
 msgid "Maximize"
 msgstr "放到最大"
 
-#: src/wmframe.cc:3034
+#: src/wmframe.cc:3044
 msgid "Rolldown"
 msgstr "向下循環"
 
-#: src/wmframe.cc:3036 src/wmtitle.cc:127
+#: src/wmframe.cc:3046 src/wmtitle.cc:130
 msgid "Rollup"
 msgstr "向上循環"
 
-#: src/wmoption.cc:228
+#: src/wmoption.cc:231
 #, c-format
 msgid "Unknown window option: %s"
 msgstr "未知視窗選項：%s"
 
-#: src/wmoption.cc:338
+#: src/wmoption.cc:343
 #, c-format
 msgid "Syntax error in window options on line %d of %s"
 msgstr "第 %d 行 (%s) 中的視窗選項語法有誤"
 
-#: src/wmprog.cc:392
+#: src/wmprog.cc:397
 msgid "_Click to focus"
 msgstr "點擊以取得焦點(_C)"
 
-#: src/wmprog.cc:393
+#: src/wmprog.cc:398
 msgid "_Explicit focus"
 msgstr "顯性焦點(_E)"
 
-#: src/wmprog.cc:394
+#: src/wmprog.cc:399
 msgid "_Sloppy mouse focus"
 msgstr "粗略的滑鼠焦點(_S)"
 
-#: src/wmprog.cc:395
+#: src/wmprog.cc:400
 msgid "S_trict mouse focus"
 msgstr "精確滑鼠焦點(_T)"
 
-#: src/wmprog.cc:396
+#: src/wmprog.cc:401
 msgid "_Quiet sloppy focus"
 msgstr "安靜的粗略焦點(_Q)"
 
-#: src/wmprog.cc:397
+#: src/wmprog.cc:402
 msgid "Custo_m"
 msgstr "自訂(_M)"
 
-#: src/wmprog.cc:484
-#, fuzzy
-#| msgid "Favorite applications"
+#: src/wmprog.cc:489
 msgid "Save Modifications"
-msgstr "喜愛的應用程式"
+msgstr "儲存修改"
 
-#: src/wmprog.cc:717
+#: src/wmprog.cc:722
 msgid "_Manual"
 msgstr "手動(_M)"
 
-#: src/wmprog.cc:718
+#: src/wmprog.cc:723
 msgid "_Icewm(1)"
 msgstr "_Icewm(1)"
 
-#: src/wmprog.cc:719
+#: src/wmprog.cc:724
 msgid "Icewm_Bg(1)"
 msgstr "Icewm_Bg(1)"
 
-#: src/wmprog.cc:720
+#: src/wmprog.cc:725
 msgid "Ice_Sound(1)"
 msgstr "Ice_Sound(1)"
 
-#: src/wmprog.cc:782
+#: src/wmprog.cc:787
 msgid "Programs"
 msgstr "程式"
 
-#: src/wmprog.cc:787
+#: src/wmprog.cc:792
 msgid "_Run..."
 msgstr "執行(_R)..."
 
-#: src/wmprog.cc:792 src/wmtaskbar.cc:280
+#: src/wmprog.cc:797 src/wmtaskbar.cc:263
 msgid "_Windows"
 msgstr "視窗(_W)"
 
-#: src/wmprog.cc:811
+#: src/wmprog.cc:816
 msgid "_Help"
 msgstr "求助(_H)"
 
-#: src/wmprog.cc:822
+#: src/wmprog.cc:827
 msgid "_Focus"
 msgstr "焦點(_F)"
 
-#: src/wmprog.cc:827
+#: src/wmprog.cc:832
 msgid "_Preferences"
 msgstr "優先設定(_P)"
 
-#: src/wmprog.cc:833
+#: src/wmprog.cc:838
 msgid "_Themes"
 msgstr "主題(_T)"
 
-#: src/wmprog.cc:838
+#: src/wmprog.cc:843
 msgid "Se_ttings"
 msgstr "設定(_T)"
 
-#: src/wmsession.cc:225 src/wmsession.cc:241 src/wmsession.cc:251
+#: src/wmsession.cc:220 src/wmsession.cc:236 src/wmsession.cc:246
 #, c-format
 msgid "Session Manager: Unknown line %s"
 msgstr "作業階段管理程式：未知的列 %s"
 
-#: src/wmtaskbar.cc:168 src/wmtaskbar.cc:169
-msgid "Task Bar"
-msgstr "工作列"
-
-#: src/wmtaskbar.cc:270 src/wmwinlist.cc:364 src/wmwinlist.cc:377
+#: src/wmtaskbar.cc:253 src/wmwinlist.cc:395 src/wmwinlist.cc:415
 msgid "Tile _Vertically"
 msgstr "垂直並排(_V)"
 
-#: src/wmtaskbar.cc:271 src/wmwinlist.cc:365 src/wmwinlist.cc:378
+#: src/wmtaskbar.cc:254 src/wmwinlist.cc:396 src/wmwinlist.cc:416
 msgid "T_ile Horizontally"
 msgstr "水平並排(_I)"
 
-#: src/wmtaskbar.cc:272 src/wmwinlist.cc:366 src/wmwinlist.cc:379
+#: src/wmtaskbar.cc:255 src/wmwinlist.cc:397 src/wmwinlist.cc:417
 msgid "Ca_scade"
 msgstr "階狀(_S)"
 
-#: src/wmtaskbar.cc:273 src/wmwinlist.cc:367 src/wmwinlist.cc:380
+#: src/wmtaskbar.cc:256 src/wmwinlist.cc:398 src/wmwinlist.cc:418
 msgid "_Arrange"
 msgstr "排列(_A)"
 
-#: src/wmtaskbar.cc:274 src/wmwinlist.cc:369 src/wmwinlist.cc:381
+#: src/wmtaskbar.cc:257 src/wmwinlist.cc:400 src/wmwinlist.cc:419
 msgid "_Minimize All"
 msgstr "全部縮到最小(_M)"
 
-#: src/wmtaskbar.cc:275 src/wmwinlist.cc:370 src/wmwinlist.cc:382
+#: src/wmtaskbar.cc:258 src/wmwinlist.cc:401 src/wmwinlist.cc:420
 msgid "_Hide All"
 msgstr "全部隱藏(_H)"
 
-#: src/wmtaskbar.cc:276 src/wmwinlist.cc:371 src/wmwinlist.cc:383
+#: src/wmtaskbar.cc:259 src/wmwinlist.cc:402 src/wmwinlist.cc:421
 msgid "_Undo"
 msgstr "復原(_U)"
 
-#: src/wmtaskbar.cc:278
+#: src/wmtaskbar.cc:261
 msgid "Arrange _Icons"
 msgstr "排列圖示(_I)"
 
-#: src/wmtaskbar.cc:282
+#: src/wmtaskbar.cc:265
 msgid "_Refresh"
 msgstr "重新整理(_R)"
 
-#: src/wmtaskbar.cc:288
-msgid "_License"
-msgstr "授權(_L)"
-
-#: src/wmtaskbar.cc:356 src/wmtaskbar.cc:975
-#, fuzzy
-#| msgid "Task Bar"
+#: src/wmtaskbar.cc:336 src/wmtaskbar.cc:966
 msgid "Hide Taskbar"
-msgstr "工作列"
+msgstr "隱藏工作列"
 
-#: src/wmtaskbar.cc:371
-#, fuzzy
-#| msgid "Favorite applications"
+#: src/wmtaskbar.cc:354
 msgid "Favorite Applications"
 msgstr "喜愛的應用程式"
 
-#: src/wmtaskbar.cc:389
-#, fuzzy
-#| msgid "Window list menu"
+#: src/wmtaskbar.cc:375
 msgid "Window List Menu"
 msgstr "視窗列表選單"
 
-#: src/wmtaskbar.cc:398
+#: src/wmtaskbar.cc:384
 msgid "Show Desktop"
 msgstr "顯示桌面"
 
-#: src/wmtaskbar.cc:975
-#, fuzzy
-#| msgid "Task Bar"
+#: src/wmtaskbar.cc:966
 msgid "Show Taskbar"
-msgstr "工作列"
+msgstr "顯示工作列"
 
-#: src/wmtitle.cc:85
+#: src/wmtitle.cc:88
 msgid "Minimize"
 msgstr "縮到最小"
 
-#: src/wmtitle.cc:113
+#: src/wmtitle.cc:116
 msgid "Hide"
 msgstr "隱藏"
 
-#: src/wmtitle.cc:141
+#: src/wmtitle.cc:144
 msgid "Raise/Lower"
 msgstr "提升/降低"
 
-#: src/wmwinlist.cc:50
+#: src/wmwinlist.cc:51
 msgid "All Workspaces"
 msgstr "所有工作區"
 
-#: src/wmwinlist.cc:339
+#: src/wmwinlist.cc:369
 msgid "Del"
 msgstr "刪除"
 
-#: src/wmwinlist.cc:343
+#: src/wmwinlist.cc:373
 msgid "_Terminate Process"
 msgstr "終止行程(_T)"
 
-#: src/wmwinlist.cc:344
+#: src/wmwinlist.cc:374
 msgid "Kill _Process"
 msgstr "砍掉行程(_P)"
 
-#: src/wmwinlist.cc:354
+#: src/wmwinlist.cc:384
 msgid "_Show"
 msgstr "顯示(_S)"
 
-#: src/wmwinlist.cc:357
-#, fuzzy
-#| msgid "R_aise"
+#: src/wmwinlist.cc:387
 msgid "_Raise"
-msgstr "提升(_A)"
+msgstr "提升(_R)"
 
-#: src/wmwinlist.cc:396 src/wmwinlist.cc:397
+#: src/wmwinlist.cc:437 src/wmwinlist.cc:438
 msgid "Window list"
 msgstr "視窗清單"
 
-#: src/wmwinmenu.cc:122
+#: src/wmwinmenu.cc:125
 #, c-format
 msgid "%lu. Workspace %-.32s"
 msgstr "%lu。工作區 %-.32s"
 
-#: src/yapp.cc:277
+#: src/yapp.cc:279
 #, c-format
 msgid "%s: select failed"
 msgstr "%s：選取失敗"
@@ -1889,10 +1733,9 @@ msgid "Unknown key name %s in %s"
 msgstr "未知的按鍵名稱 %s / %s"
 
 #: src/yconfig.cc:150 src/yconfig.cc:163 src/yconfig.cc:177
-#, fuzzy, c-format
-#| msgid "Bad argument: %s for %s"
+#, c-format
 msgid "Bad argument: %s for %s [%d,%d]"
-msgstr "不當的引數：%s 對於 %s"
+msgstr "不當的引數：%s 對於 %s [%d,%d]"
 
 #: src/yconfig.cc:214
 #, c-format
@@ -1934,63 +1777,63 @@ msgstr "程式臭蟲？XPM 檔案非預期結束，但是 Imlib 之前可以解�
 msgid "BUG? Unexpected character but Imlib was able to parse \"%s\""
 msgstr "程式臭蟲？非預期字元，但是 Imlib 之前可以解析「%s」"
 
-#: src/yfontcore.cc:71 src/yfontxft.cc:158
+#: src/yfontcore.cc:72 src/yfontxft.cc:158
 #, c-format
 msgid "Could not load font \"%s\"."
 msgstr "無法載入字型「%s」。"
 
-#: src/yfontcore.cc:74 src/yfontcore.cc:121 src/yfontxft.cc:181
+#: src/yfontcore.cc:75 src/yfontcore.cc:124 src/yfontxft.cc:181
 #, c-format
 msgid "Loading of fallback font \"%s\" failed."
 msgstr "載入後備字型 \"%s\" 失敗。"
 
-#: src/yfontcore.cc:114
+#: src/yfontcore.cc:117
 #, c-format
 msgid "Could not load fontset \"%s\"."
 msgstr "無法載入字型集「%s」。"
 
-#: src/yfontcore.cc:126
+#: src/yfontcore.cc:129
 #, c-format
 msgid "Missing codesets for fontset \"%s\":"
 msgstr "字型集 \"%s\" 缺少字碼集："
 
-#: src/yinput.cc:38
+#: src/yinput.cc:18
 msgid "_Copy"
 msgstr "複製(_C)"
 
-#: src/yinput.cc:38
+#: src/yinput.cc:18
 msgid "Ctrl+C"
 msgstr "Ctrl+C"
 
-#: src/yinput.cc:40
+#: src/yinput.cc:19
 msgid "Cu_t"
 msgstr "剪下(_T)"
 
-#: src/yinput.cc:40
+#: src/yinput.cc:19
 msgid "Ctrl+X"
 msgstr "Ctrl+X"
 
-#: src/yinput.cc:42
+#: src/yinput.cc:20
 msgid "_Paste"
 msgstr "貼上(_P)"
 
-#: src/yinput.cc:42
+#: src/yinput.cc:20
 msgid "Ctrl+V"
 msgstr "Ctrl+V"
 
-#: src/yinput.cc:44
+#: src/yinput.cc:21
 msgid "Paste _Selection"
 msgstr "貼上所選(_S)"
 
-#: src/yinput.cc:44
+#: src/yinput.cc:21
 msgid "Ctrl+P"
 msgstr "Ctrl+P"
 
-#: src/yinput.cc:47
+#: src/yinput.cc:23
 msgid "Select _All"
 msgstr "全部選取(_A)"
 
-#: src/yinput.cc:47
+#: src/yinput.cc:23
 msgid "Ctrl+A"
 msgstr "Ctrl+A"
 
@@ -2013,7 +1856,7 @@ msgstr "iconv 不（完全）支援 %s 到 %s 的轉換器。"
 msgid "Invalid multibyte string \"%s\": %s"
 msgstr "無效的多位元字串「%s」：%s"
 
-#: src/ymsgbox.cc:36
+#: src/ymsgbox.cc:35
 msgid "_OK"
 msgstr "確定(_O)"
 
@@ -2046,7 +1889,7 @@ msgstr "位於 %d 處的 URL 中存在不完整的十六進位逸出字元。"
 msgid "Invalid hex escape in URL at position %d."
 msgstr "位於 %d 處的 URL 中存在無效的十六進位逸出字元。"
 
-#: src/yxapp.cc:885
+#: src/yxapp.cc:958
 msgid ""
 "  -d, --display=NAME  NAME of the X server to use.\n"
 "  --sync              Synchronize X11 commands.\n"
@@ -2147,44 +1990,42 @@ msgstr "Blocks 類型遊戲"
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Game
 #: src/fdospecgen.h:81
 msgid "BoardGame"
-msgstr ""
+msgstr "桌上遊戲"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Development
 #: src/fdospecgen.h:83
 msgid "Building"
-msgstr ""
+msgstr "建造"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Utility
 #: src/fdospecgen.h:85
 msgid "Calculator"
-msgstr ""
+msgstr "計算機"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Office
 #: src/fdospecgen.h:87
 msgid "Calendar"
-msgstr ""
+msgstr "行事曆"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Game
 #: src/fdospecgen.h:89
-#, fuzzy
-#| msgid "Games"
 msgid "CardGame"
-msgstr "遊戲"
+msgstr "卡牌遊戲"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Office
 #: src/fdospecgen.h:91
 msgid "Chart"
-msgstr ""
+msgstr "圖表"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Network
 #: src/fdospecgen.h:93
 msgid "Chat"
-msgstr ""
+msgstr "聊天"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science
 #: src/fdospecgen.h:95
 msgid "Chemistry"
-msgstr ""
+msgstr "化學"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Utility
 #: src/fdospecgen.h:97
@@ -2194,49 +2035,47 @@ msgstr "時鐘"
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Utility;Archiving
 #: src/fdospecgen.h:99
 msgid "Compression"
-msgstr ""
+msgstr "壓縮"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science
 #: src/fdospecgen.h:101
 msgid "ComputerScience"
-msgstr ""
+msgstr "電腦科學"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science
 #: src/fdospecgen.h:103
 msgid "Construction"
-msgstr ""
+msgstr "營造"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Office
 #: src/fdospecgen.h:105
 msgid "ContactManagement"
-msgstr ""
+msgstr "聯絡人管理"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes.
 #: src/fdospecgen.h:107
 msgid "Core"
-msgstr ""
+msgstr "核心"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science
 #: src/fdospecgen.h:109
 msgid "DataVisualization"
-msgstr ""
+msgstr "資料視覺化"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Office or Development or AudioVideo
 #: src/fdospecgen.h:111
 msgid "Database"
-msgstr ""
+msgstr "資料庫"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Development
 #: src/fdospecgen.h:113
 msgid "Debugger"
-msgstr ""
+msgstr "偵錯器"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Settings
 #: src/fdospecgen.h:115
-#, fuzzy
-#| msgid "Settings"
 msgid "DesktopSettings"
-msgstr "設定"
+msgstr "桌面設定"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes.
 #: src/fdospecgen.h:117
@@ -2246,27 +2085,27 @@ msgstr "程式開發"
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Network
 #: src/fdospecgen.h:119
 msgid "Dialup"
-msgstr ""
+msgstr "撥接"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Office or TextTools
 #: src/fdospecgen.h:121
 msgid "Dictionary"
-msgstr ""
+msgstr "字典"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: AudioVideo
 #: src/fdospecgen.h:123
 msgid "DiscBurning"
-msgstr ""
+msgstr "燒錄光碟"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes.
 #: src/fdospecgen.h:125
 msgid "Documentation"
-msgstr ""
+msgstr "文件"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science
 #: src/fdospecgen.h:127
 msgid "Economy"
-msgstr ""
+msgstr "經濟"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes.
 #: src/fdospecgen.h:129
@@ -2281,93 +2120,87 @@ msgstr "教育軟體"
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science
 #: src/fdospecgen.h:133
 msgid "Electricity"
-msgstr ""
+msgstr "電力"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes.
 #: src/fdospecgen.h:135
 msgid "Electronics"
-msgstr ""
+msgstr "電子學"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Office or Network
 #: src/fdospecgen.h:137
 msgid "Email"
-msgstr ""
+msgstr "電子郵件"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: System or Game
 #: src/fdospecgen.h:139
 msgid "Emulator"
-msgstr ""
+msgstr "模擬器"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes.
 #: src/fdospecgen.h:141
 msgid "Engineering"
-msgstr ""
+msgstr "工程"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Network
 #: src/fdospecgen.h:143
 msgid "Feed"
-msgstr ""
+msgstr "Feed"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: System;FileTools
 #: src/fdospecgen.h:145
 msgid "FileManager"
-msgstr ""
+msgstr "檔案管理員"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Utility or System
 #: src/fdospecgen.h:147
 msgid "FileTools"
-msgstr ""
+msgstr "檔案工具"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Network
 #: src/fdospecgen.h:149
 msgid "FileTransfer"
-msgstr ""
+msgstr "檔案傳輸"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: System
 #: src/fdospecgen.h:151
-#, fuzzy
-#| msgid "System"
 msgid "Filesystem"
-msgstr "系統工具"
+msgstr "檔案系統"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Office
 #: src/fdospecgen.h:153
-#, fuzzy
-#| msgid "Cancel"
 msgid "Finance"
-msgstr "取消"
+msgstr "財務"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Office
 #: src/fdospecgen.h:155
 msgid "FlowChart"
-msgstr ""
+msgstr "流程圖"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Development
 #: src/fdospecgen.h:157
 msgid "GUIDesigner"
-msgstr ""
+msgstr "GUI 設計工具"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes.
 #: src/fdospecgen.h:159
-#, fuzzy
-#| msgid "Games"
 msgid "Game"
 msgstr "遊戲"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science
 #: src/fdospecgen.h:161
 msgid "Geography"
-msgstr ""
+msgstr "地理"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science
 #: src/fdospecgen.h:163
 msgid "Geology"
-msgstr ""
+msgstr "地質"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science
 #: src/fdospecgen.h:165
 msgid "Geoscience"
-msgstr ""
+msgstr "地球科學"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes.
 #: src/fdospecgen.h:167
@@ -2377,105 +2210,97 @@ msgstr "圖形處理"
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Network or Audio
 #: src/fdospecgen.h:169
 msgid "HamRadio"
-msgstr ""
+msgstr "業餘無線電"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Settings
 #: src/fdospecgen.h:171
-#, fuzzy
-#| msgid "Settings"
 msgid "HardwareSettings"
-msgstr "設定"
+msgstr "硬體設定"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science
 #: src/fdospecgen.h:173
 msgid "History"
-msgstr ""
+msgstr "歷史"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science
 #: src/fdospecgen.h:175
 msgid "Humanities"
-msgstr ""
+msgstr "人文學科"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Development
 #: src/fdospecgen.h:177
 msgid "IDE"
-msgstr ""
+msgstr "IDE"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Network
 #: src/fdospecgen.h:179
 msgid "IRCClient"
-msgstr ""
+msgstr "IRC 用戶端"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science
 #: src/fdospecgen.h:181
-#, fuzzy
-#| msgid "_Terminate Process"
 msgid "ImageProcessing"
-msgstr "終止行程(_T)"
+msgstr "影像處理"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Network
 #: src/fdospecgen.h:183
 msgid "InstantMessaging"
-msgstr ""
+msgstr "即時通訊"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Game
 #: src/fdospecgen.h:185
-#, fuzzy
-#| msgid "Games"
 msgid "KidsGame"
-msgstr "遊戲"
+msgstr "兒童遊戲"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science
 #: src/fdospecgen.h:187
-#, fuzzy
-#| msgid "Language:"
 msgid "Languages"
-msgstr "語言："
+msgstr "語言"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science
 #: src/fdospecgen.h:189
 msgid "Literature"
-msgstr ""
+msgstr "文學"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Game
 #: src/fdospecgen.h:191
 msgid "LogicGame"
-msgstr ""
+msgstr "邏輯遊戲"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science or Utility
 #: src/fdospecgen.h:193
 msgid "Maps"
-msgstr ""
+msgstr "地圖"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science
 #: src/fdospecgen.h:195
 msgid "Math"
-msgstr ""
+msgstr "數學"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science
 #: src/fdospecgen.h:197
 msgid "MedicalSoftware"
-msgstr ""
+msgstr "醫療軟體"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: AudioVideo;Audio
 #: src/fdospecgen.h:199
 msgid "Midi"
-msgstr ""
+msgstr "Midi"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: AudioVideo;Audio
 #: src/fdospecgen.h:201
 msgid "Mixer"
-msgstr ""
+msgstr "混音器"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: System or Network
 #: src/fdospecgen.h:203
 msgid "Monitor"
-msgstr ""
+msgstr "監視器"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes.
 #: src/fdospecgen.h:205
 msgid "Motif"
-msgstr ""
+msgstr "Motif"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes.
 #: src/fdospecgen.h:207
@@ -2485,7 +2310,7 @@ msgstr "多媒體程式"
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: AudioVideo or Education
 #: src/fdospecgen.h:209
 msgid "Music"
-msgstr ""
+msgstr "音樂"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes.
 #: src/fdospecgen.h:211
@@ -2495,17 +2320,17 @@ msgstr "網路"
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Network
 #: src/fdospecgen.h:213
 msgid "News"
-msgstr ""
+msgstr "新聞"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education;Math or Science;Math
 #: src/fdospecgen.h:215
 msgid "NumericalAnalysis"
-msgstr ""
+msgstr "數值分析"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Graphics;Scanning
 #: src/fdospecgen.h:217
 msgid "OCR"
-msgstr ""
+msgstr "OCR"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes.
 #: src/fdospecgen.h:219
@@ -2520,104 +2345,102 @@ msgstr "其它"
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Network
 #: src/fdospecgen.h:223
 msgid "P2P"
-msgstr ""
+msgstr "P2P"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Office
 #: src/fdospecgen.h:225
 msgid "PDA"
-msgstr ""
+msgstr "PDA"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Settings
 #: src/fdospecgen.h:227
 msgid "PackageManager"
-msgstr ""
+msgstr "套件管理員"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education;ComputerScience or Science;ComputerScience
 #: src/fdospecgen.h:229
 msgid "ParallelComputing"
-msgstr ""
+msgstr "平行計算"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Graphics or Office
 #: src/fdospecgen.h:231
 msgid "Photography"
-msgstr ""
+msgstr "攝影"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science
 #: src/fdospecgen.h:233
 msgid "Physics"
-msgstr ""
+msgstr "物理"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Audio or Video or AudioVideo
 #: src/fdospecgen.h:235
 msgid "Player"
-msgstr ""
+msgstr "播放器"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Office
 #: src/fdospecgen.h:237
 msgid "Presentation"
-msgstr ""
+msgstr "簡報"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Settings;HardwareSettings
 #: src/fdospecgen.h:239
 msgid "Printing"
-msgstr ""
+msgstr "列印"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Development
 #: src/fdospecgen.h:241
 msgid "Profiling"
-msgstr ""
+msgstr "分析"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Office or Development
 #: src/fdospecgen.h:243
 msgid "ProjectManagement"
-msgstr ""
+msgstr "專案管理"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Graphics or Office
 #: src/fdospecgen.h:245
 msgid "Publishing"
-msgstr ""
+msgstr "發佈"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Graphics;2DGraphics
 #: src/fdospecgen.h:247
-#, fuzzy
-#| msgid "Graphics"
 msgid "RasterGraphics"
-msgstr "圖形處理"
+msgstr "點陣圖形"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Audio or Video or AudioVideo
 #: src/fdospecgen.h:249
 msgid "Recorder"
-msgstr ""
+msgstr "錄製器"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Network
 #: src/fdospecgen.h:251
 msgid "RemoteAccess"
-msgstr ""
+msgstr "遠端存取"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Development
 #: src/fdospecgen.h:253
 msgid "RevisionControl"
-msgstr ""
+msgstr "版本控制"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science
 #: src/fdospecgen.h:255
 msgid "Robotics"
-msgstr ""
+msgstr "機器人"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Game
 #: src/fdospecgen.h:257
 msgid "RolePlaying"
-msgstr ""
+msgstr "角色扮演"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Graphics
 #: src/fdospecgen.h:259
 msgid "Scanning"
-msgstr ""
+msgstr "掃描"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes.
 #: src/fdospecgen.h:261
 msgid "Science"
-msgstr ""
+msgstr "科學"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes.
 #: src/fdospecgen.h:263
@@ -2627,12 +2450,12 @@ msgstr "螢幕保護程式"
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Settings or System
 #: src/fdospecgen.h:265
 msgid "Security"
-msgstr ""
+msgstr "安全性"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: AudioVideo;Audio
 #: src/fdospecgen.h:267
 msgid "Sequencer"
-msgstr ""
+msgstr "編曲程式"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes.
 #: src/fdospecgen.h:269
@@ -2642,43 +2465,37 @@ msgstr "設定"
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Game
 #: src/fdospecgen.h:271
 msgid "Shooter"
-msgstr ""
+msgstr "射擊遊戲"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Game
 #: src/fdospecgen.h:273
-#, fuzzy
-#| msgid "Education"
 msgid "Simulation"
-msgstr "教育軟體"
+msgstr "模擬遊戲"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science or Utility
 #: src/fdospecgen.h:275
 msgid "Spirituality"
-msgstr ""
+msgstr "精神"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science
 #: src/fdospecgen.h:277
-#, fuzzy
-#| msgid "Support"
 msgid "Sports"
-msgstr "支援"
+msgstr "體育"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Game
 #: src/fdospecgen.h:279
 msgid "SportsGame"
-msgstr ""
+msgstr "運動遊戲"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Office
 #: src/fdospecgen.h:281
 msgid "Spreadsheet"
-msgstr ""
+msgstr "試算表"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Game
 #: src/fdospecgen.h:283
-#, fuzzy
-#| msgid "Same Game"
 msgid "StrategyGame"
-msgstr "Same 遊戲"
+msgstr "益智類遊戲"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes.
 #: src/fdospecgen.h:285
@@ -2688,71 +2505,67 @@ msgstr "系統工具"
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: AudioVideo;Video
 #: src/fdospecgen.h:287
 msgid "TV"
-msgstr ""
+msgstr "電視"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Network
 #: src/fdospecgen.h:289
 msgid "Telephony"
-msgstr ""
+msgstr "電話"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Utility
 #: src/fdospecgen.h:291
 msgid "TelephonyTools"
-msgstr ""
+msgstr "電話工具"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: System
 #: src/fdospecgen.h:293
 msgid "TerminalEmulator"
-msgstr ""
+msgstr "終端機模擬器"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Utility
 #: src/fdospecgen.h:295
-#, fuzzy
-#| msgid "Editors"
 msgid "TextEditor"
-msgstr "編輯器"
+msgstr "文字編輯器"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Utility
 #: src/fdospecgen.h:297
 msgid "TextTools"
-msgstr ""
+msgstr "文字工具"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Development
 #: src/fdospecgen.h:299
 msgid "Translation"
-msgstr ""
+msgstr "翻譯"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: AudioVideo;Audio
 #: src/fdospecgen.h:301
 msgid "Tuner"
-msgstr ""
+msgstr "調諧器"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes.
 #: src/fdospecgen.h:303
 msgid "Utility"
-msgstr ""
+msgstr "公用程式"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Graphics;2DGraphics
 #: src/fdospecgen.h:305
-#, fuzzy
-#| msgid "Graphics"
 msgid "VectorGraphics"
-msgstr "圖形處理"
+msgstr "向量繪圖"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes.
 #: src/fdospecgen.h:307
 msgid "Video"
-msgstr ""
+msgstr "視訊"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Network
 #: src/fdospecgen.h:309
 msgid "VideoConference"
-msgstr ""
+msgstr "視訊會議"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Graphics or Office
 #: src/fdospecgen.h:311
 msgid "Viewer"
-msgstr ""
+msgstr "檢視器"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes.
 #: src/fdospecgen.h:313
@@ -2762,19 +2575,151 @@ msgstr "Wine"
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Network
 #: src/fdospecgen.h:315
 msgid "WebBrowser"
-msgstr ""
+msgstr "網頁瀏覽器"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Network or Development
 #: src/fdospecgen.h:317
-#, fuzzy
-#| msgid "Development"
 msgid "WebDevelopment"
-msgstr "程式開發"
+msgstr "網頁開發"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Office
 #: src/fdospecgen.h:319
 msgid "WordProcessor"
-msgstr ""
+msgstr "文書處理器"
+
+#~ msgid "Task Bar"
+#~ msgstr "工作列"
+
+#~ msgid "_License"
+#~ msgstr "授權(_L)"
+
+#~ msgid ""
+#~ "Usage: %s [OPTIONS] ACTIONS\n"
+#~ "\n"
+#~ "Options:\n"
+#~ "  -d, -display DISPLAY        Connects to the X server specified by "
+#~ "DISPLAY.\n"
+#~ "                              Default: $DISPLAY or :0.0 when not set.\n"
+#~ "  -w, -window WINDOW_ID       Specifies the window to manipulate. "
+#~ "Special\n"
+#~ "                              identifiers are `root' for the root window "
+#~ "and\n"
+#~ "                              `focus' for the currently focused window.\n"
+#~ "  -c, -class WM_CLASS         Window management class of the window(s) "
+#~ "to\n"
+#~ "                              manipulate. If WM_CLASS contains a period, "
+#~ "only\n"
+#~ "                              windows with exactly the same WM_CLASS "
+#~ "property\n"
+#~ "                              are matched. If there is no period, windows "
+#~ "of\n"
+#~ "                              the same class and windows of the same "
+#~ "instance\n"
+#~ "                              (aka. `-name') are selected.\n"
+#~ "\n"
+#~ "Actions:\n"
+#~ "  setIconTitle   TITLE        Set the icon title.\n"
+#~ "  setWindowTitle TITLE        Set the window title.\n"
+#~ "  setGeometry    geometry     Set the window geometry\n"
+#~ "  setState       MASK STATE   Set the GNOME window state to STATE.\n"
+#~ "                              Only the bits selected by MASK are "
+#~ "affected.\n"
+#~ "                              STATE and MASK are expressions of the "
+#~ "domain\n"
+#~ "                              `GNOME window state'.\n"
+#~ "  toggleState    STATE        Toggle the GNOME window state bits "
+#~ "specified by\n"
+#~ "                              the STATE expression.\n"
+#~ "  setHints       HINTS        Set the GNOME window hints to HINTS.\n"
+#~ "  setLayer       LAYER        Moves the window to another GNOME window "
+#~ "layer.\n"
+#~ "  setWorkspace   WORKSPACE    Moves the window to another workspace. "
+#~ "Select\n"
+#~ "                              the root window to change the current "
+#~ "workspace.\n"
+#~ "                              Select 0xFFFFFFFF or \"All\" for all "
+#~ "workspaces.\n"
+#~ "  listWorkspaces              Lists the names of all workspaces.\n"
+#~ "  setTrayOption  TRAYOPTION   Set the IceWM tray option hint.\n"
+#~ "  logout                      Tell IceWM to logout.\n"
+#~ "  reboot                      Tell IceWM to reboot.\n"
+#~ "  shutdown                    Tell IceWM to shutdown.\n"
+#~ "  cancel                      Tell IceWM to cancel the logout/reboot/"
+#~ "shutdown.\n"
+#~ "  about                       Tell IceWM to show the about window.\n"
+#~ "  windowlist                  Tell IceWM to show the window list.\n"
+#~ "  restart                     Tell IceWM to restart.\n"
+#~ "  suspend                     Tell IceWM to suspend.\n"
+#~ "\n"
+#~ "Expressions:\n"
+#~ "  Expressions are list of symbols of one domain concatenated by `+' or "
+#~ "`|':\n"
+#~ "\n"
+#~ "  EXPRESSION ::= SYMBOL | EXPRESSION ( `+' | `|' ) SYMBOL\n"
+#~ "\n"
+#~ msgstr ""
+#~ "用法：%s [選項] 動作\n"
+#~ "\n"
+#~ "選項：\n"
+#~ "  -d、-display DISPLAY            連接到 DISPLAY 所指定的 X 伺服器。\n"
+#~ "                              預設值：$DISPLAY 或是 :0.0 (未指定時)\n"
+#~ "  -w、-window WINDOW_ID           指定要操作的視窗。特殊識別字「root」用"
+#~ "於 root 視\n"
+#~ "                              窗；而「focus」用於當前的焦點視窗。\n"
+#~ "  -c、-class WM_CLASS             指定要操作的視窗的視窗管理類別。如果 "
+#~ "WM_CLASS 包\n"
+#~ "                              含了小數點，那只會套用於完全符合 WM_CLASS 資"
+#~ "訊的\n"
+#~ "                              視窗。但如果沒有小數點，那麼會套用於相同類別"
+#~ "以及\n"
+#~ "                              具有相同實體 (亦即「-name」) 的視窗。\n"
+#~ "\n"
+#~ "動作：\n"
+#~ "  setIconTitle   TITLE        設定圖示標題。\n"
+#~ "  setWindowTitle TITLE        設定視窗標題。\n"
+#~ "  setGeometry    geometry     設定視窗位置大小。\n"
+#~ "  setState       MASK STATE   設定 GNOME 視窗狀態為 STATE。\n"
+#~ "                              只會作用於由 MASK 所指定的位元。\n"
+#~ "                              STATE 與 MASK 都是「GNOME 視窗狀態」領域中的"
+#~ "表示\n"
+#~ "                              式。\n"
+#~ "  toggleState    STATE        切換由 STATE 所指定的 GNOME 視窗狀態。\n"
+#~ "  setHints       HINTS        設定 GNOME 的視窗提示為 HINTS。\n"
+#~ "  setLayer       LAYER        移動視窗到其他的 GNOME 視窗層次。\n"
+#~ "  setWorkspace   WORKSPACE    移動視窗到其他的工作區。\n"
+#~ "                              選取 root 視窗以變更目前的工作區。\n"
+#~ "                              選取 0xFFFFFFFF 或「All」指定所有工作區。\n"
+#~ "  listWorkspaces              列出所有工作區的名稱。\n"
+#~ "  setTrayOption  TRAYOPTION   設定 IceWM 系統列的選項提示。\n"
+#~ "  logout                      指示 IceWM 登出。\n"
+#~ "  reboot                      指示 IceWM 重新開機。\n"
+#~ "  shutdown                    指示 IceWM 關閉。\n"
+#~ "  cancel                      指示 IceWM 取消登出/重新開機/關閉。\n"
+#~ "  about                       指示 IceWM 顯示「關於」視窗。\n"
+#~ "  windowlist                  指示 IceWM 顯示視窗清單。\n"
+#~ "  restart                     指示 IceWM 重新啟動。\n"
+#~ "  suspend                     指示 IceWM 暫停。\n"
+#~ "\n"
+#~ "表示式：\n"
+#~ "  表示式是一串單一領域符號的列表，彼此由 '+' 或 '-' 所連接：\n"
+#~ "\n"
+#~ "  EXPRESSION ::= SYMBOL | EXPRESSION ( `+' | `|' ) SYMBOL\n"
+#~ "\n"
+
+#~ msgid "Can't connect to ESound daemon: %s"
+#~ msgstr "無法連線到 ESound 服務程式：%s"
+
+#~ msgid "Error <%d> while uploading `%s:%s'"
+#~ msgstr "時發生錯誤 <%d>在上傳「%s:%s」"
+
+#~ msgid "Sample <%d> uploaded as `%s:%s'"
+#~ msgstr "樣本 <%d> 上傳為「%s:%s」"
+
+#~ msgid "Playing sample #%d: %d"
+#~ msgstr "正在播放樣本 #%d︰%d"
+
+#~ msgid "Usage error: "
+#~ msgstr "用法錯誤："
 
 #~ msgid "Out of memory for image %s"
 #~ msgstr "圖案 \"%s\" 的記憶體不足"

@@ -4,6 +4,11 @@
 namespace ASCII {
 
     template<class T>
+    inline bool isSign(T c) {
+        return c == '+' || c == '-';
+    }
+
+    template<class T>
     static bool isLower(T c) {
         return c >= 'a' && c <= 'z';
     }
@@ -69,7 +74,16 @@ namespace ASCII {
             ++s;
         return s;
     }
-};
+
+    template<class T>
+    static int hexDigit(T c) {
+        return c >= '0' && c <= '9' ? int(c - '0') :
+               c >= 'a' && c <= 'f' ? int(c - 'a') + 10 :
+               c >= 'A' && c <= 'F' ? int(c - 'A') + 10 :
+               -1;
+    }
+
+}
 
 #endif
 

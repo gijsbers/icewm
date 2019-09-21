@@ -6,18 +6,13 @@
  * Alt{+Shift}+Tab window switching
  */
 #include "config.h"
-
 #include "wmswitch.h"
 #include "wpixmaps.h"
 #include "wmframe.h"
 #include "yxapp.h"
 #include "prefs.h"
 #include "yprefs.h"
-
-// for vertical quickswitch, reuse some colors from the menu because those
-// from flat quickswitch often look odd (not enough contrast)
-
-extern YColorName activeMenuItemBg, activeMenuItemFg;
+#include "workspaces.h"
 
 class WindowItemsCtrlr : public ISwitchItems
 {
@@ -126,7 +121,7 @@ class WindowItemsCtrlr : public ISwitchItems
 
 public:
 
-    virtual int getCount()
+    virtual int getCount() OVERRIDE
     {
         return zList.getCount();
     }
@@ -144,7 +139,7 @@ public:
         const int cnt = getCount();
         return setTarget(cnt < 2 ? 0 : (zTarget + cnt + (zdown ? 1 : -1)) % cnt);
     }
-    inline virtual int setTarget(int zPosition)
+    inline virtual int setTarget(int zPosition) OVERRIDE
     {
         zTarget=zPosition;
         if (inrange(zTarget, 0, getCount() - 1))
@@ -167,25 +162,25 @@ public:
             free(fWMClass);
     }
 
-    int getActiveItem()
+    virtual int getActiveItem() OVERRIDE
     {
         return zTarget;
     }
 
-    virtual ustring getTitle(int idx)
+    virtual ustring getTitle(int idx) OVERRIDE
     {
         if (inrange(idx, 0, getCount() - 1))
             return zList[idx]->client()->windowTitle();
         return null;
     }
 
-    virtual void setWMClass(char* wmclass) {
+    virtual void setWMClass(char* wmclass) OVERRIDE {
         if (fWMClass)
             free(fWMClass);
         fWMClass = wmclass;
     }
 
-    void updateList() {
+    virtual void updateList() OVERRIDE {
         freeList();
         getZList();
     }
@@ -195,7 +190,7 @@ public:
             displayFocusChange(zList[idx]);
     }
 
-    void begin(bool zdown)
+    virtual void begin(bool zdown) OVERRIDE
     {
         fLastWindow = fActiveWindow = manager->getFocus();
         updateList();
@@ -203,11 +198,11 @@ public:
         moveTarget(zdown);
     }
 
-    void reset() {
+    virtual void reset() OVERRIDE {
         zTarget = 0;
     }
 
-    void cancel() {
+    virtual void cancel() OVERRIDE {
         if (fLastWindow) {
             displayFocusChange(fLastWindow);
         } else if (fActiveWindow) {
@@ -217,7 +212,7 @@ public:
         fLastWindow = fActiveWindow = 0;
     }
 
-    void accept(IClosablePopup *parent) {
+    virtual void accept(IClosablePopup *parent) OVERRIDE {
         if (fActiveWindow == 0)
             cancel();
         else {
@@ -228,7 +223,7 @@ public:
         fLastWindow = fActiveWindow = 0;
     }
 
-    void destroyedItem(void *item)
+    virtual void destroyedItem(void *item) OVERRIDE
     {
         if (getCount() == 0)
             return;
@@ -278,8 +273,10 @@ SwitchWindow::SwitchWindow(YWindow *parent, ISwitchItems *items,
     modsDown = 0;
     isUp = false;
 
-    setStyle(wsSaveUnder | wsOverrideRedirect | wsPointerMotion);
+    setStyle(wsSaveUnder | wsOverrideRedirect | wsPointerMotion | wsNoExpose);
     setTitle("IceSwitch");
+    setClassHint("switch", "IceWM");
+    setNetWindowType(_XA_NET_WM_WINDOW_TYPE_DIALOG);
 }
 
 bool SwitchWindow::close() {
@@ -391,6 +388,10 @@ void SwitchWindow::resize(int xiscreen) {
     setGeometry(YRect(dx + ((dw - w) >> 1),
                       dy + ((dh - h) >> 1),
                       w, h));
+}
+
+void SwitchWindow::repaint() {
+    GraphicsBuffer(this).paint();
 }
 
 void SwitchWindow::paint(Graphics &g, const YRect &/*r*/) {
@@ -593,9 +594,9 @@ void SwitchWindow::paintVertical(Graphics &g) {
             if(contentY + frameHght > (int) height())
                 break;
             if (i == zItems->getActiveItem()) {
-                g.setColor(activeMenuItemBg);
+                g.setColor(switchMbg);
                 g.fillRect(frameX, contentY-quickSwitchIBorder, frameWid, frameHght);
-                g.setColor(activeMenuItemFg);
+                g.setColor(switchMfg);
             }
             else
                 g.setColor(switchFg);

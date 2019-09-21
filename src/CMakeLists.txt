@@ -12,9 +12,9 @@ INCLUDE(FindPkgConfig)
 INCLUDE(CheckCXXSourceCompiles)
 INCLUDE(CheckCXXCompilerFlag)
 
-SET(CXXFLAGS_COMMON "-pthread -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -DHAVE_CONFIG_H")
+SET(CXXFLAGS_COMMON -pthread -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -DHAVE_CONFIG_H -include "${CMAKE_BINARY_DIR}/config.h")
+include_directories(${CMAKE_CURRENT_BINARY_DIR} ${CMAKE_CURRENT_SOURCE_DIR})
 
-set(icewm_img_libs "")
 set(icewm_libs "")
 
 if("${CMAKE_BUILD_TYPE}" STREQUAL "" AND ("" STREQUAL "${CMAKE_CXX_FLAGS}"))
@@ -22,39 +22,38 @@ if("${CMAKE_BUILD_TYPE}" STREQUAL "" AND ("" STREQUAL "${CMAKE_CXX_FLAGS}"))
 endif()
 
 if("${CMAKE_BUILD_TYPE}" STREQUAL "Debug")
+    CHECK_CXX_COMPILER_FLAG(-std=gnu++98 CXX_FORCELEGACY)
+    if(CXX_FORCELEGACY)
+        list(APPEND CXXFLAGS_COMMON -std=gnu++98)
+    endif()
     add_definitions(-DDEBUG)
 endif()
-
-# carefully splicing of command line arguments, even from lists
-macro(_append varname)
-    string(REPLACE ";" " " _apx "${ARGN}")
-    if(NOT DEFINED ${varname})
-        set(${varname} "${_apx}")
-    else()
-        set(${varname} "${${varname}} ${_apx}")
-    endif()
-endmacro()
 
 # I don't need -rdynamic, thanks!
 SET(CMAKE_SHARED_LIBRARY_LINK_CXX_FLAGS "")
 SET(CMAKE_SHARED_LIBRARY_LINK_C_FLAGS "")
 
-# apply to test calls
-SET(CMAKE_REQUIRED_FLAGS ${CXXFLAGS_COMMON})
+SET(CMAKE_REQUIRED_FLAGS )
 
 CHECK_CXX_COMPILER_FLAG(-fvisibility=hidden CXX_VHI)
 if(CXX_VHI)
-    _append(CXXFLAGS_COMMON -fvisibility=hidden)
+    list(APPEND CXXFLAGS_COMMON -fvisibility=hidden)
 endif()
 
 CHECK_CXX_COMPILER_FLAG(-fvisibility-inlines-hidden CXX_VIHI)
 if(CXX_VIHI)
-    _append(CXXFLAGS_COMMON -fvisibility-inlines-hidden)
+    list(APPEND CXXFLAGS_COMMON -fvisibility-inlines-hidden)
 endif()
 
-CHECK_CXX_COMPILER_FLAG(-std=gnu++98 CXX_FORCELEGACY)
-if(CXX_FORCELEGACY)
-    _append(CXXFLAGS_COMMON -std=gnu++98)
+# teach GCC7+ to interpret our comments
+CHECK_CXX_COMPILER_FLAG(-Wimplicit-fallthrough=2 HAS_FALLTHROUGH_OPTION)
+if(HAS_FALLTHROUGH_OPTION)
+    list(APPEND CXXFLAGS_COMMON -Wimplicit-fallthrough=2)
+else()
+    CHECK_CXX_COMPILER_FLAG(-Wimplicit-fallthrough HAS_FALLTHROUGH_OPTION)
+    if(HAS_FALLTHROUGH_OPTION)
+        list(APPEND CXXFLAGS_COMMON -Wimplicit-fallthrough)
+    endif()
 endif()
 
 #CHECK_CXX_COMPILER_FLAG(-Wl,-fuse-ld=gold CXX_LINKER_GOLD)
@@ -62,16 +61,15 @@ endif()
 #    list(APPEND icewm_libs -Wl,-fuse-ld=gold)
 #endif()
 
-option(CONFIG_LIBPNG "(Experimental) PNGLIB image loader" on)
-option(CONFIG_LIBJPEG "JPEGLIB image loader" on)
-option(CONFIG_GDK_PIXBUF_XLIB "GDK-PIXBUF based image loader" off)
-option(CONFIG_LIBRSVG "(Optional) SVG image loader" off)
-option(CONFIG_XPM "(Optional) XPM image loader" on)
+option(CONFIG_LIBPNG "PNGLIB image loader" off)
+option(CONFIG_LIBJPEG "JPEGLIB image loader" off)
+option(CONFIG_GDK_PIXBUF_XLIB "GDK-PIXBUF based image loader" on)
+option(CONFIG_LIBRSVG "Optional SVG images for GDK-PIXBUF" off)
+option(CONFIG_XPM "XPM image loader" on)
 option(CONFIG_I18N "Define to enable internationalization" on)
-option(CONFIG_RENDER "Define to enable XRENDER extension" on)
 option(CONFIG_XRANDR "Define to enable XRANDR extension" on)
 option(CONFIG_SESSION "Define to enable X session management" on)
-option(CONFIG_EXTERNAL_TRAY "Define to build tray support in standalone executable" off)
+option(CONFIG_EXTERNAL_TRAY "Define for external systray (deprecated)" off)
 option(ENABLE_NLS "Enable Native Language Support" on)
 option(ENABLE_LTO "Enable Link Time Optimization" off)
 
@@ -83,6 +81,7 @@ IF("" STREQUAL "${CONFIG_UNICODE_SET}")
 ELSE()
     MESSAGE(STATUS "Configured custom unicode set: ${CONFIG_UNICODE_SET}.")
 ENDIF()
+SET(XTERMCMD xterm CACHE STRING "Default terminal emulator for X11")
 
 # TODO: find some common helper to handle that variables
 if(ENABLE_NLS OR CONFIG_I18N)
@@ -97,7 +96,7 @@ if(ENABLE_NLS OR CONFIG_I18N)
 endif()
 
 if(ENABLE_LTO)
-    set(CXXFLAGS_COMMON "${CXXFLAGS_COMMON} -flto")
+    list(APPEND CXXFLAGS_COMMON -flto)
     list(APPEND EXTRA_LIBS -flto)
 endif()
 
@@ -158,7 +157,6 @@ CHECK_INCLUDE_FILE_CXX(limits.h HAVE_LIMITS_H)
 CHECK_INCLUDE_FILE_CXX(locale.h HAVE_LOCALE_H)
 CHECK_INCLUDE_FILE_CXX(netdb.h HAVE_NETDB_H)
 CHECK_INCLUDE_FILE_CXX(netinet/in.h HAVE_NETINET_IN_H)
-CHECK_INCLUDE_FILE_CXX(sndfile.h HAVE_SNDFILE_H)
 CHECK_INCLUDE_FILE_CXX(stddef.h HAVE_STDDEF_H)
 CHECK_INCLUDE_FILE_CXX(stdlib.h HAVE_STDLIB_H)
 CHECK_INCLUDE_FILE_CXX(string.h HAVE_STRING_H)
@@ -191,48 +189,68 @@ CHECK_TYPE_SIZE(short SIZEOF_SHORT)
 #########################################################
 
 pkg_check_modules(fontconfig fontconfig)
-pkg_check_modules(xext xext)
-pkg_check_modules(x11 x11)
+pkg_check_modules(xrender REQUIRED xrender)
+pkg_check_modules(xcomposite REQUIRED xcomposite)
+pkg_check_modules(xdamage REQUIRED xdamage)
+pkg_check_modules(xfixes REQUIRED xfixes)
+pkg_check_modules(xext REQUIRED xext)
+pkg_check_modules(x11 REQUIRED x11)
 
-# XXX: the image loader selection became a big mess but it is hard to revert now
-# It would have been a better idea to use different names for the user-specified
-# options and do the logics here.
-# But for now, this self-adapting code modifies the option variables.
+set(icewm_img_libs ${xrender_LDFLAGS} ${xcomposite_LDFLAGS} ${xdamage_LDFLAGS} ${xfixes_LDFLAGS})
 
-set(HINT_IMG_LOADERS  "Possible combination of image loaders are:
-    -DCONFIG_XPM=on -DCONFIG_LIBPNG=on -DCONFIG_GDK_PIXBUF_XLIB=off
-    or
-    -DCONFIG_XPM=off -DCONFIG_LIBPNG=off -DCONFIG_GDK_PIXBUF_XLIB=on
-")
-# basic user configuration error check
-if(CONFIG_GDK_PIXBUF_XLIB AND NOT CONFIG_XPM)
+# It would be a good idea to use different names for the image options and do the
+# logics here.  For now, this self-adapting code modifies the option variables.
+
+set(HINT_CURSORS
+[=[
+ Cursor support requires either -DCONFIG_XPM=on or -DCONFIG_IMLIB=on.
+]=])
+
+set(HINT_IMG_LOADERS
+[=[
+ There is a choice to be made between two image loaders.
+ Either 'yimage_gdk' must be enabled by -DCONFIG_GDK_PIXBUF_XLIB=on,
+ or else 'yximage' must be enabled by -DCONFIG_LIBPNG=on.
+ The latter requires -DCONFIG_XPM=on, while -DCONFIG_LIBJPEG=on is recommended.
+ The first provides optional support for SVG with -DCONFIG_LIBRSVG=on.
+ ]=] ${HINT_CURSORS})
+
+# image configuration error check
+if(CONFIG_GDK_PIXBUF_XLIB)
     #ok
     set(CONFIG_LIBPNG off)
     set(CONFIG_LIBJPEG off)
     if (NOT CONFIG_LIBRSVG)
         message(WARNING "CONFIG_LIBRSVG is recommended for SVG image support")
     endif()
-elseif(CONFIG_XPM AND NOT CONFIG_GDK_PIXBUF_XLIB)
+elseif(CONFIG_XPM AND CONFIG_LIBPNG)
     #ok
-    if (NOT CONFIG_LIBPNG)
-        message(WARNING "LIBPNG is recommended for PNG image support")
-    endif()
     if (NOT CONFIG_LIBJPEG)
         message(WARNING "LIBJPEG is advisable for backgrounds in icewmbg")
     endif()
+    set(CONFIG_LIBRSVG off)
 else()
-    MESSAGE(FATAL_ERROR "${HINT_IMG_LOADERS}")
+    MESSAGE(FATAL_ERROR ${HINT_IMG_LOADERS})
+endif()
+
+# cursor configuration error check
+if(CONFIG_XPM)
+    #ok
+    set(CONFIG_IMLIB off)
+elseif(CONFIG_IMLIB)
+    #ok
+    set(CONFIG_XPM off)
+else()
+    MESSAGE(FATAL_ERROR ${HINT_CURSORS})
 endif()
 
 if(CONFIG_GDK_PIXBUF_XLIB)
     pkg_check_modules(pixbuf gdk-pixbuf-xlib-2.0)
     if(NOT pixbuf_FOUND)
-        message(FATAL_ERROR "GDX-PIXBUF image loader selected but its dev files were not found.
-${HINT_IMG_LOADERS}")
+        message(FATAL_ERROR "GDX-PIXBUF image loader selected but its dev files were not found."
+${HINT_IMG_LOADERS})
     endif()
-    set(CONFIG_XPM off)
     set(CONFIG_LIBPNG off)
-    set(CONFIG_IMLIB off)
     set(CONFIG_LIBJPEG off)
     LIST(APPEND icewm_img_libs ${pixbuf_LDFLAGS})
 endif()
@@ -241,17 +259,21 @@ endif()
 if (CONFIG_LIBRSVG)
     pkg_check_modules(librsvg librsvg-2.0)
     if(NOT librsvg_FOUND)
-        message(WARNING "SVG image loader selected but librsvg dev files not found. SVG support will be not available.")
+        message(WARNING
+                "SVG image loader selected but librsvg-2.0 dev files not found."
+                "SVG support will be not available.")
         set(CONFIG_LIBRSVG off)
+    else()
+        LIST(APPEND icewm_img_libs ${librsvg_LDFLAGS})
     endif()
-    LIST(APPEND icewm_img_libs ${librsvg_LDFLAGS})
 endif()
 
 if(CONFIG_XPM)
     pkg_check_modules(libxpm xpm)
     if(NOT libxpm_FOUND)
-        message(FATAL_ERROR "XPM image loader selected but libxpm dev files not found.
-${HINT_IMG_LOADERS}")
+        message(FATAL_ERROR
+                "XPM image loader selected but libXpm dev files not found."
+                ${HINT_IMG_LOADERS})
     endif()
     LIST(APPEND icewm_img_libs ${libxpm_LDFLAGS})
 endif()
@@ -259,8 +281,9 @@ endif()
 if(CONFIG_LIBPNG)
     pkg_check_modules(libpng libpng)
     if(NOT libpng_FOUND)
-        message(FATAL_ERROR "PNG image loader selected but libpng dev files not found.
-${HINT_IMG_LOADERS}")
+        message(FATAL_ERROR
+                "PNG image loader selected but libpng dev files not found."
+                ${HINT_IMG_LOADERS})
     endif()
     LIST(APPEND icewm_img_libs ${libpng_LDFLAGS})
 endif()
@@ -268,10 +291,21 @@ endif()
 if(CONFIG_LIBJPEG)
     pkg_check_modules(libjpeg libjpeg)
     if(NOT libjpeg_FOUND)
-        message(FATAL_ERROR "JPEG image loader selected but libjpeg dev files not found.
-${HINT_IMG_LOADERS}")
+        message(FATAL_ERROR
+                "JPEG image loader selected but libjpeg dev files not found."
+                "Please install libjpeg-dev (or similar)."
+                "Otherwise use -DCONFIG_LIBJPEG=off.")
     endif()
     LIST(APPEND icewm_img_libs ${libjpeg_LDFLAGS})
+endif()
+
+if(CONFIG_IMLIB)
+    pkg_check_modules(libimlib imlib)
+    if(NOT libimlib_FOUND)
+        message(FATAL_ERROR "IMLIB selected but libImlib dev files not found."
+        ${HINT_CURSORS})
+    endif()
+    LIST(APPEND icewm_img_libs ${libimlib_LDFLAGS})
 endif()
 
 IF(CONFIG_SESSION)
@@ -292,15 +326,6 @@ if(CONFIG_XRANDR)
         message(WARNING "Xrandr library not found, disabling CONFIG_XRANDR")
         set(CONFIG_XRANDR off)
     ENDIF()
-endif()
-
-if(CONFIG_RENDER)
-    pkg_check_modules(xrender xrender)
-    IF(NOT xrender_FOUND)
-        message(WARNING "Xrender library not found, disabling CONFIG_RENDER")
-        set(CONFIG_RENDER off)
-    ENDIF()
-    LIST(APPEND icewm_img_libs ${xrender_LDFLAGS})
 endif()
 
 option(CONFIG_COREFONTS "Define to enable X11 core fonts" off)
@@ -325,7 +350,6 @@ message(STATUS "Checking audio subsystems from ICESOUND: ${ICESOUND}")
 #clear cache
 set(ENABLE_ALSA off)
 set(ENABLE_AO off)
-set(ENABLE_ESD off)
 set(ENABLE_OSS off)
 set(audio_libs )
 set(audio_flags )
@@ -363,22 +387,12 @@ if(sndfile_FOUND)
             list(APPEND audio_libs ${ao_LIBS})
         endif()
     endif()
-    if("${ICESOUND}" MATCHES "esound|esd")
-        pkg_check_modules(esd esound)
-        set(ENABLE_ESD "${esd_FOUND}")
-        if(esd_FOUND)
-            list(APPEND audio_flags "${esd_CFLAGS}")
-            list(APPEND audio_libs ${esd_LDFLAGS})
-            list(APPEND audio_libs ${esd_LIBS})
-        endif()
-    endif()
     if("${ICESOUND}" MATCHES "oss")
         CHECK_INCLUDE_FILE_CXX(sys/soundcard.h HAVE_SYS_SOUNDCARD_H)
         set(ENABLE_OSS "${HAVE_SYS_SOUNDCARD_H}")
     endif()
-
-    string(REPLACE ";" " " audio_flags "${audio_flags}")
 endif(sndfile_FOUND)
+CHECK_INCLUDE_FILE_CXX(sndfile.h HAVE_SNDFILE_H ${audio_flags})
 
 option(XINERAMA "Define to enable Xinerama support" on)
 if(XINERAMA)
@@ -403,7 +417,7 @@ if(CONFIG_FDO_MENUS)
     pkg_check_modules(gio gio-2.0 gio-unix-2.0)
     if(NOT gio_FOUND)
         set(CONFIG_FDO_MENUS off)
-        message(WARNING "Freedesktop style menus not supported")
+        message(WARNING "Freedesktop style menus not supported (libglib2.0-dev or similar package required)")
     endif()
 endif()
 
@@ -413,24 +427,11 @@ option(DEBUG "Define if you want to debug IceWM" off)
 # some extra sugar where available    #
 #######################################
 
-SET(CMAKE_REQUIRED_FLAGS ${CXXFLAGS_COMMON})
 SET(LDFLAGS_ORIG ${CMAKE_EXE_LINKER_FLAGS})
 SET(CMAKE_EXE_LINKER_FLAGS "${LDFLAGS_ORIG} -Wl,--as-needed ")
 CHECK_CXX_SOURCE_COMPILES("int main() {return 0;}" USE_WLASNEEDED)
 IF(NOT USE_WLASNEEDED)
     SET(CMAKE_EXE_LINKER_FLAGS ${LDFLAGS_ORIG})
-ENDIF()
-
-# teach GCC7 to interpret our comments
-SET(CMAKE_REQUIRED_FLAGS "${CXXFLAGS_COMMON} -Wimplicit-fallthrough=2")
-CHECK_CXX_SOURCE_COMPILES("int main() {return 0;}" USE_FALLTHROUGH_WARNING)
-IF(USE_FALLTHROUGH_WARNING)
-    if ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
-        # apparently clang does not support the parameter but the default behavior is what we ant
-        SET(CXXFLAGS_COMMON "${CXXFLAGS_COMMON} -Wimplicit-fallthrough")
-    else()
-        SET(CXXFLAGS_COMMON "${CXXFLAGS_COMMON} -Wimplicit-fallthrough=2")
-    endif()
 ENDIF()
 
 #######################################
@@ -442,13 +443,6 @@ CONFIGURE_FILE("${CMAKE_SOURCE_DIR}/src/config.cmake.h.in" "${CMAKE_BINARY_DIR}/
 #######################################
 # declaring targets and build flags   #
 #######################################
-
-# pkg-config delivers lists, we need plain compiler options! :-(
-foreach(pfx fontconfig xext x11 pixbuf xrandr xrender xft alsa
-        esd ao oss xinerama fribidi gio)
-    string(REPLACE ";" " " ${pfx}_CFLAGS "${${pfx}_CFLAGS}")
-    #message(STATUS "Normalizing argument lists: ${${pfx}_LDFLAGS} ; ${${pfx}_CFLAGS}")
-endforeach()
 
 SET(ICE_COMMON_SRCS mstring.cc udir.cc upath.cc yapp.cc yxapp.cc ytimer.cc
     ywindow.cc ypaint.cc ypopup.cc misc.cc ycursor.cc ysocket.cc ypaths.cc
@@ -485,52 +479,55 @@ SET(ICEWM_SRCS ${ICE_COMMON_SRCS} ${ITK_SRCS}
 SET(MISC_SRCS misc.cc yarray.cc mstring.cc ref.cc)
 
 ADD_EXECUTABLE(icewm${EXEEXT} ${ICEWM_SRCS})
-set(icewm_pc_flags "${fontconfig_CFLAGS} ${x11_CFLAGS} ${xext_CFLAGS} ${libpng_CFLAGS} ${libxpm_CFLAGS} ${pixbuf_CFLAGS} ${xft_CFLAGS} ${xrandr_CFLAGS} ${xrender_CFLAGS} ${xinerama_CFLAGS} ${fribidi_CFLAGS}")
-SET_TARGET_PROPERTIES(icewm${EXEEXT} PROPERTIES COMPILE_FLAGS "${CXXFLAGS_COMMON} ${icewm_pc_flags}")
-list(APPEND icewm_libs ${sm_LIBS} ${nls_LIBS} ${fontconfig_LDFLAGS} ${fribidi_LDFLAGS} ${xext_LDFLAGS} ${x11_LDFLAGS} ${xft_LDFLAGS} ${xrandr_LDFLAGS} ${xinerama_LDFLAGS} ${EXTRA_LIBS})
+set(icewm_pc_flags ${fontconfig_CFLAGS} ${x11_CFLAGS} ${xext_CFLAGS} ${libpng_CFLAGS} ${libxpm_CFLAGS} ${pixbuf_CFLAGS} ${xft_CFLAGS} ${xrandr_CFLAGS} ${xrender_CFLAGS} ${xinerama_CFLAGS} ${fribidi_CFLAGS})
+target_compile_options(icewm${EXEEXT} PUBLIC ${CXXFLAGS_COMMON} ${icewm_pc_flags})
+set(icewm_libs ${sm_LIBS} ${nls_LIBS} ${fontconfig_LDFLAGS} ${fribidi_LDFLAGS} ${xext_LDFLAGS} ${x11_LDFLAGS} ${xft_LDFLAGS} ${xrandr_LDFLAGS} ${xinerama_LDFLAGS} ${EXTRA_LIBS})
 TARGET_LINK_LIBRARIES(icewm${EXEEXT} ${icewm_libs} ${icewm_img_libs})
 
 ADD_EXECUTABLE(genpref${EXEEXT} genpref.cc ${MISC_SRCS})
-TARGET_LINK_LIBRARIES(genpref${EXEEXT} ${EXTRA_LIBS})
+set(genpref_pc_flags ${x11_CFLAGS})
+target_compile_options(genpref${EXEEXT} PUBLIC ${CXXFLAGS_COMMON} ${genpref_pc_flags})
+TARGET_LINK_LIBRARIES(genpref${EXEEXT} ${nls_LIBS} ${EXTRA_LIBS})
 
 IF(CONFIG_FDO_MENUS)
     ADD_EXECUTABLE(icewm-menu-fdo${EXEEXT} fdomenu.cc ${MISC_SRCS})
-    SET_TARGET_PROPERTIES(icewm-menu-fdo${EXEEXT} PROPERTIES COMPILE_FLAGS "${CXXFLAGS_COMMON} ${gio_CFLAGS}")
+    target_compile_options(icewm-menu-fdo${EXEEXT} PUBLIC ${CXXFLAGS_COMMON} ${gio_CFLAGS})
     TARGET_LINK_LIBRARIES(icewm-menu-fdo${EXEEXT} ${gio_LDFLAGS} ${nls_LIBS} ${EXTRA_LIBS})
     INSTALL(TARGETS icewm-menu-fdo${EXEEXT} DESTINATION ${BINDIR})
 ENDIF()
 
 ADD_EXECUTABLE(icewm-session${EXEEXT} icesm.cc yapp.cc misc.cc mstring.cc upath.cc ytimer.cc yprefs.cc yarray.cc ref.cc)
-SET_TARGET_PROPERTIES(icewm-session${EXEEXT} PROPERTIES COMPILE_FLAGS "${CXXFLAGS_COMMON}")
+set(icewm_session_pc_flags ${x11_CFLAGS})
+target_compile_options(icewm-session${EXEEXT} PUBLIC ${CXXFLAGS_COMMON} ${icewm_session_pc_flags})
 TARGET_LINK_LIBRARIES(icewm-session${EXEEXT} ${nls_LIBS} ${EXTRA_LIBS})
 
 ADD_EXECUTABLE(icewmhint${EXEEXT} icewmhint.cc ${MISC_SRCS})
-SET_TARGET_PROPERTIES(icewmhint${EXEEXT} PROPERTIES COMPILE_FLAGS "${CXXFLAGS_COMMON} ${icewm_pc_flags}")
+target_compile_options(icewmhint${EXEEXT} PUBLIC ${CXXFLAGS_COMMON} ${icewm_pc_flags})
 TARGET_LINK_LIBRARIES(icewmhint${EXEEXT} ${xext_LDFLAGS} ${x11_LDFLAGS} ${nls_LIBS} ${EXTRA_LIBS})
 
 ADD_EXECUTABLE(icesh${EXEEXT} icesh.cc misc.cc mstring.cc ref.cc yarray.cc)
-SET_TARGET_PROPERTIES(icesh${EXEEXT} PROPERTIES COMPILE_FLAGS "${CXXFLAGS_COMMON} ${icewm_pc_flags}")
-TARGET_LINK_LIBRARIES(icesh${EXEEXT} ${xext_LDFLAGS} ${x11_LDFLAGS} ${nls_LIBS} ${EXTRA_LIBS})
+target_compile_options(icesh${EXEEXT} PUBLIC ${CXXFLAGS_COMMON} ${icewm_pc_flags})
+TARGET_LINK_LIBRARIES(icesh${EXEEXT} ${xext_LDFLAGS} ${xrandr_LDFLAGS} ${xinerama_LDFLAGS} ${x11_LDFLAGS} ${nls_LIBS} ${EXTRA_LIBS})
 
 ADD_EXECUTABLE(icewmbg${EXEEXT} icewmbg.cc ref.cc ${ICE_COMMON_SRCS})
-SET_TARGET_PROPERTIES(icewmbg${EXEEXT} PROPERTIES COMPILE_FLAGS "${CXXFLAGS_COMMON} ${icewm_pc_flags}")
+target_compile_options(icewmbg${EXEEXT} PUBLIC ${CXXFLAGS_COMMON} ${icewm_pc_flags})
 TARGET_LINK_LIBRARIES(icewmbg${EXEEXT} ${xext_LDFLAGS} ${x11_LDFLAGS} ${xft_LDFLAGS} ${fribidi_LDFLAGS} ${xrandr_LDFLAGS}  ${icewm_img_libs} ${xinerama_LDFLAGS} ${nls_LIBS} ${EXTRA_LIBS})
 
-IF(ENABLE_ALSA OR ENABLE_AO OR ENABLE_ESD OR ENABLE_OSS)
+IF(ENABLE_ALSA OR ENABLE_AO OR ENABLE_OSS)
     ADD_EXECUTABLE(icesound${EXEEXT} icesound.cc upath.cc misc.cc mstring.cc ytimer.cc yapp.cc yprefs.cc yarray.cc ref.cc)
-    SET_TARGET_PROPERTIES(icesound${EXEEXT} PROPERTIES COMPILE_FLAGS "${CXXFLAGS_COMMON} ${icewm_pc_flags} ${audio_flags}")
+    target_compile_options(icesound${EXEEXT} PUBLIC ${CXXFLAGS_COMMON} ${icewm_pc_flags} ${audio_flags})
     TARGET_LINK_LIBRARIES(icesound${EXEEXT} ${xext_LDFLAGS} ${x11_LDFLAGS} ${nls_LIBS} ${audio_libs} ${EXTRA_LIBS})
     INSTALL(TARGETS icesound${EXEEXT} DESTINATION ${BINDIR})
 ENDIF()
 
 ADD_EXECUTABLE(icehelp${EXEEXT} icehelp.cc ${ICE_COMMON_SRCS} yscrollbar.cc ref.cc yicon.cc wmconfig.cc ymenu.cc ymenuitem.cc yprefs.cc yscrollview.cc)
-SET_TARGET_PROPERTIES(icehelp${EXEEXT} PROPERTIES COMPILE_FLAGS "${CXXFLAGS_COMMON} ${icewm_pc_flags}")
+target_compile_options(icehelp${EXEEXT} PUBLIC ${CXXFLAGS_COMMON} ${icewm_pc_flags})
 TARGET_LINK_LIBRARIES(icehelp${EXEEXT} ${xext_LDFLAGS} ${x11_LDFLAGS} ${xft_LDFLAGS} ${fribidi_LDFLAGS} ${xrandr_LDFLAGS} ${icewm_img_libs} ${xinerama_LDFLAGS} ${nls_LIBS} ${EXTRA_LIBS})
 INSTALL(TARGETS icehelp${EXEEXT} DESTINATION ${BINDIR})
 
 IF(CONFIG_EXTERNAL_TRAY)
 ADD_EXECUTABLE(icewmtray${EXEEXT} icetray.cc ref.cc wmconfig.cc yxtray.cc wmoption.cc ${ICE_COMMON_SRCS})
-SET_TARGET_PROPERTIES(icewmtray${EXEEXT} PROPERTIES COMPILE_FLAGS "${CXXFLAGS_COMMON} ${icewm_pc_flags}")
+target_compile_options(icewmtray${EXEEXT} PUBLIC ${CXXFLAGS_COMMON} ${icewm_pc_flags})
 TARGET_LINK_LIBRARIES(icewmtray${EXEEXT} ${xext_LDFLAGS} ${x11_LDFLAGS} ${xft_LDFLAGS} ${xrandr_LDFLAGS} ${xinerama_LDFLAGS} ${nls_LIBS} ${icewm_img_libs} ${EXTRA_LIBS})
 ENDIF()
 
@@ -552,13 +549,12 @@ foreach (_variableName
         PACKAGE
         VERSION
         DATADIR LIBDIR LOCDIR DOCDIR CFGDIR ICEHELPIDX
-        CONFIG_IMLIB
         CONFIG_GDK_PIXBUF_XLIB
         CONFIG_LIBRSVG
         CONFIG_XPM
-        CONFIG_LIBJPEG
         CONFIG_LIBPNG
-        CONFIG_RENDER
+        CONFIG_LIBJPEG
+        CONFIG_IMLIB
         CONFIG_XFREETYPE
         CONFIG_COREFONTS
         CONFIG_FRIBIDI
@@ -567,7 +563,6 @@ foreach (_variableName
         ENABLE_LTO
         ENABLE_ALSA
         ENABLE_AO
-        ENABLE_ESD
         ENABLE_OSS
         ENABLE_NLS
         )

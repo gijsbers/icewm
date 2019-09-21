@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: icewm 1.2.7\n"
 "Report-Msgid-Bugs-To: https://github.com/bbidulock/icewm/issues\n"
-"POT-Creation-Date: 2018-12-17 23:55+0100\n"
-"PO-Revision-Date: 2018-05-15 20:03+0000\n"
+"POT-Creation-Date: 2019-08-17 12:39+0200\n"
+"PO-Revision-Date: 2019-02-07 06:32+0000\n"
 "Last-Translator: Robert Taisz <robert.taisz@emerald.hu>\n"
 "Language-Team: Hungarian <https://l10n.opensuse.org/projects/icewm/icewm-1-4-"
 "branch/hu/>\n"
@@ -19,50 +19,50 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.3\n"
 
 # ../src/aapm.cc:93
-#: src/aapm.cc:177 src/aapm.cc:459 src/aapm.cc:681 src/aapm.cc:806
+#: src/aapm.cc:187 src/aapm.cc:469 src/aapm.cc:691 src/aapm.cc:816
 msgid " - Power"
 msgstr " - Hálózati feszültség"
 
 # ../src/aapm.cc:95
-#: src/aapm.cc:179 src/aapm.cc:462 src/aapm.cc:684
+#: src/aapm.cc:189 src/aapm.cc:472 src/aapm.cc:694
 msgid "P"
 msgstr "H"
 
 # ../src/aapm.cc:98
-#: src/aapm.cc:183 src/aapm.cc:436 src/aapm.cc:664 src/aapm.cc:774
+#: src/aapm.cc:193 src/aapm.cc:446 src/aapm.cc:674 src/aapm.cc:784
 msgid " - Charging"
 msgstr " - Töltés alatt"
 
-#: src/aapm.cc:185 src/aapm.cc:438 src/aapm.cc:666
+#: src/aapm.cc:195 src/aapm.cc:448 src/aapm.cc:676
 msgid "C"
 msgstr "T"
 
-#: src/aapm.cc:440
+#: src/aapm.cc:450
 msgid " - Full"
 msgstr " - Feltöltve"
 
-#: src/aapm.cc:985
+#: src/aapm.cc:998
 #, c-format
 msgid "power:\t%s"
 msgstr "Töltés:\t%s"
 
 #: src/aclock.cc:173
 msgid "CLOCK"
-msgstr ""
+msgstr "ÓRA"
 
 #: src/aclock.cc:177
 msgid "Date"
-msgstr ""
+msgstr "Dátum"
 
 # ../src/wmwinlist.cc:236
-#: src/aclock.cc:178 src/themes.cc:85
+#: src/aclock.cc:178 src/themes.cc:78
 msgid "Default"
 msgstr "Alapértelmezett"
 
-#: src/aclock.cc:179 src/acpustatus.cc:862 src/amailbox.cc:938
+#: src/aclock.cc:179 src/acpustatus.cc:862 src/amailbox.cc:952
 #: src/amemstatus.cc:264
 msgid "_Disable"
 msgstr "_Letiltás"
@@ -140,16 +140,13 @@ msgid "Load: "
 msgstr "Terhelés: "
 
 #: src/acpustatus.cc:371
-#, fuzzy, c-format
-#| msgid ""
-#| "\n"
-#| "Ram (free): %5.3f (%.3f) G"
+#, c-format
 msgid ""
 "\n"
 "Ram (user): %5.3f (%.3f) G"
 msgstr ""
 "\n"
-"RAM (szabad): %5.3f (%.3f) G"
+"RAM (felhasználó): %5.3f (%.3f) G"
 
 #. TRANSLATORS: Please translate the string "C" into "Celsius Temperature" in your language.
 #. TRANSLATORS: Please make sure the translated string could be shown in your non-utf8 locale.
@@ -158,10 +155,9 @@ msgid "°C"
 msgstr "°C"
 
 #: src/acpustatus.cc:770
-#, fuzzy, c-format
-#| msgid "%s: %llu %llu %llu %llu %llu %llu %llu %llu"
+#, c-format
 msgid "CPU: %llu %llu %llu %llu %llu %llu %llu %llu"
-msgstr "%s: %llu %llu %llu %llu %llu %llu %llu %llu"
+msgstr "CPU: %llu %llu %llu %llu %llu %llu %llu %llu"
 
 #: src/acpustatus.cc:859
 #, c-format
@@ -220,55 +216,53 @@ msgid "Write to socket failed: %s"
 msgstr "Nem sikerült írni a szoftvercsatornába: %s"
 
 # ../src/amailbox.cc:303
-#: src/amailbox.cc:680
+#: src/amailbox.cc:681
 #, c-format
 msgid "Using MailBox \"%s\"\n"
 msgstr "Használt postafiók: \"%s\"\n"
 
-#: src/amailbox.cc:794
-#, fuzzy
-#| msgid "_Suspend"
+#: src/amailbox.cc:808
 msgid "Suspended"
-msgstr "_Felfüggesztés"
+msgstr "Felfüggesztve"
 
 # ../src/amailbox.cc:402
-#: src/amailbox.cc:798
+#: src/amailbox.cc:812
 msgid "Error checking mailbox."
 msgstr "Hiba történt a postafiók ellenőrzésekor."
 
 # ../src/amailbox.cc:408
-#: src/amailbox.cc:805
+#: src/amailbox.cc:819
 #, c-format
 msgid "%ld mail message, %ld unread."
 msgstr "%ld üzenet, %ld olvasatlan."
 
 # ../src/amailbox.cc:409
-#: src/amailbox.cc:806
+#: src/amailbox.cc:820
 #, c-format
 msgid "%ld mail messages, %ld unread."
 msgstr "%ld üzenet, %ld olvasatlan."
 
 # ../src/amailbox.cc:408
-#: src/amailbox.cc:812
+#: src/amailbox.cc:826
 #, c-format
 msgid "%ld mail message."
 msgstr "%ld üzenet."
 
 # ../src/amailbox.cc:409
-#: src/amailbox.cc:813
+#: src/amailbox.cc:827
 #, c-format
 msgid "%ld mail messages."
 msgstr "%ld üzenet."
 
-#: src/amailbox.cc:936
+#: src/amailbox.cc:950
 msgid "MAIL"
 msgstr "POSTA"
 
-#: src/amailbox.cc:937
+#: src/amailbox.cc:951
 msgid "_Check"
-msgstr ""
+msgstr "_Ellenőrzés"
 
-#: src/amailbox.cc:939
+#: src/amailbox.cc:953
 msgid "_Suspend"
 msgstr "_Felfüggesztés"
 
@@ -312,7 +306,7 @@ msgstr "Felhasználó: "
 msgid "MEM"
 msgstr "MEMÓRIA"
 
-#: src/apppstatus.cc:203
+#: src/apppstatus.cc:199
 #, c-format
 msgid ""
 "Interface %s:\n"
@@ -327,7 +321,7 @@ msgstr ""
 "  Összforgalom (be/ki):\t%lli %s/%lli %s\n"
 "  Online idő:\t%ld:%02ld:%02ld%s%s"
 
-#: src/apppstatus.cc:215
+#: src/apppstatus.cc:211
 msgid ""
 "\n"
 "  Caller id:\t"
@@ -335,144 +329,144 @@ msgstr ""
 "\n"
 " Hívóazonosító:\t"
 
-#: src/apppstatus.cc:717
+#: src/apppstatus.cc:712
 msgid "NET"
 msgstr "HÁLÓZAT"
 
 # ../src/wmstatus.cc:170
-#: src/aworkspaces.cc:294 src/wmstatus.cc:163
+#: src/aworkspaces.cc:584 src/wmstatus.cc:200
 msgid "Workspace: "
 msgstr "Munkaterület: "
 
 # ../src/icehelp.cc:539
-#: src/icehelp.cc:1201
+#: src/icehelp.cc:1210
 msgid "Back"
 msgstr "Vissza"
 
 # ../src/icehelp.cc:539
-#: src/icehelp.cc:1201
+#: src/icehelp.cc:1210
 msgid "Alt+Left"
 msgstr "Alt+Bal"
 
 # ../src/icehelp.cc:540
-#: src/icehelp.cc:1203
+#: src/icehelp.cc:1212
 msgid "Forward"
 msgstr "Előre"
 
 # ../src/icehelp.cc:540
-#: src/icehelp.cc:1203
+#: src/icehelp.cc:1212
 msgid "Alt+Right"
 msgstr "Alt+Jobb"
 
 # ../src/icehelp.cc:542
-#: src/icehelp.cc:1206
+#: src/icehelp.cc:1215
 msgid "Previous"
 msgstr "Előző"
 
 # ../src/icehelp.cc:543
-#: src/icehelp.cc:1207
+#: src/icehelp.cc:1216
 msgid "Next"
 msgstr "Következő"
 
 # ../src/icehelp.cc:545
-#: src/icehelp.cc:1209
+#: src/icehelp.cc:1218
 msgid "Contents"
 msgstr "Tartalom"
 
 # ../src/icehelp.cc:546
-#: src/icehelp.cc:1210
+#: src/icehelp.cc:1219
 msgid "Index"
 msgstr "Index"
 
 # ../src/icehelp.cc:548 ../src/icesame.cc:59 ../src/iceview.cc:69
 # ../src/wmframe.cc:127
-#: src/icehelp.cc:1213 src/icesame.cc:62 src/iceview.cc:74 src/wmtitle.cc:99
+#: src/icehelp.cc:1222 src/icesame.cc:62 src/iceview.cc:74 src/wmtitle.cc:102
 msgid "Close"
 msgstr "Bezárás"
 
 # ../src/icehelp.cc:548 ../src/icesame.cc:59 ../src/iceview.cc:69
-#: src/icehelp.cc:1213 src/icesame.cc:62 src/iceview.cc:74
+#: src/icehelp.cc:1222 src/icesame.cc:62 src/iceview.cc:74
 msgid "Ctrl+Q"
 msgstr "Ctrl+Q"
 
-#: src/icehelp.cc:1218
+#: src/icehelp.cc:1227
 msgid "Icewm(1)"
 msgstr "Icewm(1)"
 
-#: src/icehelp.cc:1220
+#: src/icehelp.cc:1229
 msgid "Icewmbg(1)"
 msgstr "Icewmbg(1)"
 
-#: src/icehelp.cc:1222
+#: src/icehelp.cc:1231
 msgid "Icesound(1)"
 msgstr "Icesound(1)"
 
-#: src/icehelp.cc:1224
+#: src/icehelp.cc:1233
 msgid "FAQ"
 msgstr "GYIK"
 
-#: src/icehelp.cc:1226
+#: src/icehelp.cc:1235
 msgid "Manual"
 msgstr "Kézikönyv"
 
-#: src/icehelp.cc:1228
+#: src/icehelp.cc:1237
 msgid "Support"
 msgstr "Terméktámogatás"
 
 # ../src/wmabout.cc:33
-#: src/icehelp.cc:1230
+#: src/icehelp.cc:1239
 msgid "Theme Howto"
 msgstr "Téma útmutatója"
 
-#: src/icehelp.cc:1232
+#: src/icehelp.cc:1241
 msgid "Website"
 msgstr "Webhely"
 
-#: src/icehelp.cc:1234
+#: src/icehelp.cc:1243
 msgid "Github"
 msgstr "Github"
 
-#: src/icehelp.cc:1936
+#: src/icehelp.cc:1944
 msgid "Unsupported protocol."
 msgstr "Nem támogatott protokoll."
 
 # ../src/icehelp.cc:1247
-#: src/icehelp.cc:1961
+#: src/icehelp.cc:1969
 #, c-format
 msgid "Invalid path: %s\n"
 msgstr "Érvénytelen útvonal: %s\n"
 
-#: src/icehelp.cc:1984
+#: src/icehelp.cc:1992
 msgid "Path does not refer to a file."
 msgstr "Az elérési út nem hivatkozik fájlra."
 
-#: src/icehelp.cc:1989
+#: src/icehelp.cc:1997
 msgid "Failed to open file for reading."
 msgstr "Nem sikerült megnyitni a fájlt olvasáshoz."
 
-#: src/icehelp.cc:2018
+#: src/icehelp.cc:2026
 msgid "Failed to create a temporary file"
 msgstr "Nem sikerült létrehozni egy ideiglenes fájlt"
 
-#: src/icehelp.cc:2110
+#: src/icehelp.cc:2118
 #, c-format
 msgid "Failed to execute system(%s) (%d)"
 msgstr "Nem sikerült végrehajtani a rendszerparancsot (%s) (%d)"
 
-#: src/icehelp.cc:2133
+#: src/icehelp.cc:2141
 #, c-format
 msgid "Failed to decompress %s"
 msgstr "Nem sikerült a(z) %s kibontása"
 
-#: src/icehelp.cc:2141
+#: src/icehelp.cc:2149
 msgid "Could not locate curl or wget in PATH"
 msgstr "Nem sikerült megtalálni a curl vagy a wget programot a PATH változóban"
 
-#: src/icehelp.cc:2145
+#: src/icehelp.cc:2153
 msgid "Unsafe characters in URL"
 msgstr "Az URL nem biztonságos karaktereket tartalmaz"
 
-#: src/icehelp.cc:2182
+#: src/icehelp.cc:2190
 #, c-format
 msgid ""
 "Usage: %s [OPTIONS] [ FILENAME | URL ]\n"
@@ -549,7 +543,7 @@ msgstr ""
 "\n"
 
 # ../src/wmoption.cc:209
-#: src/icehelp.cc:2259
+#: src/icehelp.cc:2267
 #, c-format
 msgid "Ignoring option '%s'"
 msgstr "'%s' beállítás figyelmen kívül hagyása"
@@ -604,18 +598,11 @@ msgstr "Ctrl+R"
 msgid "Same Game"
 msgstr "Same Game"
 
-#: src/icesh.cc:191
-#, c-format
-msgid "Action `%s' requires at least %d arguments."
-msgstr "A(z) `%s' művelet legalább %d argumentumot vár."
+#: src/icesh.cc:63
+msgid "For help please consult the man page icesh(1).\n"
+msgstr ""
 
-# ../src/icehelp.cc:1247
-#: src/icesh.cc:198
-#, c-format
-msgid "Invalid expression: `%s'"
-msgstr "Érvénytelen kifejezés: \"%s\""
-
-#: src/icesh.cc:319
+#: src/icesh.cc:1095
 #, c-format
 msgid "Named symbols of the domain `%s' (numeric range: %ld-%ld):\n"
 msgstr ""
@@ -623,193 +610,93 @@ msgstr ""
 "%ld-%ld):\n"
 
 # ../src/icehelp.cc:1247
-#: src/icesh.cc:435
+#: src/icesh.cc:1232
 #, c-format
 msgid "Invalid workspace name: `%s'"
 msgstr "Érvénytelen munkaterület név: \"%s\""
 
-#: src/icesh.cc:440
+#: src/icesh.cc:1236
 #, c-format
 msgid "Workspace out of range: %ld"
 msgstr "Tartományon kívüli munkaterület: %ld"
 
-#: src/icesh.cc:605
-#, c-format
-msgid ""
-"Usage: %s [OPTIONS] ACTIONS\n"
-"\n"
-"Options:\n"
-"  -d, -display DISPLAY        Connects to the X server specified by "
-"DISPLAY.\n"
-"                              Default: $DISPLAY or :0.0 when not set.\n"
-"  -w, -window WINDOW_ID       Specifies the window to manipulate. Special\n"
-"                              identifiers are `root' for the root window "
-"and\n"
-"                              `focus' for the currently focused window.\n"
-"  -c, -class WM_CLASS         Window management class of the window(s) to\n"
-"                              manipulate. If WM_CLASS contains a period, "
-"only\n"
-"                              windows with exactly the same WM_CLASS "
-"property\n"
-"                              are matched. If there is no period, windows "
-"of\n"
-"                              the same class and windows of the same "
-"instance\n"
-"                              (aka. `-name') are selected.\n"
-"\n"
-"Actions:\n"
-"  setIconTitle   TITLE        Set the icon title.\n"
-"  setWindowTitle TITLE        Set the window title.\n"
-"  setGeometry    geometry     Set the window geometry\n"
-"  setState       MASK STATE   Set the GNOME window state to STATE.\n"
-"                              Only the bits selected by MASK are affected.\n"
-"                              STATE and MASK are expressions of the domain\n"
-"                              `GNOME window state'.\n"
-"  toggleState    STATE        Toggle the GNOME window state bits specified "
-"by\n"
-"                              the STATE expression.\n"
-"  setHints       HINTS        Set the GNOME window hints to HINTS.\n"
-"  setLayer       LAYER        Moves the window to another GNOME window "
-"layer.\n"
-"  setWorkspace   WORKSPACE    Moves the window to another workspace. Select\n"
-"                              the root window to change the current "
-"workspace.\n"
-"                              Select 0xFFFFFFFF or \"All\" for all "
-"workspaces.\n"
-"  listWorkspaces              Lists the names of all workspaces.\n"
-"  setTrayOption  TRAYOPTION   Set the IceWM tray option hint.\n"
-"  logout                      Tell IceWM to logout.\n"
-"  reboot                      Tell IceWM to reboot.\n"
-"  shutdown                    Tell IceWM to shutdown.\n"
-"  cancel                      Tell IceWM to cancel the logout/reboot/"
-"shutdown.\n"
-"  about                       Tell IceWM to show the about window.\n"
-"  windowlist                  Tell IceWM to show the window list.\n"
-"  restart                     Tell IceWM to restart.\n"
-"  suspend                     Tell IceWM to suspend.\n"
-"\n"
-"Expressions:\n"
-"  Expressions are list of symbols of one domain concatenated by `+' or `|':\n"
-"\n"
-"  EXPRESSION ::= SYMBOL | EXPRESSION ( `+' | `|' ) SYMBOL\n"
-"\n"
-msgstr ""
-"Használat: %s [KAPCSOLÓK] MŰVELETEK\n"
-"\n"
-"Kapcsolók:\n"
-"  -d, -display KIJELZŐ         A KIJELZŐ által megadott X-kiszolgálóhoz "
-"kapcsolódik.\n"
-"                              Alapértelmezett: $DISPLAY vagy :0.0 ha nincs "
-"beállítva.\n"
-"  -w, -window ABLAK_ID      Megadja a kezelendő ablakot. Vannak különleges\n"
-"                              azonosítók: `root' a gyökérablak és `focus' a "
-"fókuszban\n"
-"                              levő ablak. \n"
-"  -c, -class WM_OSZTÁLY      A kezelendő ablakok ablakkezelő-osztálya. Ha a\n"
-"    \t    \t    \t      WM_OSZTÁLY tartalmaz pontot, csak azok az ablakok\n"
-"    \t    \t              számítanak, amelyeknek pontosan ugyanaz a "
-"WM_OSZTÁLY \n"
-"\t\t\t      tulajdonságuk. Ha nincs pont, az azonos osztályba és az\n"
-"\t\t\t      azonos példányhoz (azaz `-name') tartozó ablakok lesznek\n"
-"\t\t\t      kiválasztva.\n"
-"\n"
-"Műveletek:\n"
-"  setIconTitle CÍM            Az ikon címének beállítása.\n"
-"  setWindowTitle CÍM          Az ablak címének beállítása.\n"
-"  setGeometry    geometria     Az ablak geometriájának beállítása.\n"
-"  setState MASZK ÁLLAPOT      A GNOME-ablak beállítása az ÁLLAPOT "
-"állapotba.\n"
-"  \t\t\t      Csak a MASZK által kiválasztott bitek érintettek.\n"
-"                              Az ÁLLAPOT és a MASZK a `GNOME ablakállapot' \n"
-"                              tartomány kifejezései.\n"
-"  toggleState ÁLLAPOT           A GNOME ablak ÁLLAPOT kifejezéssel megadott "
-"állapotbitjeinek\n"
-"                              váltása.\n"
-"  setHints TIPP              A GNOME ablaksúgójának beállítása a TIPP "
-"értékre.\n"
-"  setLayer RÉTEG              Az ablak áthelyezése a GNOME másik "
-"ablakrétegébe.\n"
-"  setWorkspace MUNKATERÜLET      Az ablak áthelyezése másik munkaterületre. "
-"Válassza\n"
-"  \t\t\t      a gyökérszint ablakát az aktuális munkaterület "
-"megváltoztatásához.\n"
-"                              Az összes munkaterületre vonatkozóan válassza "
-"az 0xFFFFFFFF vagy az \"Összes\" lehetőséget.\n"
-"  listWorkspaces   \t      Felsorolja az összes munkaterület nevét.\n"
-"  setTrayOption TÁLCABEÁLLÍTÁS    Az IceWM tálcabeállítási súgójának "
-"beállítása.\n"
-"  logout                      Az IceWM utasítás a kijelentkezésre.\n"
-"  reboot                      Az IceWM utasítása az újraindításra.\n"
-"  shutdown                    Az IceWM utasítása a leállításra.\n"
-"  cancel                      Az IceWM utasítása a kijelentkezés/újraindítás/"
-"leállítás elvetésére.\n"
-"  about                       Az IceWM utasítása a névjegyablak "
-"megjelenítésére.\n"
-"  windowlist                  Az IceWM utasítása az ablaklista "
-"megjelenítésére.\n"
-"  restart                     Az IceWM utasítása az újraindításra.\n"
-"  suspend                     Az IceWM utasítása a felfüggesztésre.\n"
-"\n"
-"Kifejezések:\n"
-"  A kifejezések egy tartomány szimbólumainak `+' vagy `|' karakterrel "
-"összefűzött listái:\n"
-"\n"
-"  KIFEJEZÉS ::= SZIMBÓLUM | KIFEJEZÉS ( `+' | `|' ) SZIMBÓLUM\n"
-"\n"
-
-#: src/icesh.cc:653
+#: src/icesh.cc:1442
 msgid "GNOME window state"
 msgstr "GNOME ablakállapot"
 
-#: src/icesh.cc:654
+#: src/icesh.cc:1443
 msgid "GNOME window hint"
 msgstr "GNOME ablaksegéd"
 
-#: src/icesh.cc:655
+#: src/icesh.cc:1444
 msgid "GNOME window layer"
 msgstr "GNOME ablakréteg"
 
-#: src/icesh.cc:656
+#: src/icesh.cc:1445
 msgid "IceWM tray option"
 msgstr "IceWM panel tulajdonságok"
 
-# ../src/iceskt.cc:36
-#: src/icesh.cc:661
-msgid "Usage error: "
-msgstr "Használati hiba: "
+#: src/icesh.cc:1446
+msgid "Gravity symbols"
+msgstr ""
+
+#: src/icesh.cc:1447
+#, fuzzy
+#| msgid "Save Modifications"
+msgid "Motif functions"
+msgstr "Módosítások mentése"
+
+#: src/icesh.cc:1448
+#, fuzzy
+#| msgid "Save Modifications"
+msgid "Motif decorations"
+msgstr "Módosítások mentése"
+
+# ../src/wmstatus.cc:170
+#: src/icesh.cc:1527
+#, c-format
+msgid "workspace #%d: `%s'\n"
+msgstr "Munkaterület száma: %d: \"%s\"\n"
+
+#: src/icesh.cc:2328
+#, c-format
+msgid "Action `%s' requires at least %d arguments."
+msgstr "A(z) `%s' művelet legalább %d argumentumot vár."
 
 # ../src/icehelp.cc:1247
-#: src/icesh.cc:747
+#: src/icesh.cc:2338
 #, c-format
-msgid "Invalid argument: `%s'."
-msgstr "Érvénytelen argumentum: \"%s\"."
-
-#: src/icesh.cc:753
-msgid "No actions specified."
-msgstr "Nincs megadott művelet."
+msgid "Invalid expression: `%s'"
+msgstr "Érvénytelen kifejezés: \"%s\""
 
 # ../src/icetail.cc:124 ../src/icewmbg.cc:199 ../src/icewmhint.cc:74
 # ../src/yapp.cc:582
-#: src/icesh.cc:760 src/icesound.cc:945 src/icewmhint.cc:36 src/yxapp.cc:925
+#: src/icesh.cc:2349 src/icesound.cc:801 src/icewmhint.cc:36 src/wmapp.cc:1120
+#: src/yxapp.cc:997
 #, c-format
 msgid "Can't open display: %s. X must be running and $DISPLAY set."
 msgstr ""
 "Nem lehet megnyitni a %s képernyőt. Az X-nek futnia kell \n"
 "és a $DISPLAY-t be kell állítani."
 
-#: src/icesh.cc:801
+# ../src/icehelp.cc:1247
+#: src/icesh.cc:2362
+#, fuzzy, c-format
+#| msgid "Invalid argument: `%s'."
+msgid "Invalid argument: `%s'"
+msgstr "Érvénytelen argumentum: \"%s\"."
+
+#: src/icesh.cc:2402
+msgid "No actions specified."
+msgstr "Nincs megadott művelet."
+
+#: src/icesh.cc:2541
 #, c-format
 msgid "Invalid window identifier: `%s'"
 msgstr "Érvénytelen ablak azonosító: \"%s\""
 
-# ../src/wmstatus.cc:170
-#: src/icesh.cc:955
-#, c-format
-msgid "workspace #%d: `%s'\n"
-msgstr "Munkaterület száma: %d: \"%s\"\n"
-
 # ../src/wmoption.cc:209
-#: src/icesh.cc:974
+#: src/icesh.cc:3039
 #, c-format
 msgid "Unknown action: `%s'"
 msgstr "Ismeretlen ablakbeállítás: \"%s\""
@@ -821,14 +708,27 @@ msgid "Socket error: %d"
 msgstr "Socket hiba: %d"
 
 #: src/icesm.cc:57
+#, fuzzy
+#| msgid ""
+#| "  -c, --config=FILE   Let IceWM load preferences from FILE.\n"
+#| "  -t, --theme=FILE    Let IceWM load the theme from FILE.\n"
+#| "\n"
+#| "  -d, --display=NAME  Use NAME to connect to the X server.\n"
+#| "  --sync              Synchronize communication with X11 server.\n"
+#| "\n"
+#| "  -i, --icewm=FILE    Use FILE as the IceWM window manager.\n"
+#| "  -n, --notray        Do not start icewmtray.\n"
+#| "  -s, --sound         Also start icesound.\n"
 msgid ""
 "  -c, --config=FILE   Let IceWM load preferences from FILE.\n"
 "  -t, --theme=FILE    Let IceWM load the theme from FILE.\n"
 "\n"
 "  -d, --display=NAME  Use NAME to connect to the X server.\n"
+"  -a, --alpha         Use a 32-bit visual for translucency.\n"
 "  --sync              Synchronize communication with X11 server.\n"
 "\n"
 "  -i, --icewm=FILE    Use FILE as the IceWM window manager.\n"
+"  -b, --nobg          Do not start icewmbg.\n"
 "  -n, --notray        Do not start icewmtray.\n"
 "  -s, --sound         Also start icesound.\n"
 msgstr ""
@@ -845,22 +745,29 @@ msgstr ""
 "  -s, --sound         Indítsa el az icesound programot is.\n"
 
 # ../src/wmoption.cc:209
-#: src/icesm.cc:120
+#: src/icesm.cc:135
 #, c-format
 msgid "Unknown option '%s'"
 msgstr "Ismeretlen beállítás: '%s 1'"
 
-#: src/icesm.cc:308
+# ../src/icesame.cc:57
+#: src/icesm.cc:331 src/icesm.cc:449
+#, fuzzy, c-format
+#| msgid "Restart"
+msgid "restart %s."
+msgstr "Újraindítás"
+
+#: src/icesm.cc:337
 #, c-format
 msgid "%s exited with status %d."
 msgstr "A(z) %s kilépett a következő állapottal: %d."
 
-#: src/icesm.cc:314
+#: src/icesm.cc:343 src/icesm.cc:455
 #, c-format
 msgid "%s was killed by signal %d."
 msgstr "A(z) %s programot leállította a(z) %d jel."
 
-#: src/icesm.cc:348
+#: src/icesm.cc:377
 msgid ""
 " IceWM crashed for the second time in 10 seconds. \n"
 " Do you wish to:\n"
@@ -874,108 +781,138 @@ msgstr ""
 "\t1: Újraindítja az IceWM programot?\n"
 "\t2: Megszakítja ezt a munkamenetet?\n"
 
-#: src/icesm.cc:353
+#: src/icesm.cc:382
 msgid "IceWM crash response"
 msgstr "IceWM összeomlási válasza"
 
-#: src/icesound.cc:219 src/icesound.cc:327 src/icesound.cc:631
+#: src/icesound.cc:216 src/icesound.cc:324 src/icesound.cc:484
 #, c-format
 msgid "Playing sample #%d (%s)"
 msgstr "%d (%s) minta lejátszása"
 
-#: src/icesound.cc:337
+#: src/icesound.cc:334
 #, c-format
 msgid "%s: Invalid number of channels"
 msgstr "%s: A csatornák száma érvénytelen"
 
-#: src/icesound.cc:343 src/icesound.cc:348
+#: src/icesound.cc:340 src/icesound.cc:345
 msgid "Could not set OSS channels"
 msgstr "Nem sikerült beállítani az OSS-csatornákat"
 
-#: src/icesound.cc:353 src/icesound.cc:381
+#: src/icesound.cc:350 src/icesound.cc:378
 msgid "Could not sync OSS"
 msgstr "Nem sikerült az OSS szinkronizálása"
 
-#: src/icesound.cc:365
+#: src/icesound.cc:362
 msgid "OSS write failed"
 msgstr "Nem sikerült az OSS írása"
 
-#: src/icesound.cc:369
+#: src/icesound.cc:366
 #, c-format
 msgid "OSS incomplete write (%d/%d)"
 msgstr "Nem teljes írás az OSS-en (%d/%d)"
 
 # ../src/ypaint.cc:262
-#: src/icesound.cc:376
+#: src/icesound.cc:373
 msgid "Could not post OSS"
 msgstr "Nem sikerült az OSS küldése"
 
 # ../src/icons.cc:220
-#: src/icesound.cc:405
+#: src/icesound.cc:402
 #, c-format
 msgid "Could not open OSS device %s"
 msgstr "Nem sikerült megnyitni a(z) %s OSS-eszközt"
 
-#: src/icesound.cc:410
+#: src/icesound.cc:407
 msgid "Could not set OSS stereo"
 msgstr "Nem sikerült a sztereó OSS beállítása"
 
-#: src/icesound.cc:415
+#: src/icesound.cc:412
 msgid "Could not reset OSS DSP"
 msgstr "Nem sikerült az OSS DSP visszaállítása"
 
-#: src/icesound.cc:420
+#: src/icesound.cc:417
 msgid "Could not set OSS format"
 msgstr "Nem sikerült az OSS formátum beállítása"
 
-#: src/icesound.cc:493
-#, c-format
-msgid "Can't connect to ESound daemon: %s"
-msgstr "Nem lehet csatlakozni az ESound démonhoz: %s"
-
-# ../src/icetail.cc:126 ../src/icewmbg.cc:201 ../src/icewmhint.cc:76
-# ../src/yapp.cc:584
-#: src/icesound.cc:494 src/icewmhint.cc:38 src/yxapp.cc:926
-msgid "<none>"
-msgstr "<nincs>"
-
-#: src/icesound.cc:512
-#, c-format
-msgid "Error <%d> while uploading `%s:%s'"
-msgstr "<%d> hiba \"%s:%s\" feltöltésekor"
-
-#: src/icesound.cc:518
-#, c-format
-msgid "Sample <%d> uploaded as `%s:%s'"
-msgstr "<%d> minta feltöltve \"%s:%s\" néven"
-
-#: src/icesound.cc:576
-#, c-format
-msgid "Playing sample #%d: %d"
-msgstr "#%d minta lejátszása: %d"
-
-#: src/icesound.cc:651
+#: src/icesound.cc:504
 #, c-format
 msgid "ao_open_live failed with %d"
 msgstr "Nem sikerült az ao_open_live végrehajtása, hiba: %d"
 
-#: src/icesound.cc:662
+#: src/icesound.cc:515
 msgid "ao_play failed"
 msgstr "Nem sikerült az ao_play végrehajtása"
 
 # ../src/wmoption.cc:209
-#: src/icesound.cc:824
+#: src/icesound.cc:683
 #, c-format
 msgid "Unrecognized option: %s\n"
 msgstr "Ismeretlen beállítás: %s\n"
 
-#: src/icesound.cc:827 src/icesound.cc:1130
+#: src/icesound.cc:686 src/icesound.cc:979
 #, c-format
 msgid "Unrecognized argument: %s\n"
 msgstr "Ismeretlen argumentum: %s\n"
 
-#: src/icesound.cc:836
-#, c-format
+#: src/icesound.cc:695
+#, fuzzy, c-format
+#| msgid ""
+#| "Usage: %s [OPTION]...\n"
+#| "\n"
+#| "Plays audio files on GUI events raised by IceWM.\n"
+#| "The currently configured sound interfaces are: %s.\n"
+#| "Icesound will choose the first of these which is usable.\n"
+#| "\n"
+#| "Options:\n"
+#| "\n"
+#| " -d, --display=DISPLAY   X11 display used by IceWM (default: $DISPLAY).\n"
+#| "\n"
+#| " -s, --sample-dir=DIR    Specifies a directory with sound files.\n"
+#| "                         Default is $HOME/.config/icewm/sounds.\n"
+#| "\n"
+#| " -i, --interface=LIST    Specifies audio output interfaces. One or more "
+#| "of:\n"
+#| "                         %s separated by commas.\n"
+#| "\n"
+#| " -D, --device=DEVICE     Backwards compatibility only: the default "
+#| "device. \n"
+#| "                         Please prefer one of the -A/-O/-S options.\n"
+#| "\n"
+#| " -O, --oss=DEVICE        Specifies the OSS device (default: \"%s\").\n"
+#| "\n"
+#| " -A, --alsa=DEVICE       Specifies the ALSA device (default: \"%s\").\n"
+#| "\n"
+#| " -S, --server=ADDR:PORT  Specifies the ESD server address and port "
+#| "number.\n"
+#| "                         For ESD the default is \"localhost:16001\".\n"
+#| "\n"
+#| " -z, --snooze=millisecs  Specifies the snooze interval between sound "
+#| "events\n"
+#| "                         in milliseconds. Default is 500 milliseconds.\n"
+#| "\n"
+#| " -p, --play=sound        Plays the given sound (name or number) and "
+#| "exits.\n"
+#| "\n"
+#| " -l, --list-files        Lists the available sound file paths and exits.\n"
+#| "\n"
+#| "     --list-sounds       Lists the supported sound filenames and exits.\n"
+#| "\n"
+#| "     --list-interfaces   Lists the supported audio interfaces and exits.\n"
+#| "\n"
+#| " -v, --verbose           Be verbose and print out each sound event.\n"
+#| "\n"
+#| " -V, --version           Prints version information and exits.\n"
+#| "\n"
+#| " -h, --help              Prints this help screen and exits.\n"
+#| "\n"
+#| "Return values:\n"
+#| "\n"
+#| "  0    Success.\n"
+#| "  1    General error.\n"
+#| "  2    Command line error.\n"
+#| "  3    Subsystems error (ie cannot connect to server).\n"
+#| "\n"
 msgid ""
 "Usage: %s [OPTION]...\n"
 "\n"
@@ -999,9 +936,6 @@ msgid ""
 " -O, --oss=DEVICE        Specifies the OSS device (default: \"%s\").\n"
 "\n"
 " -A, --alsa=DEVICE       Specifies the ALSA device (default: \"%s\").\n"
-"\n"
-" -S, --server=ADDR:PORT  Specifies the ESD server address and port number.\n"
-"                         For ESD the default is \"localhost:16001\".\n"
 "\n"
 " -z, --snooze=millisecs  Specifies the snooze interval between sound events\n"
 "                         in milliseconds. Default is 500 milliseconds.\n"
@@ -1086,51 +1020,51 @@ msgstr ""
 "  3    Alrendszerhiba (pl. nem lehet csatlakozni a kiszolgálóhoz).\n"
 "\n"
 
-#: src/icesound.cc:930
+#: src/icesound.cc:786
 #, c-format
 msgid "No audio for %s"
 msgstr "%s - nincs hang"
 
-#: src/icesound.cc:1007
+#: src/icesound.cc:863
 msgid "Could not get GUI event property"
 msgstr "Nem sikerült lekérni a GUI-esemény tulajdonságát"
 
-#: src/icesound.cc:1011
+#: src/icesound.cc:867
 #, c-format
 msgid "Received invalid GUI event %d"
 msgstr "A fogadott GUI-esemény érvénytelen: %d"
 
-#: src/icesound.cc:1015
+#: src/icesound.cc:871
 #, c-format
 msgid "Received GUI event %s"
 msgstr "Fogadott GUI-esemény: %s"
 
-#: src/icesound.cc:1029
+#: src/icesound.cc:885
 #, c-format
 msgid "Too quick; ignoring %s."
 msgstr "Túl gyors, a(z) %s figyelmen kívül hagyva."
 
-#: src/icesound.cc:1033
+#: src/icesound.cc:889
 #, c-format
 msgid "Support for the %s interface not compiled."
 msgstr "A %s eszköz támogatása nincs befordítva a programba."
 
-#: src/icesound.cc:1073
+#: src/icesound.cc:922
 #, c-format
 msgid "Unsupported interface: %s."
 msgstr "Nem támogatott %s eszköz."
 
-#: src/icesound.cc:1082
+#: src/icesound.cc:931
 #, c-format
 msgid "Using %s audio."
 msgstr "%s hang használata."
 
-#: src/icesound.cc:1086
+#: src/icesound.cc:935
 #, c-format
 msgid "Failed to connect to audio interfaces %s."
 msgstr "Nem sikerült csatlakozni a hangillesztőkhöz: %s."
 
-#: src/icesound.cc:1098
+#: src/icesound.cc:947
 #, c-format
 msgid "Received signal %s: Terminating..."
 msgstr "%s jel érkezett: Megszakítás..."
@@ -1183,57 +1117,12 @@ msgstr "Sortörés"
 msgid "Ctrl+W"
 msgstr "Ctrl+W"
 
-#: src/icewmbg.cc:78
+#: src/icewmbg.cc:79
 #, c-format
 msgid "Failed to load image '%s'."
 msgstr "Nem sikerült a(z) '%s' kép betöltése."
 
-#: src/icewmbg.cc:885
-#, fuzzy
-#| msgid ""
-#| "Usage: icewmbg [OPTIONS]\n"
-#| "Where multiple values can be given they are separated by commas.\n"
-#| "When image is a directory then all images from that directory are used.\n"
-#| "\n"
-#| "Options:\n"
-#| "  -p, --replace        Replace an existing icewmbg.\n"
-#| "  -q, --quit           Tell the running icewmbg to quit.\n"
-#| "  -r, --restart        Tell the running icewmbg to restart itself.\n"
-#| "\n"
-#| "  -c, --config=FILE    Load preferences from FILE.\n"
-#| "  -t, --theme=NAME     Load the theme with name NAME.\n"
-#| "\n"
-#| "  -i, --image=FILE(S)  Load background image(s) from FILE(S).\n"
-#| "  -k, --color=NAME(S)  Use background color(s) from NAME(S).\n"
-#| "\n"
-#| "  -s, --semis=FILE(S)  Load transparency image(s) from FILE(S).\n"
-#| "  -x, --trans=NAME(S)  Use transparency color(s) from NAME(S).\n"
-#| "\n"
-#| "  -e, --center=0/1     Disable/Enable centering background.\n"
-#| "  -a, --scaled=0/1     Disable/Enable scaling background.\n"
-#| "  -m, --multi=0/1      Disable/Enable multihead background.\n"
-#| "\n"
-#| "  --display=NAME       Use NAME to connect to the X server.\n"
-#| "  --sync               Synchronize communication with X11 server.\n"
-#| "\n"
-#| "  -h, --help           Print this usage screen and exit.\n"
-#| "  -V, --version        Prints version information and exits.\n"
-#| "\n"
-#| "Loads desktop background according to preferences file:\n"
-#| " DesktopBackgroundCenter  - Display desktop background centered\n"
-#| " DesktopBackgroundScaled  - Display desktop background scaled\n"
-#| " DesktopBackgroundColor   - Desktop background color(s)\n"
-#| " DesktopBackgroundImage   - Desktop background image(s)\n"
-#| " SupportSemitransparency  - Support for semitransparent terminals\n"
-#| " DesktopTransparencyColor - Semitransparency background color(s)\n"
-#| " DesktopTransparencyImage - Semitransparency background image(s)\n"
-#| " DesktopBackgroundMultihead - One background over all monitors\n"
-#| "\n"
-#| " center:0 scaled:0 = tiled\n"
-#| " center:1 scaled:0 = centered\n"
-#| " center:1 scaled:1 = fill one dimension and keep aspect ratio\n"
-#| " center:0 scaled:1 = fill both dimensions and keep aspect ratio\n"
-#| "\n"
+#: src/icewmbg.cc:886
 msgid ""
 "Usage: icewmbg [OPTIONS]\n"
 "Where multiple values can be given they are separated by commas.\n"
@@ -1293,6 +1182,7 @@ msgstr ""
 "  -p, --replace        Meglévő icewmbg lecserélése.\n"
 "  -q, --quit           A futó icewmbg utasítása a kilépésre.\n"
 "  -r, --restart        A futó icewmbg utasítása saját maga újraindítására.\n"
+"  -u, --shuffle        Háttérképek listájának keverése/újrakeverése.\n"
 "\n"
 "  -c, --config=FÁJL    Beállítások betöltése a FÁJL-ból.\n"
 "  -t, --theme=NÉV     A NÉV nevű téma betöltése.\n"
@@ -1306,6 +1196,7 @@ msgstr ""
 "  -e, --center=0/1     Háttér középre igazításának letiltása/engedélyezése.\n"
 "  -a, --scaled=0/1     Háttér méretezésének letiltása/engedélyezése.\n"
 "  -m, --multi=0/1      Többmonitoros háttér letiltása/engedélyezése.\n"
+"  -y, --cycle=MÁSODPERC  Hátterek váltása a megadott másodperc elteltével.\n"
 "\n"
 "  --display=NÉV       A NÉV használata az X-kiszolgálóhoz való "
 "csatlakozáshoz.\n"
@@ -1320,10 +1211,12 @@ msgstr ""
 " DesktopBackgroundScaled  - Asztali háttér megjelenítése méretezve\n"
 " DesktopBackgroundColor   - Asztali háttér színe(i)\n"
 " DesktopBackgroundImage   - Asztali háttér képe(i)\n"
+" ShuffleBackgroundImages  - Háttérképek listájának keverése\n"
 " SupportSemitransparency  - Félig átlátszó terminálok támogatása\n"
 " DesktopTransparencyColor - Félig átlátszó háttérszín(ek)\n"
 " DesktopTransparencyImage - Félig átlátszó háttérkép(ek)\n"
 " DesktopBackgroundMultihead - Egy háttér minden monitoron\n"
+" CycleBackgroundsPeriod   - Másodpercek a hátterek váltása között\n"
 "\n"
 " center:0 scaled:0 = mozaik\n"
 " center:1 scaled:0 = középre\n"
@@ -1331,27 +1224,27 @@ msgstr ""
 " center:0 scaled:1 = kitöltés mindkét méretre és a méretarány megőrzése\n"
 "\n"
 
-#: src/icewmbg.cc:1100
+#: src/icewmbg.cc:1101
 msgid "Cannot start, because another icewmbg is still running."
 msgstr "Nem lehet elindítani, mert egy másik icewmbg még fut."
 
 # ../src/icewmhint.cc:47
-#: src/icewmhint.cc:23
+#: src/icewmhint.cc:19
 msgid "Usage: icewmhint class.instance option arg\n"
 msgstr "Használat: icewmhint osztály.példány kapcsoló argumentum\n"
 
 # ../src/icewmhint.cc:63 ../src/ypaint.cc:238
-#: src/icewmhint.cc:57
+#: src/icewmhint.cc:56
 #, c-format
 msgid "Out of memory (len=%d)."
 msgstr "Elfogyott a memória (hossz=%d)."
 
 # ../src/misc.cc:275
-#: src/misc.cc:466 src/misc.cc:478
+#: src/misc.cc:559 src/misc.cc:571
 msgid "Warning: "
 msgstr "Figyelmeztetés: "
 
-#: src/misc.cc:754
+#: src/misc.cc:847
 #, c-format
 msgid ""
 "Usage: %s [OPTIONS]\n"
@@ -1370,260 +1263,256 @@ msgstr ""
 "  -h, --help          Megjeleníti ezt a használati képernyőt, és kilép.\n"
 "\n"
 
-#: src/movesize.cc:876
+#: src/movesize.cc:875
 #, c-format
 msgid "Unknown direction in move/resize request: %d"
 msgstr "Ismeretlen irány az áthelyezés/átméretezés kérésnél: %d"
 
 # ../src/wmabout.cc:26 ../src/wmabout.cc:27
-#: src/wmabout.cc:26 src/wmabout.cc:28
+#: src/wmabout.cc:23 src/wmabout.cc:25
 msgid "(C)"
 msgstr "(C)"
 
 # ../src/wmabout.cc:31
-#: src/wmabout.cc:34
+#: src/wmabout.cc:31
 msgid "Theme:"
 msgstr "Téma:"
 
 # ../src/wmabout.cc:32
-#: src/wmabout.cc:35
+#: src/wmabout.cc:32
 msgid "Theme Description:"
 msgstr "Téma leírása:"
 
 # ../src/wmabout.cc:33
-#: src/wmabout.cc:36
+#: src/wmabout.cc:33
 msgid "Theme Author:"
 msgstr "Téma szerzője:"
 
-#: src/wmabout.cc:40
+#: src/wmabout.cc:37
 msgid "CodeSet:"
 msgstr "Kódkészlet:"
 
-#: src/wmabout.cc:41
+#: src/wmabout.cc:38
 msgid "Language:"
 msgstr "Nyelv:"
 
 # ../src/wmabout.cc:47
-#: src/wmabout.cc:67
+#: src/wmabout.cc:64
 msgid "icewm - About"
 msgstr "IceWM - Névjegy"
 
 #
 # ../src/wmapp.cc:581
-#: src/wmapp.cc:90
+#: src/wmapp.cc:83
 msgid "A window manager is already running, use --replace to replace it"
 msgstr ""
 "Egy másik ablakkezelő már fut, lecseréléséhez használja a --replace "
 "beállítást"
 
-#: src/wmapp.cc:108
+#: src/wmapp.cc:101
 #, c-format
 msgid "Failed to become the owner of the %s selection"
 msgstr "Nem sikerült a(z) %s választás tulajdonosakénti beállítás"
 
-#: src/wmapp.cc:112
+#: src/wmapp.cc:105
 msgid "Waiting to replace the old window manager"
 msgstr "Várakozás a régi ablakkezelő lecserélésére"
 
-#: src/wmapp.cc:117
+#: src/wmapp.cc:110
 msgid "done."
 msgstr "Kész."
 
 # ../src/wmapp.cc:177
-#: src/wmapp.cc:403
+#: src/wmapp.cc:415
 msgid "Unable to get current font path."
 msgstr "Nem lehet elérni a jelenlegi betűkészlet elérési útvonalát."
 
 # ../src/wmapp.cc:205
-#: src/wmapp.cc:430
+#: src/wmapp.cc:442
 msgid "Unexpected format of ICEWM_FONT_PATH property"
 msgstr "Az ICEWM_FONT_PATH hibásan van megadva"
 
 # OS/2 is dead, but... ;-)
 # ../src/wmapp.cc:457
-#: src/wmapp.cc:508
+#: src/wmapp.cc:512
 msgid "_Logout"
 msgstr "_Kilépés"
 
 # ../src/wmapp.cc:458
-#: src/wmapp.cc:509
+#: src/wmapp.cc:513
 msgid "_Cancel logout"
 msgstr "_Kilépés megszakítása"
 
 # ../src/wmdialog.cc:59
-#: src/wmapp.cc:514
+#: src/wmapp.cc:518
 msgid "Lock _Workstation"
 msgstr "Munkaállomás le_zárása"
 
 # ../src/wmdialog.cc:87
-#: src/wmapp.cc:516 src/wmdialog.cc:78
+#: src/wmapp.cc:520 src/wmdialog.cc:78
 msgid "Re_boot"
 msgstr "Ú_jraindítás"
 
 # ../src/wmdialog.cc:94
-#: src/wmapp.cc:518 src/wmdialog.cc:79
+#: src/wmapp.cc:522 src/wmdialog.cc:79
 msgid "Shut_down"
 msgstr "_Kikapcsolás"
 
 #. TRANSLATORS: This means "energy saving mode" or "suspended system". Not "interrupt". Not "hibernate".
-#: src/wmapp.cc:520 src/wmdialog.cc:75
+#: src/wmapp.cc:524 src/wmdialog.cc:75
 msgid "_Sleep mode"
-msgstr ""
+msgstr "_Alvó mód"
 
 # ../src/wmapp.cc:468
-#: src/wmapp.cc:525
+#: src/wmapp.cc:529
 msgid "Restart _Icewm"
 msgstr "Az _IceWM újraindítása"
 
 # ../src/wmapp.cc:474
-#: src/wmapp.cc:527
+#: src/wmapp.cc:531
 msgid "Restart _Xterm"
 msgstr "Az _Xterm újraindítása"
 
 # ../src/wmapp.cc:488
-#: src/wmapp.cc:540
+#: src/wmapp.cc:541
 msgid "_Menu"
 msgstr "_Menü"
 
 # ../src/wmapp.cc:489
-#: src/wmapp.cc:541
+#: src/wmapp.cc:542
 msgid "_Above Dock"
 msgstr "Dokk _felett"
 
 # ../src/wmapp.cc:490
-#: src/wmapp.cc:542
+#: src/wmapp.cc:543
 msgid "_Dock"
 msgstr "_Dokk"
 
 # ../src/wmapp.cc:491
-#: src/wmapp.cc:543
+#: src/wmapp.cc:544
 msgid "_OnTop"
 msgstr "_Elöl"
 
 # ../src/wmapp.cc:492
-#: src/wmapp.cc:544
+#: src/wmapp.cc:545
 msgid "_Normal"
 msgstr "_Normál"
 
 # ../src/wmapp.cc:493
-#: src/wmapp.cc:545
+#: src/wmapp.cc:546
 msgid "_Below"
 msgstr "_Hátul"
 
 # ../src/wmapp.cc:494
-#: src/wmapp.cc:546
+#: src/wmapp.cc:547
 msgid "D_esktop"
 msgstr "_Asztal"
 
 # ../src/wmapp.cc:505
-#: src/wmapp.cc:571 src/wmwinlist.cc:349
+#: src/wmapp.cc:582 src/wmwinlist.cc:379
 msgid "_Restore"
 msgstr "_Visszaállítás"
 
 # ../src/wmapp.cc:506
-#: src/wmapp.cc:573
+#: src/wmapp.cc:584
 msgid "_Move"
 msgstr "_Mozgatás"
 
 # ../src/wmapp.cc:507
-#: src/wmapp.cc:575
+#: src/wmapp.cc:586
 msgid "_Size"
 msgstr "Mé_retezés"
 
 # ../src/wmapp.cc:508
-#: src/wmapp.cc:577 src/wmwinlist.cc:350
+#: src/wmapp.cc:588 src/wmwinlist.cc:380
 msgid "Mi_nimize"
 msgstr "Mi_nimalizálás"
 
 # ../src/wmapp.cc:509
-#: src/wmapp.cc:579 src/wmwinlist.cc:351
+#: src/wmapp.cc:590 src/wmwinlist.cc:381
 msgid "Ma_ximize"
 msgstr "Ma_ximalizálás"
 
 # ../src/wmframe.cc:105 ../src/wmframe.cc:515 ../src/wmframe.cc:2182
-#: src/wmapp.cc:580 src/wmwinlist.cc:352
-#, fuzzy
-#| msgid "Maximize"
+#: src/wmapp.cc:591 src/wmwinlist.cc:382
 msgid "Maximize_Vert"
-msgstr "Maximalizálás"
+msgstr "Maximalizálás függ."
 
 # ../src/wmframe.cc:105 ../src/wmframe.cc:515 ../src/wmframe.cc:2182
-#: src/wmapp.cc:581
-#, fuzzy
-#| msgid "Maximize"
+#: src/wmapp.cc:592
 msgid "MaximizeHori_z"
-msgstr "Maximalizálás"
+msgstr "Maximalizálás vízsz."
 
-#: src/wmapp.cc:584 src/wmwinlist.cc:353
+#: src/wmapp.cc:595 src/wmwinlist.cc:383
 msgid "_Fullscreen"
 msgstr "_Teljes képernyő"
 
 # ../src/wmapp.cc:511 ../src/wmwinlist.cc:248
-#: src/wmapp.cc:587 src/wmwinlist.cc:355
+#: src/wmapp.cc:598 src/wmwinlist.cc:385
 msgid "_Hide"
 msgstr "Elre_jtés"
 
 # ../src/wmapp.cc:513
-#: src/wmapp.cc:589 src/wmwinlist.cc:356
+#: src/wmapp.cc:600 src/wmwinlist.cc:386
 msgid "Roll_up"
 msgstr "Fel_görgetés"
 
 # ../src/wmapp.cc:515
-#: src/wmapp.cc:596
+#: src/wmapp.cc:607
 msgid "R_aise"
 msgstr "_Előrehozás"
 
 # ../src/wmapp.cc:516
-#: src/wmapp.cc:598 src/wmwinlist.cc:358
+#: src/wmapp.cc:609 src/wmwinlist.cc:388
 msgid "_Lower"
 msgstr "_Hátra küldés"
 
 # ../src/wmapp.cc:517
-#: src/wmapp.cc:600
+#: src/wmapp.cc:611 src/wmwinlist.cc:389
 msgid "La_yer"
 msgstr "E_lrendezés"
 
 # ../src/wmapp.cc:520 ../src/wmwinlist.cc:251
-#: src/wmapp.cc:604 src/wmwinlist.cc:360
+#: src/wmapp.cc:615 src/wmwinlist.cc:391
 msgid "Move _To"
 msgstr "Áthelye_zés másik munkaterületre"
 
 # ../src/wmapp.cc:521
-#: src/wmapp.cc:605 src/wmwinlist.cc:361
+#: src/wmapp.cc:616 src/wmwinlist.cc:392
 msgid "Occupy _All"
 msgstr "Megjelenés minden mun_katerületen"
 
-#: src/wmapp.cc:611
+#: src/wmapp.cc:622
 msgid "Limit _Workarea"
 msgstr "_Munkaterület korlátozása"
 
-#: src/wmapp.cc:615 src/wmwinlist.cc:362
+#: src/wmapp.cc:626 src/wmwinlist.cc:393
 msgid "Tray _icon"
 msgstr "Panel_ikon"
 
 # ../src/wmapp.cc:524 ../src/wmwinlist.cc:236 ../src/wmwinlist.cc:258
-#: src/wmapp.cc:620 src/wmwinlist.cc:339 src/wmwinlist.cc:373
+#: src/wmapp.cc:631 src/wmwinlist.cc:369 src/wmwinlist.cc:404
 msgid "_Close"
 msgstr "_Bezárás"
 
 # ../src/wmwinlist.cc:238
-#: src/wmapp.cc:622 src/wmwinlist.cc:341
+#: src/wmapp.cc:633 src/wmwinlist.cc:371
 msgid "_Kill Client"
 msgstr "_Kliens lelövése"
 
 # ../src/wmapp.cc:527 ../src/wmwinmenu.cc:135
-#: src/wmapp.cc:625 src/wmdialog.cc:80 src/wmwinmenu.cc:131
+#: src/wmapp.cc:636 src/wmdialog.cc:80 src/wmwinmenu.cc:134
 msgid "_Window list"
 msgstr "Ablak_lista"
 
 #
 # ../src/wmapp.cc:581
-#: src/wmapp.cc:639
+#: src/wmapp.cc:669
 msgid "Another window manager already running, exiting..."
 msgstr "Egy másik ablakkezelő már fut, kilépés..."
 
 # ../src/wmapp.cc:637
-#: src/wmapp.cc:724
+#: src/wmapp.cc:743
 #, c-format
 msgid ""
 "Could not restart: %s\n"
@@ -1633,18 +1522,24 @@ msgstr ""
 "Esetleg nincsen a $PATH-ban (elérési\n"
 "útvonalban) és ezért nem elérhető %s?"
 
-#: src/wmapp.cc:849
+#: src/wmapp.cc:871
 msgid "Kill IceWM, replace with Xterm"
 msgstr "IceWM leállítása, lecserélés az Xtermre"
 
-#: src/wmapp.cc:1394
+# ../src/icetail.cc:126 ../src/icewmbg.cc:201 ../src/icewmhint.cc:76
+# ../src/yapp.cc:584
+#: src/wmapp.cc:1121 src/yxapp.cc:998
+msgid "<none>"
+msgstr "<nincs>"
+
+#: src/wmapp.cc:1466
 msgid ""
 "  --client-id=ID      Client id to use when contacting session manager.\n"
 msgstr ""
 "  --client-id=ID      A munkamenet-kezelőhöz való csatlakozáskor használandó "
 "ügyfélazonosító.\n"
 
-#: src/wmapp.cc:1400
+#: src/wmapp.cc:1472
 msgid ""
 "\n"
 "  --debug             Print generic debug messages.\n"
@@ -1655,11 +1550,19 @@ msgstr ""
 "  --debug-z           Ablaksorrenddel kapcsolatos hibakeresési üzenetek "
 "nyomtatása.\n"
 
-#: src/wmapp.cc:1408
+#: src/wmapp.cc:1480
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "  -c, --config=FILE   Load preferences from FILE.\n"
+#| "  -t, --theme=FILE    Load theme from FILE.\n"
+#| "  --postpreferences   Print preferences after all processing.\n"
 msgid ""
 "\n"
+"  -a, --alpha         Use a 32-bit visual for translucency.\n"
 "  -c, --config=FILE   Load preferences from FILE.\n"
 "  -t, --theme=FILE    Load theme from FILE.\n"
+"  --splash=IMAGE      Briefly show IMAGE on startup.\n"
 "  --postpreferences   Print preferences after all processing.\n"
 msgstr ""
 "\n"
@@ -1667,7 +1570,7 @@ msgstr ""
 "  -t, --theme=FÁJL    Téma betöltése a FÁJL-ból.\n"
 "  --postpreferences   Beállítások nyomtatása a feldolgozás után.\n"
 
-#: src/wmapp.cc:1413
+#: src/wmapp.cc:1487
 #, c-format
 msgid ""
 "Usage: %s [OPTIONS]\n"
@@ -1728,30 +1631,30 @@ msgstr ""
 "%s\n"
 "\n"
 
-#: src/wmapp.cc:1474
+#: src/wmapp.cc:1548
 #, c-format
 msgid "%s configuration directories:\n"
 msgstr "%s konfigurációs könyvtárai:\n"
 
 # ../src/wmoption.cc:209
-#: src/wmapp.cc:1559
+#: src/wmapp.cc:1633
 #, c-format
 msgid "%s configured options:%s\n"
 msgstr "%s konfigurált beállítás: %s\n"
 
 # ../src/wmoption.cc:209
-#: src/wmapp.cc:1612
+#: src/wmapp.cc:1695
 #, c-format
 msgid "Unrecognized option '%s'."
 msgstr "Nem azonosítható beállítás: '%s'."
 
 # ../src/wmapp.cc:676
-#: src/wmapp.cc:1645
+#: src/wmapp.cc:1767
 msgid "Confirm Logout"
 msgstr "Kilépés megerősítése"
 
 # ../src/wmapp.cc:677
-#: src/wmapp.cc:1646
+#: src/wmapp.cc:1768
 msgid ""
 "Logout will close all active applications.\n"
 "Proceed?"
@@ -1759,28 +1662,28 @@ msgstr ""
 "Kilépéskor bezáródik az összes futó alkalmazás.\n"
 "Mégis?"
 
-#: src/wmconfig.cc:40
+#: src/wmconfig.cc:37
 #, c-format
 msgid "Failed to load theme %s"
 msgstr "Nem sikerült a(z) %s téma betöltése"
 
 # ../src/wmoption.cc:209
-#: src/wmconfig.cc:103
+#: src/wmconfig.cc:92
 #, c-format
 msgid "Unknown value '%s' for option '%s'."
 msgstr "Ismeretlen '%s' érték a következő beállításnál: '%s'."
 
-#: src/wmconfig.cc:111
+#: src/wmconfig.cc:100
 #, c-format
 msgid "Unable to create directory %s"
 msgstr "Nem sikerült a könyvtár létrehozása: %s"
 
-#: src/wmconfig.cc:138 src/wmprog.cc:564 src/wmprog.cc:686 src/wmprog.cc:690
+#: src/wmconfig.cc:127 src/wmprog.cc:569 src/wmprog.cc:691 src/wmprog.cc:695
 #, c-format
 msgid "Unable to write to %s"
 msgstr "Nem lehet írni a következőre: %s"
 
-#: src/wmconfig.cc:165 src/wmprog.cc:694
+#: src/wmconfig.cc:154 src/wmprog.cc:699
 #, c-format
 msgid "Unable to rename %s to %s"
 msgstr "A(z) %s nem nevezhető át %s nevűre"
@@ -1791,13 +1694,13 @@ msgid "Loc_k Workstation"
 msgstr "Munkaállomás le_zárása"
 
 # ../src/wmdialog.cc:73
-#: src/wmdialog.cc:76 src/ymsgbox.cc:44
+#: src/wmdialog.cc:76 src/ymsgbox.cc:43
 msgid "_Cancel"
 msgstr "_Mégsem"
 
 # ../src/wmdialog.cc:66 ../src/wmprog.cc:629 ../src/wmtaskbar.cc:236
-#: src/wmdialog.cc:77 src/wmprog.cc:844 src/wmprog.cc:846 src/wmtaskbar.cc:297
-#: src/wmtaskbar.cc:299
+#: src/wmdialog.cc:77 src/wmprog.cc:849 src/wmprog.cc:851 src/wmtaskbar.cc:270
+#: src/wmtaskbar.cc:272
 msgid "_Logout..."
 msgstr "_Kilépés..."
 
@@ -1807,18 +1710,17 @@ msgid "_Restart icewm"
 msgstr "Az _IceWM újraindítása"
 
 # ../src/wmprog.cc:633 ../src/wmtaskbar.cc:230 ../src/wmtaskbar.cc:233
-#: src/wmdialog.cc:82 src/wmprog.cc:805 src/wmtaskbar.cc:290
-#: src/wmtaskbar.cc:293
+#: src/wmdialog.cc:82 src/wmprog.cc:810 src/wmtaskbar.cc:266
 msgid "_About"
 msgstr "N_évjegy"
 
 #
 # ../src/wmframe.cc:1183
-#: src/wmframe.cc:1400
+#: src/wmframe.cc:1408
 msgid "Kill Client: "
 msgstr "Kliens leölése: "
 
-#: src/wmframe.cc:1407
+#: src/wmframe.cc:1415
 msgid ""
 "WARNING! All unsaved changes will be lost when\n"
 "this client is killed. Do you wish to proceed?"
@@ -1828,273 +1730,251 @@ msgstr ""
 "Biztosan ezt akarod?"
 
 # ../src/wmframe.cc:2179
-#: src/wmframe.cc:3001
+#: src/wmframe.cc:3011
 msgid "Restore"
 msgstr "Visszaállítás"
 
 # ../src/wmframe.cc:105 ../src/wmframe.cc:515 ../src/wmframe.cc:2182
-#: src/wmframe.cc:3004 src/wmtitle.cc:69
+#: src/wmframe.cc:3014 src/wmtitle.cc:72
 msgid "Maximize"
 msgstr "Maximalizálás"
 
 # ../src/wmframe.cc:2212
-#: src/wmframe.cc:3034
+#: src/wmframe.cc:3044
 msgid "Rolldown"
 msgstr "Legörget"
 
 # ../src/wmframe.cc:149 ../src/wmframe.cc:2214
-#: src/wmframe.cc:3036 src/wmtitle.cc:127
+#: src/wmframe.cc:3046 src/wmtitle.cc:130
 msgid "Rollup"
 msgstr "Felgörgetés"
 
 # ../src/wmoption.cc:209
-#: src/wmoption.cc:228
+#: src/wmoption.cc:231
 #, c-format
 msgid "Unknown window option: %s"
 msgstr "Ismeretlen ablakbeállítás: %s"
 
 # ../src/wmoption.cc:268
-#: src/wmoption.cc:338
+#: src/wmoption.cc:343
 #, c-format
 msgid "Syntax error in window options on line %d of %s"
 msgstr "Szintaktikai hiba az ablakbeállításokban, sor: %d (%s)"
 
-#: src/wmprog.cc:392
+#: src/wmprog.cc:397
 msgid "_Click to focus"
 msgstr "_Kattintson a fókuszáláshoz"
 
-#: src/wmprog.cc:393
+#: src/wmprog.cc:398
 msgid "_Explicit focus"
 msgstr "_Explicit fókusz"
 
-#: src/wmprog.cc:394
+#: src/wmprog.cc:399
 msgid "_Sloppy mouse focus"
 msgstr "_Pontatlan egérmutatós fókusz"
 
-#: src/wmprog.cc:395
+#: src/wmprog.cc:400
 msgid "S_trict mouse focus"
 msgstr "P_ontos egérmutatós fókusz"
 
-#: src/wmprog.cc:396
+#: src/wmprog.cc:401
 msgid "_Quiet sloppy focus"
 msgstr "_Egyszerű pontatlan fókusz"
 
-#: src/wmprog.cc:397
+#: src/wmprog.cc:402
 msgid "Custo_m"
 msgstr "Egyé_ni"
 
-#: src/wmprog.cc:484
-#, fuzzy
-#| msgid "Favorite applications"
+#: src/wmprog.cc:489
 msgid "Save Modifications"
-msgstr "Kedvenc alkalmazások"
+msgstr "Módosítások mentése"
 
-#: src/wmprog.cc:717
+#: src/wmprog.cc:722
 msgid "_Manual"
 msgstr "_Kézi"
 
-#: src/wmprog.cc:718
+#: src/wmprog.cc:723
 msgid "_Icewm(1)"
 msgstr "_Icewm(1)"
 
-#: src/wmprog.cc:719
+#: src/wmprog.cc:724
 msgid "Icewm_Bg(1)"
 msgstr "Icewm_Bg(1)"
 
-#: src/wmprog.cc:720
+#: src/wmprog.cc:725
 msgid "Ice_Sound(1)"
 msgstr "Ice_Sound(1)"
 
 # ../src/wmprog.cc:587
-#: src/wmprog.cc:782
+#: src/wmprog.cc:787
 msgid "Programs"
 msgstr "Programok"
 
 # ../src/wmprog.cc:621
-#: src/wmprog.cc:787
+#: src/wmprog.cc:792
 msgid "_Run..."
 msgstr "_Futtatás..."
 
 # ../src/wmprog.cc:617 ../src/wmtaskbar.cc:218
-#: src/wmprog.cc:792 src/wmtaskbar.cc:280
+#: src/wmprog.cc:797 src/wmtaskbar.cc:263
 msgid "_Windows"
 msgstr "_Ablakok"
 
 # ../src/wmprog.cc:642
-#: src/wmprog.cc:811
+#: src/wmprog.cc:816
 msgid "_Help"
 msgstr "_Súgó"
 
-#: src/wmprog.cc:822
+#: src/wmprog.cc:827
 msgid "_Focus"
 msgstr "_Fókusz"
 
-#: src/wmprog.cc:827
+#: src/wmprog.cc:832
 msgid "_Preferences"
 msgstr "_Beállítások"
 
 # ../src/wmprog.cc:627
-#: src/wmprog.cc:833
+#: src/wmprog.cc:838
 msgid "_Themes"
 msgstr "_Témák"
 
-#: src/wmprog.cc:838
+#: src/wmprog.cc:843
 msgid "Se_ttings"
 msgstr "Beá_llítás"
 
 # ../src/wmsession.cc:261 ../src/wmsession.cc:277 ../src/wmsession.cc:287
-#: src/wmsession.cc:225 src/wmsession.cc:241 src/wmsession.cc:251
+#: src/wmsession.cc:220 src/wmsession.cc:236 src/wmsession.cc:246
 #, c-format
 msgid "Session Manager: Unknown line %s"
 msgstr "Munkafolyamat-kezelő: ismeretlen sor %s"
 
-# ../src/wmtaskbar.cc:145 ../src/wmtaskbar.cc:146
-#: src/wmtaskbar.cc:168 src/wmtaskbar.cc:169
-msgid "Task Bar"
-msgstr "Panel"
-
 # ../src/wmtaskbar.cc:207 ../src/wmwinlist.cc:253 ../src/wmwinlist.cc:262
-#: src/wmtaskbar.cc:270 src/wmwinlist.cc:364 src/wmwinlist.cc:377
+#: src/wmtaskbar.cc:253 src/wmwinlist.cc:395 src/wmwinlist.cc:415
 msgid "Tile _Vertically"
 msgstr "_Függőleges mozaik"
 
 # ../src/wmtaskbar.cc:208 ../src/wmwinlist.cc:254 ../src/wmwinlist.cc:263
-#: src/wmtaskbar.cc:271 src/wmwinlist.cc:365 src/wmwinlist.cc:378
+#: src/wmtaskbar.cc:254 src/wmwinlist.cc:396 src/wmwinlist.cc:416
 msgid "T_ile Horizontally"
 msgstr "_Vízszintes mozaik"
 
 # ../src/wmtaskbar.cc:209 ../src/wmwinlist.cc:255 ../src/wmwinlist.cc:264
-#: src/wmtaskbar.cc:272 src/wmwinlist.cc:366 src/wmwinlist.cc:379
+#: src/wmtaskbar.cc:255 src/wmwinlist.cc:397 src/wmwinlist.cc:417
 msgid "Ca_scade"
 msgstr "Vízesés"
 
 # ../src/wmtaskbar.cc:210 ../src/wmwinlist.cc:256 ../src/wmwinlist.cc:265
-#: src/wmtaskbar.cc:273 src/wmwinlist.cc:367 src/wmwinlist.cc:380
+#: src/wmtaskbar.cc:256 src/wmwinlist.cc:398 src/wmwinlist.cc:418
 msgid "_Arrange"
 msgstr "El_rendez"
 
 # ../src/wmtaskbar.cc:211 ../src/wmwinlist.cc:266
-#: src/wmtaskbar.cc:274 src/wmwinlist.cc:369 src/wmwinlist.cc:381
+#: src/wmtaskbar.cc:257 src/wmwinlist.cc:400 src/wmwinlist.cc:419
 msgid "_Minimize All"
 msgstr "_Mindent minimalizál"
 
 # ../src/wmtaskbar.cc:212 ../src/wmwinlist.cc:267
-#: src/wmtaskbar.cc:275 src/wmwinlist.cc:370 src/wmwinlist.cc:382
+#: src/wmtaskbar.cc:258 src/wmwinlist.cc:401 src/wmwinlist.cc:420
 msgid "_Hide All"
 msgstr "Mindent elre_jt"
 
 # ../src/wmtaskbar.cc:213 ../src/wmwinlist.cc:268
-#: src/wmtaskbar.cc:276 src/wmwinlist.cc:371 src/wmwinlist.cc:383
+#: src/wmtaskbar.cc:259 src/wmwinlist.cc:402 src/wmwinlist.cc:421
 msgid "_Undo"
 msgstr "_Visszavonás"
 
 # ../src/wmtaskbar.cc:215
-#: src/wmtaskbar.cc:278
+#: src/wmtaskbar.cc:261
 msgid "Arrange _Icons"
 msgstr "_Ikonok elrendezése"
 
 # ../src/wmtaskbar.cc:221
-#: src/wmtaskbar.cc:282
+#: src/wmtaskbar.cc:265
 msgid "_Refresh"
 msgstr "_Frissítés"
 
-# ../src/wmtaskbar.cc:228
-#: src/wmtaskbar.cc:288
-msgid "_License"
-msgstr "_Licencszerződés"
-
 # ../src/wmtaskbar.cc:145 ../src/wmtaskbar.cc:146
-#: src/wmtaskbar.cc:356 src/wmtaskbar.cc:975
-#, fuzzy
-#| msgid "Task Bar"
+#: src/wmtaskbar.cc:336 src/wmtaskbar.cc:966
 msgid "Hide Taskbar"
-msgstr "Panel"
+msgstr "Tálca elrejtése"
 
-#: src/wmtaskbar.cc:371
-#, fuzzy
-#| msgid "Favorite applications"
+#: src/wmtaskbar.cc:354
 msgid "Favorite Applications"
 msgstr "Kedvenc alkalmazások"
 
 # ../src/wmwinlist.cc:276 ../src/wmwinlist.cc:277
-#: src/wmtaskbar.cc:389
-#, fuzzy
-#| msgid "Window list menu"
+#: src/wmtaskbar.cc:375
 msgid "Window List Menu"
 msgstr "Ablaklista menü"
 
 # ../src/wmapp.cc:494
-#: src/wmtaskbar.cc:398
+#: src/wmtaskbar.cc:384
 msgid "Show Desktop"
 msgstr "Asztal megjelenítése"
 
 # ../src/wmtaskbar.cc:145 ../src/wmtaskbar.cc:146
-#: src/wmtaskbar.cc:975
-#, fuzzy
-#| msgid "Task Bar"
+#: src/wmtaskbar.cc:966
 msgid "Show Taskbar"
-msgstr "Panel"
+msgstr "Tálca megjelenítése"
 
 # ../src/wmframe.cc:118
-#: src/wmtitle.cc:85
+#: src/wmtitle.cc:88
 msgid "Minimize"
 msgstr "Minimalizálás"
 
 # ../src/wmframe.cc:139
-#: src/wmtitle.cc:113
+#: src/wmtitle.cc:116
 msgid "Hide"
 msgstr "Elrejtés"
 
 #
 # ../src/wmframe.cc:158
-#: src/wmtitle.cc:141
+#: src/wmtitle.cc:144
 msgid "Raise/Lower"
 msgstr "Előhoz/Hátra küld"
 
 # ../src/wmstatus.cc:170
-#: src/wmwinlist.cc:50
+#: src/wmwinlist.cc:51
 msgid "All Workspaces"
 msgstr "Minden munkaterület"
 
 # ../src/wmwinlist.cc:236
-#: src/wmwinlist.cc:339
+#: src/wmwinlist.cc:369
 msgid "Del"
 msgstr "Törlés"
 
 # ../src/wmwinlist.cc:240
-#: src/wmwinlist.cc:343
+#: src/wmwinlist.cc:373
 msgid "_Terminate Process"
 msgstr "Folyama_t leállítása"
 
 # ../src/wmwinlist.cc:241
-#: src/wmwinlist.cc:344
+#: src/wmwinlist.cc:374
 msgid "Kill _Process"
 msgstr "Folyamat lelö_vése"
 
 # ../src/wmwinlist.cc:246
-#: src/wmwinlist.cc:354
+#: src/wmwinlist.cc:384
 msgid "_Show"
 msgstr "_Megjelenítés"
 
 # ../src/wmapp.cc:515
-#: src/wmwinlist.cc:357
-#, fuzzy
-#| msgid "R_aise"
+#: src/wmwinlist.cc:387
 msgid "_Raise"
 msgstr "_Előrehozás"
 
 # ../src/wmwinlist.cc:276 ../src/wmwinlist.cc:277
-#: src/wmwinlist.cc:396 src/wmwinlist.cc:397
+#: src/wmwinlist.cc:437 src/wmwinlist.cc:438
 msgid "Window list"
 msgstr "Ablaklista"
 
 # ../src/wmwinmenu.cc:125
-#: src/wmwinmenu.cc:122
+#: src/wmwinmenu.cc:125
 #, c-format
 msgid "%lu. Workspace %-.32s"
 msgstr "%lu. Munkaterület %-.32s"
 
-#: src/yapp.cc:277
+#: src/yapp.cc:279
 #, c-format
 msgid "%s: select failed"
 msgstr "%s: nem sikerült a kiválasztás"
@@ -2107,10 +1987,9 @@ msgstr "Ismeretlen kulcs: %s Hely: %s"
 
 # ../src/wmconfig.cc:264 ../src/wmconfig.cc:277
 #: src/yconfig.cc:150 src/yconfig.cc:163 src/yconfig.cc:177
-#, fuzzy, c-format
-#| msgid "Bad argument: %s for %s"
+#, c-format
 msgid "Bad argument: %s for %s [%d,%d]"
-msgstr "Rossz argumentum: %s - %s"
+msgstr "Rossz argumentum: %s for %s [%d,%d]"
 
 # ../src/wmconfig.cc:355
 #: src/yconfig.cc:214
@@ -2166,75 +2045,75 @@ msgstr ""
 "elemzését."
 
 # ../src/ypaint.cc:287
-#: src/yfontcore.cc:71 src/yfontxft.cc:158
+#: src/yfontcore.cc:72 src/yfontxft.cc:158
 #, c-format
 msgid "Could not load font \"%s\"."
 msgstr "Nem betölthető betűkészlet: \"%s\"."
 
 # ../src/ycursor.cc:110
-#: src/yfontcore.cc:74 src/yfontcore.cc:121 src/yfontxft.cc:181
+#: src/yfontcore.cc:75 src/yfontcore.cc:124 src/yfontxft.cc:181
 #, c-format
 msgid "Loading of fallback font \"%s\" failed."
 msgstr "Nem sikerült a(z) \"%s\" tartalék betűkészlet betöltése."
 
 # ../src/ypaint.cc:262
-#: src/yfontcore.cc:114
+#: src/yfontcore.cc:117
 #, c-format
 msgid "Could not load fontset \"%s\"."
 msgstr "A betűkészlet nem betölthető: \"%s\"."
 
-#: src/yfontcore.cc:126
+#: src/yfontcore.cc:129
 #, c-format
 msgid "Missing codesets for fontset \"%s\":"
 msgstr "A(z) \"%s\" betűkészlet kódkészletei hiányoznak:"
 
 # ../src/yinput.cc:54
-#: src/yinput.cc:38
+#: src/yinput.cc:18
 msgid "_Copy"
 msgstr "_Másolás"
 
 # ../src/yinput.cc:54
-#: src/yinput.cc:38
+#: src/yinput.cc:18
 msgid "Ctrl+C"
 msgstr "Ctrl+C"
 
 # ../src/yinput.cc:53
-#: src/yinput.cc:40
+#: src/yinput.cc:19
 msgid "Cu_t"
 msgstr "_Kivágás"
 
 # ../src/yinput.cc:53
-#: src/yinput.cc:40
+#: src/yinput.cc:19
 msgid "Ctrl+X"
 msgstr "Ctrl+X"
 
 # ../src/yinput.cc:55
-#: src/yinput.cc:42
+#: src/yinput.cc:20
 msgid "_Paste"
 msgstr "_Beillesztés"
 
 # ../src/yinput.cc:55
-#: src/yinput.cc:42
+#: src/yinput.cc:20
 msgid "Ctrl+V"
 msgstr "Ctrl+V"
 
 # ../src/yinput.cc:56
-#: src/yinput.cc:44
+#: src/yinput.cc:21
 msgid "Paste _Selection"
 msgstr "Beilleszti a ki_jelölt részt"
 
 # ../src/icehelp.cc:548 ../src/icesame.cc:59 ../src/iceview.cc:69
-#: src/yinput.cc:44
+#: src/yinput.cc:21
 msgid "Ctrl+P"
 msgstr "Ctrl+P"
 
 # ../src/yinput.cc:58
-#: src/yinput.cc:47
+#: src/yinput.cc:23
 msgid "Select _All"
 msgstr "Mi_ndent kijelöl"
 
 # ../src/yinput.cc:58
-#: src/yinput.cc:47
+#: src/yinput.cc:23
 msgid "Ctrl+A"
 msgstr "Ctrl+A"
 
@@ -2264,7 +2143,7 @@ msgid "Invalid multibyte string \"%s\": %s"
 msgstr "Érvénytelen több byte-os karakterlánc (multibyte string): \"%s\": %s"
 
 # ../src/ymsgbox.cc:34
-#: src/ymsgbox.cc:36
+#: src/ymsgbox.cc:35
 msgid "_OK"
 msgstr "_OK"
 
@@ -2300,7 +2179,7 @@ msgid "Invalid hex escape in URL at position %d."
 msgstr ""
 "Érvénytelen hexadecimális szám az escape után az URL-címben, pozíció: %d."
 
-#: src/yxapp.cc:885
+#: src/yxapp.cc:958
 msgid ""
 "  -d, --display=NAME  NAME of the X server to use.\n"
 "  --sync              Synchronize X11 commands.\n"
@@ -2310,17 +2189,13 @@ msgstr ""
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Graphics
 #: src/fdospecgen.h:43
-#, fuzzy
-#| msgid "Graphics"
 msgid "2DGraphics"
-msgstr "Grafika"
+msgstr "2D grafika"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Graphics
 #: src/fdospecgen.h:45
-#, fuzzy
-#| msgid "Graphics"
 msgid "3DGraphics"
-msgstr "Grafika"
+msgstr "3D grafika"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Settings or Utility
 #: src/fdospecgen.h:47 src/fdospecgen.h:49
@@ -2335,117 +2210,113 @@ msgstr "Kellékek"
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Game
 #: src/fdospecgen.h:53
 msgid "ActionGame"
-msgstr ""
+msgstr "Akciójáték"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes.
 #: src/fdospecgen.h:55
 msgid "Adult"
-msgstr ""
+msgstr "Felnőtt"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Game
 #: src/fdospecgen.h:57
 msgid "AdventureGame"
-msgstr ""
+msgstr "Kalandjáték"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes.
 #: src/fdospecgen.h:59
 msgid "Amusement"
-msgstr ""
+msgstr "Szórakozás"
 
 # ../src/icesame.cc:62
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Game
 #: src/fdospecgen.h:61
-#, fuzzy
-#| msgid "Same Game"
 msgid "ArcadeGame"
-msgstr "Same Game"
+msgstr "Ügyességi játék"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Utility
 #: src/fdospecgen.h:63
 msgid "Archiving"
-msgstr ""
+msgstr "Archiválás"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science
 #: src/fdospecgen.h:65
 msgid "Art"
-msgstr ""
+msgstr "Művészet"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science
 #: src/fdospecgen.h:67
 msgid "ArtificialIntelligence"
-msgstr ""
+msgstr "Mesterséges intelligencia"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science
 #: src/fdospecgen.h:69
 msgid "Astronomy"
-msgstr ""
+msgstr "Asztronómia"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes.
 #: src/fdospecgen.h:71
 msgid "Audio"
-msgstr ""
+msgstr "Hang"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes.
 #: src/fdospecgen.h:73
 msgid "AudioVideo"
-msgstr ""
+msgstr "Hang és videó"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Audio or Video or AudioVideo
 #: src/fdospecgen.h:75
 msgid "AudioVideoEditing"
-msgstr ""
+msgstr "Hang- és videoszerkesztés"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science
 #: src/fdospecgen.h:77
 msgid "Biology"
-msgstr ""
+msgstr "Biológia"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Game
 #: src/fdospecgen.h:79
 msgid "BlocksGame"
-msgstr ""
+msgstr "Téglás játék"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Game
 #: src/fdospecgen.h:81
 msgid "BoardGame"
-msgstr ""
+msgstr "Táblás játék"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Development
 #: src/fdospecgen.h:83
 msgid "Building"
-msgstr ""
+msgstr "Építés"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Utility
 #: src/fdospecgen.h:85
 msgid "Calculator"
-msgstr ""
+msgstr "Számológép"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Office
 #: src/fdospecgen.h:87
 msgid "Calendar"
-msgstr ""
+msgstr "Naptár"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Game
 #: src/fdospecgen.h:89
-#, fuzzy
-#| msgid "Games"
 msgid "CardGame"
-msgstr "Játék"
+msgstr "Kártyajáték"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Office
 #: src/fdospecgen.h:91
 msgid "Chart"
-msgstr ""
+msgstr "Diagram"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Network
 #: src/fdospecgen.h:93
 msgid "Chat"
-msgstr ""
+msgstr "Csevegés"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science
 #: src/fdospecgen.h:95
 msgid "Chemistry"
-msgstr ""
+msgstr "Kémia"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Utility
 #: src/fdospecgen.h:97
@@ -2455,49 +2326,47 @@ msgstr "Óra"
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Utility;Archiving
 #: src/fdospecgen.h:99
 msgid "Compression"
-msgstr ""
+msgstr "Tömörítés"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science
 #: src/fdospecgen.h:101
 msgid "ComputerScience"
-msgstr ""
+msgstr "Informatika"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science
 #: src/fdospecgen.h:103
 msgid "Construction"
-msgstr ""
+msgstr "Tervezés"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Office
 #: src/fdospecgen.h:105
 msgid "ContactManagement"
-msgstr ""
+msgstr "Kapcsolatkezelés"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes.
 #: src/fdospecgen.h:107
 msgid "Core"
-msgstr ""
+msgstr "Mag"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science
 #: src/fdospecgen.h:109
 msgid "DataVisualization"
-msgstr ""
+msgstr "Adatmegjelenítés"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Office or Development or AudioVideo
 #: src/fdospecgen.h:111
 msgid "Database"
-msgstr ""
+msgstr "Adatbázis"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Development
 #: src/fdospecgen.h:113
 msgid "Debugger"
-msgstr ""
+msgstr "Hibakereső"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Settings
 #: src/fdospecgen.h:115
-#, fuzzy
-#| msgid "Settings"
 msgid "DesktopSettings"
-msgstr "Beállítások"
+msgstr "Asztalbeállítások"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes.
 #: src/fdospecgen.h:117
@@ -2507,27 +2376,27 @@ msgstr "Fejlesztés"
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Network
 #: src/fdospecgen.h:119
 msgid "Dialup"
-msgstr ""
+msgstr "Telefonos"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Office or TextTools
 #: src/fdospecgen.h:121
 msgid "Dictionary"
-msgstr ""
+msgstr "Szótár"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: AudioVideo
 #: src/fdospecgen.h:123
 msgid "DiscBurning"
-msgstr ""
+msgstr "Lemezírás"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes.
 #: src/fdospecgen.h:125
 msgid "Documentation"
-msgstr ""
+msgstr "Dokumentáció"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science
 #: src/fdospecgen.h:127
 msgid "Economy"
-msgstr ""
+msgstr "Gazdaság"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes.
 #: src/fdospecgen.h:129
@@ -2542,94 +2411,88 @@ msgstr "Oktatás"
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science
 #: src/fdospecgen.h:133
 msgid "Electricity"
-msgstr ""
+msgstr "Elektromosság"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes.
 #: src/fdospecgen.h:135
 msgid "Electronics"
-msgstr ""
+msgstr "Elektronika"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Office or Network
 #: src/fdospecgen.h:137
 msgid "Email"
-msgstr ""
+msgstr "E-mail"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: System or Game
 #: src/fdospecgen.h:139
 msgid "Emulator"
-msgstr ""
+msgstr "Emulátor"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes.
 #: src/fdospecgen.h:141
 msgid "Engineering"
-msgstr ""
+msgstr "Mérnöki tervezés"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Network
 #: src/fdospecgen.h:143
 msgid "Feed"
-msgstr ""
+msgstr "Hírcsatorna"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: System;FileTools
 #: src/fdospecgen.h:145
 msgid "FileManager"
-msgstr ""
+msgstr "Fájlkezelő"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Utility or System
 #: src/fdospecgen.h:147
 msgid "FileTools"
-msgstr ""
+msgstr "Fájleszközök"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Network
 #: src/fdospecgen.h:149
 msgid "FileTransfer"
-msgstr ""
+msgstr "Fájlátvitel"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: System
 #: src/fdospecgen.h:151
-#, fuzzy
-#| msgid "System"
 msgid "Filesystem"
-msgstr "Rendszer"
+msgstr "Fájlrendszer"
 
 # ../src/ymsgbox.cc:42
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Office
 #: src/fdospecgen.h:153
-#, fuzzy
-#| msgid "Cancel"
 msgid "Finance"
-msgstr "Mégsem"
+msgstr "Pénzügy"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Office
 #: src/fdospecgen.h:155
 msgid "FlowChart"
-msgstr ""
+msgstr "Folyamatábra"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Development
 #: src/fdospecgen.h:157
 msgid "GUIDesigner"
-msgstr ""
+msgstr "GUI-tervező"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes.
 #: src/fdospecgen.h:159
-#, fuzzy
-#| msgid "Games"
 msgid "Game"
 msgstr "Játék"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science
 #: src/fdospecgen.h:161
 msgid "Geography"
-msgstr ""
+msgstr "Földrajz"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science
 #: src/fdospecgen.h:163
 msgid "Geology"
-msgstr ""
+msgstr "Geológia"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science
 #: src/fdospecgen.h:165
 msgid "Geoscience"
-msgstr ""
+msgstr "Földtudomány"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes.
 #: src/fdospecgen.h:167
@@ -2639,106 +2502,98 @@ msgstr "Grafika"
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Network or Audio
 #: src/fdospecgen.h:169
 msgid "HamRadio"
-msgstr ""
+msgstr "Amatőr rádiózás"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Settings
 #: src/fdospecgen.h:171
-#, fuzzy
-#| msgid "Settings"
 msgid "HardwareSettings"
-msgstr "Beállítások"
+msgstr "Hardverbeállítások"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science
 #: src/fdospecgen.h:173
 msgid "History"
-msgstr ""
+msgstr "Történelem"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science
 #: src/fdospecgen.h:175
 msgid "Humanities"
-msgstr ""
+msgstr "Humán tudományok"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Development
 #: src/fdospecgen.h:177
 msgid "IDE"
-msgstr ""
+msgstr "IDE"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Network
 #: src/fdospecgen.h:179
 msgid "IRCClient"
-msgstr ""
+msgstr "IRC-ügyfél"
 
 # ../src/wmwinlist.cc:240
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science
 #: src/fdospecgen.h:181
-#, fuzzy
-#| msgid "_Terminate Process"
 msgid "ImageProcessing"
-msgstr "Folyama_t leállítása"
+msgstr "Képfeldolgozás"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Network
 #: src/fdospecgen.h:183
 msgid "InstantMessaging"
-msgstr ""
+msgstr "Azonnali üzenetek"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Game
 #: src/fdospecgen.h:185
-#, fuzzy
-#| msgid "Games"
 msgid "KidsGame"
-msgstr "Játék"
+msgstr "Gyerekjáték"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science
 #: src/fdospecgen.h:187
-#, fuzzy
-#| msgid "Language:"
 msgid "Languages"
-msgstr "Nyelv:"
+msgstr "Nyelvek"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science
 #: src/fdospecgen.h:189
 msgid "Literature"
-msgstr ""
+msgstr "Irodalom"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Game
 #: src/fdospecgen.h:191
 msgid "LogicGame"
-msgstr ""
+msgstr "Logikai játék"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science or Utility
 #: src/fdospecgen.h:193
 msgid "Maps"
-msgstr ""
+msgstr "Térképek"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science
 #: src/fdospecgen.h:195
 msgid "Math"
-msgstr ""
+msgstr "Matematika"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science
 #: src/fdospecgen.h:197
 msgid "MedicalSoftware"
-msgstr ""
+msgstr "Egészségügyi szoftver"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: AudioVideo;Audio
 #: src/fdospecgen.h:199
 msgid "Midi"
-msgstr ""
+msgstr "Midi"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: AudioVideo;Audio
 #: src/fdospecgen.h:201
 msgid "Mixer"
-msgstr ""
+msgstr "Mixer"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: System or Network
 #: src/fdospecgen.h:203
 msgid "Monitor"
-msgstr ""
+msgstr "Monitor"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes.
 #: src/fdospecgen.h:205
 msgid "Motif"
-msgstr ""
+msgstr "Motívum"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes.
 #: src/fdospecgen.h:207
@@ -2748,7 +2603,7 @@ msgstr "Multimédia"
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: AudioVideo or Education
 #: src/fdospecgen.h:209
 msgid "Music"
-msgstr ""
+msgstr "Zene"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes.
 #: src/fdospecgen.h:211
@@ -2758,17 +2613,17 @@ msgstr "Hálózat"
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Network
 #: src/fdospecgen.h:213
 msgid "News"
-msgstr ""
+msgstr "Hírek"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education;Math or Science;Math
 #: src/fdospecgen.h:215
 msgid "NumericalAnalysis"
-msgstr ""
+msgstr "Numerikus elemzés"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Graphics;Scanning
 #: src/fdospecgen.h:217
 msgid "OCR"
-msgstr ""
+msgstr "OCR"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes.
 #: src/fdospecgen.h:219
@@ -2783,104 +2638,102 @@ msgstr "Egyéb"
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Network
 #: src/fdospecgen.h:223
 msgid "P2P"
-msgstr ""
+msgstr "P2P"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Office
 #: src/fdospecgen.h:225
 msgid "PDA"
-msgstr ""
+msgstr "PDA"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Settings
 #: src/fdospecgen.h:227
 msgid "PackageManager"
-msgstr ""
+msgstr "Csomagkezelő"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education;ComputerScience or Science;ComputerScience
 #: src/fdospecgen.h:229
 msgid "ParallelComputing"
-msgstr ""
+msgstr "Párhuzamos számítás"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Graphics or Office
 #: src/fdospecgen.h:231
 msgid "Photography"
-msgstr ""
+msgstr "Fényképezés"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science
 #: src/fdospecgen.h:233
 msgid "Physics"
-msgstr ""
+msgstr "Fizika"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Audio or Video or AudioVideo
 #: src/fdospecgen.h:235
 msgid "Player"
-msgstr ""
+msgstr "Lejátszó"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Office
 #: src/fdospecgen.h:237
 msgid "Presentation"
-msgstr ""
+msgstr "Bemutató"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Settings;HardwareSettings
 #: src/fdospecgen.h:239
 msgid "Printing"
-msgstr ""
+msgstr "Nyomtatás"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Development
 #: src/fdospecgen.h:241
 msgid "Profiling"
-msgstr ""
+msgstr "Profilkészítés"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Office or Development
 #: src/fdospecgen.h:243
 msgid "ProjectManagement"
-msgstr ""
+msgstr "Projektkezelés"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Graphics or Office
 #: src/fdospecgen.h:245
 msgid "Publishing"
-msgstr ""
+msgstr "Közzététel"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Graphics;2DGraphics
 #: src/fdospecgen.h:247
-#, fuzzy
-#| msgid "Graphics"
 msgid "RasterGraphics"
-msgstr "Grafika"
+msgstr "Rasztergrafika"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Audio or Video or AudioVideo
 #: src/fdospecgen.h:249
 msgid "Recorder"
-msgstr ""
+msgstr "Felvevő"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Network
 #: src/fdospecgen.h:251
 msgid "RemoteAccess"
-msgstr ""
+msgstr "Távoli hozzáférés"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Development
 #: src/fdospecgen.h:253
 msgid "RevisionControl"
-msgstr ""
+msgstr "Verzió-ellenőrzés"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science
 #: src/fdospecgen.h:255
 msgid "Robotics"
-msgstr ""
+msgstr "Robotika"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Game
 #: src/fdospecgen.h:257
 msgid "RolePlaying"
-msgstr ""
+msgstr "Szerepjáték"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Graphics
 #: src/fdospecgen.h:259
 msgid "Scanning"
-msgstr ""
+msgstr "Beolvasás"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes.
 #: src/fdospecgen.h:261
 msgid "Science"
-msgstr ""
+msgstr "Tudomány"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes.
 #: src/fdospecgen.h:263
@@ -2890,12 +2743,12 @@ msgstr "Képernyővédők"
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Settings or System
 #: src/fdospecgen.h:265
 msgid "Security"
-msgstr ""
+msgstr "Biztonság"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: AudioVideo;Audio
 #: src/fdospecgen.h:267
 msgid "Sequencer"
-msgstr ""
+msgstr "Szekvenszer"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes.
 #: src/fdospecgen.h:269
@@ -2905,44 +2758,38 @@ msgstr "Beállítások"
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Game
 #: src/fdospecgen.h:271
 msgid "Shooter"
-msgstr ""
+msgstr "Lövöldözős játék"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Game
 #: src/fdospecgen.h:273
-#, fuzzy
-#| msgid "Education"
 msgid "Simulation"
-msgstr "Oktatás"
+msgstr "Szimuláció"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science or Utility
 #: src/fdospecgen.h:275
 msgid "Spirituality"
-msgstr ""
+msgstr "Szellemiség"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Education or Science
 #: src/fdospecgen.h:277
-#, fuzzy
-#| msgid "Support"
 msgid "Sports"
-msgstr "Terméktámogatás"
+msgstr "Sport"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Game
 #: src/fdospecgen.h:279
 msgid "SportsGame"
-msgstr ""
+msgstr "Sportjáték"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Office
 #: src/fdospecgen.h:281
 msgid "Spreadsheet"
-msgstr ""
+msgstr "Számolótábla"
 
 # ../src/icesame.cc:62
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Game
 #: src/fdospecgen.h:283
-#, fuzzy
-#| msgid "Same Game"
 msgid "StrategyGame"
-msgstr "Same Game"
+msgstr "Stratégiai játék"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes.
 #: src/fdospecgen.h:285
@@ -2952,71 +2799,67 @@ msgstr "Rendszer"
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: AudioVideo;Video
 #: src/fdospecgen.h:287
 msgid "TV"
-msgstr ""
+msgstr "Televízió"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Network
 #: src/fdospecgen.h:289
 msgid "Telephony"
-msgstr ""
+msgstr "Telefonos szolgáltatások"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Utility
 #: src/fdospecgen.h:291
 msgid "TelephonyTools"
-msgstr ""
+msgstr "Telefonos eszközök"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: System
 #: src/fdospecgen.h:293
 msgid "TerminalEmulator"
-msgstr ""
+msgstr "Terminálemulátor"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Utility
 #: src/fdospecgen.h:295
-#, fuzzy
-#| msgid "Editors"
 msgid "TextEditor"
-msgstr "Szövegszerkesztők"
+msgstr "Szövegszerkesztő"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Utility
 #: src/fdospecgen.h:297
 msgid "TextTools"
-msgstr ""
+msgstr "Szövegeszközök"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Development
 #: src/fdospecgen.h:299
 msgid "Translation"
-msgstr ""
+msgstr "Fordítás"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: AudioVideo;Audio
 #: src/fdospecgen.h:301
 msgid "Tuner"
-msgstr ""
+msgstr "Tuner"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes.
 #: src/fdospecgen.h:303
 msgid "Utility"
-msgstr ""
+msgstr "Segédprogram"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Graphics;2DGraphics
 #: src/fdospecgen.h:305
-#, fuzzy
-#| msgid "Graphics"
 msgid "VectorGraphics"
-msgstr "Grafika"
+msgstr "Vektorgrafika"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes.
 #: src/fdospecgen.h:307
 msgid "Video"
-msgstr ""
+msgstr "Videó"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Network
 #: src/fdospecgen.h:309
 msgid "VideoConference"
-msgstr ""
+msgstr "Videokonferencia"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Graphics or Office
 #: src/fdospecgen.h:311
 msgid "Viewer"
-msgstr ""
+msgstr "Megtekintő"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes.
 #: src/fdospecgen.h:313
@@ -3026,19 +2869,173 @@ msgstr "WINE"
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Network
 #: src/fdospecgen.h:315
 msgid "WebBrowser"
-msgstr ""
+msgstr "Böngésző"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Network or Development
 #: src/fdospecgen.h:317
-#, fuzzy
-#| msgid "Development"
 msgid "WebDevelopment"
-msgstr "Fejlesztés"
+msgstr "Webfejlesztés"
 
 #. TRANSLATORS: This is a menu category name from freedesktop.org. Please add spaces as needed but no double-quotes. Context: Office
 #: src/fdospecgen.h:319
 msgid "WordProcessor"
-msgstr ""
+msgstr "Szövegszerkesztő"
+
+# ../src/wmtaskbar.cc:145 ../src/wmtaskbar.cc:146
+#~ msgid "Task Bar"
+#~ msgstr "Panel"
+
+# ../src/wmtaskbar.cc:228
+#~ msgid "_License"
+#~ msgstr "_Licencszerződés"
+
+#~ msgid ""
+#~ "Usage: %s [OPTIONS] ACTIONS\n"
+#~ "\n"
+#~ "Options:\n"
+#~ "  -d, -display DISPLAY        Connects to the X server specified by "
+#~ "DISPLAY.\n"
+#~ "                              Default: $DISPLAY or :0.0 when not set.\n"
+#~ "  -w, -window WINDOW_ID       Specifies the window to manipulate. "
+#~ "Special\n"
+#~ "                              identifiers are `root' for the root window "
+#~ "and\n"
+#~ "                              `focus' for the currently focused window.\n"
+#~ "  -c, -class WM_CLASS         Window management class of the window(s) "
+#~ "to\n"
+#~ "                              manipulate. If WM_CLASS contains a period, "
+#~ "only\n"
+#~ "                              windows with exactly the same WM_CLASS "
+#~ "property\n"
+#~ "                              are matched. If there is no period, windows "
+#~ "of\n"
+#~ "                              the same class and windows of the same "
+#~ "instance\n"
+#~ "                              (aka. `-name') are selected.\n"
+#~ "\n"
+#~ "Actions:\n"
+#~ "  setIconTitle   TITLE        Set the icon title.\n"
+#~ "  setWindowTitle TITLE        Set the window title.\n"
+#~ "  setGeometry    geometry     Set the window geometry\n"
+#~ "  setState       MASK STATE   Set the GNOME window state to STATE.\n"
+#~ "                              Only the bits selected by MASK are "
+#~ "affected.\n"
+#~ "                              STATE and MASK are expressions of the "
+#~ "domain\n"
+#~ "                              `GNOME window state'.\n"
+#~ "  toggleState    STATE        Toggle the GNOME window state bits "
+#~ "specified by\n"
+#~ "                              the STATE expression.\n"
+#~ "  setHints       HINTS        Set the GNOME window hints to HINTS.\n"
+#~ "  setLayer       LAYER        Moves the window to another GNOME window "
+#~ "layer.\n"
+#~ "  setWorkspace   WORKSPACE    Moves the window to another workspace. "
+#~ "Select\n"
+#~ "                              the root window to change the current "
+#~ "workspace.\n"
+#~ "                              Select 0xFFFFFFFF or \"All\" for all "
+#~ "workspaces.\n"
+#~ "  listWorkspaces              Lists the names of all workspaces.\n"
+#~ "  setTrayOption  TRAYOPTION   Set the IceWM tray option hint.\n"
+#~ "  logout                      Tell IceWM to logout.\n"
+#~ "  reboot                      Tell IceWM to reboot.\n"
+#~ "  shutdown                    Tell IceWM to shutdown.\n"
+#~ "  cancel                      Tell IceWM to cancel the logout/reboot/"
+#~ "shutdown.\n"
+#~ "  about                       Tell IceWM to show the about window.\n"
+#~ "  windowlist                  Tell IceWM to show the window list.\n"
+#~ "  restart                     Tell IceWM to restart.\n"
+#~ "  suspend                     Tell IceWM to suspend.\n"
+#~ "\n"
+#~ "Expressions:\n"
+#~ "  Expressions are list of symbols of one domain concatenated by `+' or "
+#~ "`|':\n"
+#~ "\n"
+#~ "  EXPRESSION ::= SYMBOL | EXPRESSION ( `+' | `|' ) SYMBOL\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Használat: %s [KAPCSOLÓK] MŰVELETEK\n"
+#~ "\n"
+#~ "Kapcsolók:\n"
+#~ "  -d, -display KIJELZŐ         A KIJELZŐ által megadott X-kiszolgálóhoz "
+#~ "kapcsolódik.\n"
+#~ "                              Alapértelmezett: $DISPLAY vagy :0.0 ha "
+#~ "nincs beállítva.\n"
+#~ "  -w, -window ABLAK_ID      Megadja a kezelendő ablakot. Vannak "
+#~ "különleges\n"
+#~ "                              azonosítók: `root' a gyökérablak és `focus' "
+#~ "a fókuszban\n"
+#~ "                              levő ablak. \n"
+#~ "  -c, -class WM_OSZTÁLY      A kezelendő ablakok ablakkezelő-osztálya. Ha "
+#~ "a\n"
+#~ "    \t    \t    \t      WM_OSZTÁLY tartalmaz pontot, csak azok az "
+#~ "ablakok\n"
+#~ "    \t    \t              számítanak, amelyeknek pontosan ugyanaz a "
+#~ "WM_OSZTÁLY \n"
+#~ "\t\t\t      tulajdonságuk. Ha nincs pont, az azonos osztályba és az\n"
+#~ "\t\t\t      azonos példányhoz (azaz `-name') tartozó ablakok lesznek\n"
+#~ "\t\t\t      kiválasztva.\n"
+#~ "\n"
+#~ "Műveletek:\n"
+#~ "  setIconTitle CÍM            Az ikon címének beállítása.\n"
+#~ "  setWindowTitle CÍM          Az ablak címének beállítása.\n"
+#~ "  setGeometry    geometria     Az ablak geometriájának beállítása.\n"
+#~ "  setState MASZK ÁLLAPOT      A GNOME-ablak beállítása az ÁLLAPOT "
+#~ "állapotba.\n"
+#~ "  \t\t\t      Csak a MASZK által kiválasztott bitek érintettek.\n"
+#~ "                              Az ÁLLAPOT és a MASZK a `GNOME "
+#~ "ablakállapot' \n"
+#~ "                              tartomány kifejezései.\n"
+#~ "  toggleState ÁLLAPOT           A GNOME ablak ÁLLAPOT kifejezéssel "
+#~ "megadott állapotbitjeinek\n"
+#~ "                              váltása.\n"
+#~ "  setHints TIPP              A GNOME ablaksúgójának beállítása a TIPP "
+#~ "értékre.\n"
+#~ "  setLayer RÉTEG              Az ablak áthelyezése a GNOME másik "
+#~ "ablakrétegébe.\n"
+#~ "  setWorkspace MUNKATERÜLET      Az ablak áthelyezése másik "
+#~ "munkaterületre. Válassza\n"
+#~ "  \t\t\t      a gyökérszint ablakát az aktuális munkaterület "
+#~ "megváltoztatásához.\n"
+#~ "                              Az összes munkaterületre vonatkozóan "
+#~ "válassza az 0xFFFFFFFF vagy az \"Összes\" lehetőséget.\n"
+#~ "  listWorkspaces   \t      Felsorolja az összes munkaterület nevét.\n"
+#~ "  setTrayOption TÁLCABEÁLLÍTÁS    Az IceWM tálcabeállítási súgójának "
+#~ "beállítása.\n"
+#~ "  logout                      Az IceWM utasítás a kijelentkezésre.\n"
+#~ "  reboot                      Az IceWM utasítása az újraindításra.\n"
+#~ "  shutdown                    Az IceWM utasítása a leállításra.\n"
+#~ "  cancel                      Az IceWM utasítása a kijelentkezés/"
+#~ "újraindítás/leállítás elvetésére.\n"
+#~ "  about                       Az IceWM utasítása a névjegyablak "
+#~ "megjelenítésére.\n"
+#~ "  windowlist                  Az IceWM utasítása az ablaklista "
+#~ "megjelenítésére.\n"
+#~ "  restart                     Az IceWM utasítása az újraindításra.\n"
+#~ "  suspend                     Az IceWM utasítása a felfüggesztésre.\n"
+#~ "\n"
+#~ "Kifejezések:\n"
+#~ "  A kifejezések egy tartomány szimbólumainak `+' vagy `|' karakterrel "
+#~ "összefűzött listái:\n"
+#~ "\n"
+#~ "  KIFEJEZÉS ::= SZIMBÓLUM | KIFEJEZÉS ( `+' | `|' ) SZIMBÓLUM\n"
+#~ "\n"
+
+#~ msgid "Can't connect to ESound daemon: %s"
+#~ msgstr "Nem lehet csatlakozni az ESound démonhoz: %s"
+
+#~ msgid "Error <%d> while uploading `%s:%s'"
+#~ msgstr "<%d> hiba \"%s:%s\" feltöltésekor"
+
+#~ msgid "Sample <%d> uploaded as `%s:%s'"
+#~ msgstr "<%d> minta feltöltve \"%s:%s\" néven"
+
+#~ msgid "Playing sample #%d: %d"
+#~ msgstr "#%d minta lejátszása: %d"
+
+# ../src/iceskt.cc:36
+#~ msgid "Usage error: "
+#~ msgstr "Használati hiba: "
 
 # ../src/icons.cc:211 ../src/icons.cc:316 ../src/icons.cc:329
 #~ msgid "Out of memory for image %s"

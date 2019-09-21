@@ -1,6 +1,12 @@
 #ifndef __REF_H
 #define __REF_H
 
+#if __cplusplus == 199711L
+#define nullptr NULL
+#define override
+#define final
+#endif
+
 class refcounted {
 public:
     int __refcount;
@@ -10,12 +16,13 @@ protected:
 public:
     refcounted(): __refcount(0) {}
 
-    void __destroy();
+    virtual void __destroy();
 };
 
 extern class null_ref& null;
 
-template<class T> class ref {
+template<class T>
+class ref {
 private:
     T *ptr;
     ref(int);   // avoid NULL and 0; require null.
@@ -54,7 +61,7 @@ public:
     ref<T>& operator=(const ref<T2>& rv) {
         if (this->ptr != rv._ptr()) {
             if (ptr) __unref();
-            ptr = (T *)rv._ptr();
+            ptr = static_cast<T *>(rv._ptr());
             if (ptr) __ref();
         }
         return *this;
@@ -72,11 +79,11 @@ public:
     bool operator==(null_ref &) const { return ptr == 0; }
     bool operator!=(null_ref &) const { return ptr != 0; }
 
-    ref<T>& operator=(null_ref &) {
-        if (ptr)
+    void operator=(null_ref &) {
+        if (ptr) {
             __unref();
-        ptr = 0;
-        return *this;
+            ptr = 0;
+        }
     }
     T *_ptr() const { return ptr; }
 };
@@ -107,6 +114,13 @@ private:
     void operator=(const lazy<T>&);
     operator int();
     operator void*();
+};
+
+template<class T>
+class lazily : public lazy<T> {
+public:
+    operator bool() { return true; }
+    void operator=(null_ref&) { lazy<T>::operator=(null); }
 };
 
 template<class T>

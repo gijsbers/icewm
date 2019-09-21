@@ -9,6 +9,7 @@
 #include "wmtitle.h"
 #include "wmapp.h"
 #include "wmcontainer.h"
+#include "workspaces.h"
 #include "wpixmaps.h"
 #include "ymenuitem.h"
 #include "yrect.h"
@@ -52,9 +53,12 @@ void YFrameWindow::updateMenu() {
 #if DO_NOT_COVER_OLD
     windowMenu->checkCommand(actionDoNotCover, doNotCover());
 #endif
+    updateSubmenus();
+}
 
-    YMenuItem *item;
-    if ((item = windowMenu->findSubmenu(moveMenu)))
+void YFrameWindow::updateSubmenus() {
+    YMenuItem *item = windowMenu()->findSubmenu(moveMenu);
+    if (item)
         item->setEnabled(!isAllWorkspaces());
 
     moveMenu->setActionListener(this);
@@ -82,7 +86,8 @@ void YFrameWindow::updateMenu() {
         }
     }
 
-    if ((item = windowMenu->findAction(actionToggleTray))) {
+    item = windowMenu()->findAction(actionToggleTray);
+    if (item) {
         bool enabled = false == (frameOptions() & foIgnoreTaskBar);
         bool checked = enabled && (getTrayOption() != WinTrayIgnore);
         item->setChecked(checked);
@@ -104,7 +109,7 @@ void YFrameWindow::updateMenu() {
 
 #ifdef CONFIG_SHAPE
 void YFrameWindow::setShape() {
-    if (!shapesSupported)
+    if (!shapes.supported)
         return ;
 
     if (client()->shaped()) {
@@ -182,11 +187,11 @@ void YFrameWindow::layoutShape() {
         fShapeBorderY = borderY();
 
 #ifdef CONFIG_SHAPE
-        if (shapesSupported &&
+        if (shapes.supported &&
             (frameDecors() & fdBorder) &&
             !(isIconic() || isFullscreen()))
         {
-            int const a(focused() ? 1 : 0);
+            int const a(focused());
             int const t((frameDecors() & fdResize) ? 0 : 1);
 
             Pixmap shape = XCreatePixmap(xapp->display(), desktop->handle(),
@@ -277,12 +282,12 @@ void YFrameWindow::layoutShape() {
     }
 }
 
-void YFrameWindow::configure(const YRect &r) {
+void YFrameWindow::configure(const YRect2& r) {
     MSG(("configure %d %d %d %d", r.x(), r.y(), r.width(), r.height()));
 
-    YWindow::configure(r);
-
-    performLayout();
+    if (r.resized()) {
+        performLayout();
+    }
     if (affectsWorkArea()) {
         manager->updateWorkArea();
     }
@@ -337,9 +342,6 @@ void YFrameWindow::layoutResizeIndicators() {
             XMapWindow(xapp->display(), topRight);
             XMapWindow(xapp->display(), bottomLeft);
             XMapWindow(xapp->display(), bottomRight);
-
-            XMapWindow(xapp->display(), topLeftSide);
-            XMapWindow(xapp->display(), topRightSide);
         }
     } else {
         if (indicatorsVisible) {
@@ -354,9 +356,6 @@ void YFrameWindow::layoutResizeIndicators() {
             XUnmapWindow(xapp->display(), topRight);
             XUnmapWindow(xapp->display(), bottomLeft);
             XUnmapWindow(xapp->display(), bottomRight);
-
-            XUnmapWindow(xapp->display(), topLeftSide);
-            XUnmapWindow(xapp->display(), topRightSide);
         }
     }
     if (!indicatorsVisible)
@@ -388,11 +387,6 @@ void YFrameWindow::layoutResizeIndicators() {
                       0, hh - yy, xx, yy);
     XMoveResizeWindow(xapp->display(), bottomRight,
                       ww - xx, hh - yy, xx, yy);
-
-    XMoveResizeWindow(xapp->display(), topLeftSide,
-                      0, 0, bx, yy);
-    XMoveResizeWindow(xapp->display(), topRightSide,
-                      ww - bx, 0, bx, yy);
 }
 
 void YFrameWindow::layoutClient() {
@@ -400,8 +394,8 @@ void YFrameWindow::layoutClient() {
         int x = borderX();
         int y = borderY();
         int title = titleY();
-        int w = this->width() - 2 * x;
-        int h = this->height() - 2 * y - title;
+        int w = max(1, int(width()) - 2 * x);
+        int h = max(1, int(height()) - 2 * y - title);
 
         fClientContainer->setGeometry(YRect(x, y + title, w, h));
         fClient->setGeometry(YRect(0, 0, w, h));

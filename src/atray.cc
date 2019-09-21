@@ -32,8 +32,6 @@ static YColorName minimizedTrayAppFg(&clrMinimizedTaskBarAppText);
 static YColorName minimizedTrayAppBg(&clrNormalTaskBarApp);
 static YColorName invisibleTrayAppFg(&clrInvisibleTaskBarAppText);
 static YColorName invisibleTrayAppBg(&clrNormalTaskBarApp);
-static ref<YFont> normalTrayFont;
-static ref<YFont> activeTrayFont;
 
 ref<YImage> TrayApp::taskMinimizedGradient;
 ref<YImage> TrayApp::taskActiveGradient;
@@ -42,15 +40,12 @@ ref<YImage> TrayApp::taskNormalGradient;
 TrayApp::TrayApp(ClientData *frame, TrayPane *trayPane, YWindow *aParent):
     YWindow(aParent)
 {
-    if (normalTrayFont == null)
-        normalTrayFont = YFont::getFont(XFA(normalTaskBarFontName));
-    if (activeTrayFont == null)
-        activeTrayFont = YFont::getFont(XFA(activeTaskBarFontName));
-
     fFrame = frame;
     fTrayPane = trayPane;
     selected = 0;
     fShown = true;
+    fRepainted = false;
+    setParentRelative();
     setToolTip(frame->getTitle());
     setTitle(cstring(frame->getTitle()));
     //setDND(true);
@@ -77,7 +72,25 @@ void TrayApp::setShown(bool ashow) {
     }
 }
 
-void TrayApp::paint(Graphics &g, const YRect &/*r*/) {
+void TrayApp::configure(const YRect2& r) {
+    if (r.resized()) {
+        fRepainted = false;
+        repaint();
+    }
+}
+
+void TrayApp::repaint() {
+    GraphicsBuffer(this).paint();
+    fRepainted = true;
+}
+
+void TrayApp::handleExpose(const XExposeEvent& exp) {
+    if (fRepainted == false) {
+        repaint();
+    }
+}
+
+void TrayApp::paint(Graphics &g, const YRect& r) {
     YColor bg;
     ref<YPixmap> bgPix;
     ref<YImage> bgGrad;
@@ -113,6 +126,8 @@ void TrayApp::paint(Graphics &g, const YRect &/*r*/) {
             taskNormalGradient = taskbuttonPixbuf->scale(sw, sh);
         bgGrad = taskNormalGradient;
     }
+    YSurface surface(bg, bgPix, bgGrad);
+    g.drawSurface(surface, r.x(), r.y(), r.width(), r.height());
 
     if (selected == 3) {
         g.setColor(YColor::black);
@@ -137,7 +152,10 @@ void TrayApp::paint(Graphics &g, const YRect &/*r*/) {
     if (icon != null) {
         if (g.color() == 0)
             g.setColor(bg);
-        icon->draw(g, 2, 2, YIcon::smallSize());
+        int wd = int(width());
+        int ht = int(height());
+        int sz = YIcon::smallSize();
+        icon->draw(g, (wd - sz) / 2, (ht - sz) / 2, sz);
     }
 }
 
@@ -232,9 +250,14 @@ bool TrayApp::handleTimer(YTimer *t) {
     return false;
 }
 
-TrayPane::TrayPane(IAppletContainer *taskBar, YWindow *parent): YWindow(parent) {
-    fTaskBar = taskBar;
-    fNeedRelayout = true;
+TrayPane::TrayPane(IAppletContainer *taskBar, YWindow *parent):
+    YWindow(parent),
+    fTaskBar(taskBar),
+    fNeedRelayout(true),
+    fConfigured(false),
+    fExposed(false)
+{
+    setParentRelative();
 }
 
 TrayPane::~TrayPane() {
@@ -365,23 +388,63 @@ void TrayPane::handleClick(const XButtonEvent &up, int count) {
     }
 }
 
-void TrayPane::paint(Graphics &g, const YRect &/*r*/) {
+void TrayPane::handleExpose(const XExposeEvent& e) {
+    if (fExposed == false) {
+        fExposed = true;
+        if (fConfigured) {
+            clearWindow();
+        }
+    }
+    if (e.count == 0) {
+        repaint();
+    }
+}
+
+bool TrayPane::hasBorder() {
+    return trayDrawBevel && wmLook != lookMetal && 1 < width() && 1 < height();
+}
+
+void TrayPane::configure(const YRect2& r) {
+    if (fConfigured == false || r.resized()) {
+        fConfigured = true;
+        if (fExposed && visible()) {
+            if (hasBorder() && 1 < r.width() && 1 < r.height()) {
+                clearArea(1, 1, r.width() - 2, r.height() - 2);
+            } else {
+                clearWindow();
+            }
+            repaint();
+            XEvent xev;
+            while (XCheckWindowEvent(xapp->display(), handle(),
+                                     ExposureMask, &xev)
+                && ((xev.type == Expose && 0 < xev.xexpose.count) ||
+                (xev.type == GraphicsExpose && 0 < xev.xgraphicsexpose.count)));
+        }
+    }
+}
+
+void TrayPane::repaint() {
+    if (fConfigured && fExposed) {
+        Graphics g(*this);
+        paint(g, YRect(0, 0, width(), height()));
+    }
+}
+
+void TrayPane::paint(Graphics &g, const YRect& r) {
     int const w(width());
     int const h(height());
 
     g.setColor(taskBarBg);
 
-    ref<YImage> gradient(parent() ? parent()->getGradient() : null);
+    if (getGradient() == null && taskbackPixmap == null) {
+        if (hasBorder() && 1 < r.width() && 1 < r.height()) {
+            g.fillRect(1, 1, r.width() - 2, r.height() - 2);
+        } else {
+            g.fillRect(0, 0, w, h);
+        }
+    }
 
-    if (gradient != null)
-        g.drawImage(gradient, x(), y(), w, h, 0, 0);
-    else
-    if (taskbackPixmap != null)
-        g.fillPixmap(taskbackPixmap, 0, 0, w, h, x(), y());
-    else
-        g.fillRect(0, 0, w, h);
-
-    if (trayDrawBevel && w > 1) {
+    if (trayDrawBevel && 2 < w && 2 < h) {
         if (wmLook == lookMetal)
             g.draw3DRect(1, 1, w - 2, h - 2, false);
         else

@@ -25,7 +25,6 @@ YMsgBox::YMsgBox(int buttons, YWindow *owner): YDialog(owner) {
     fButtonOK = 0;
     fButtonCancel = 0;
     fLabel = new YLabel(null, this);
-    fLabel->show();
 
     setToplevel(true);
 
@@ -113,8 +112,10 @@ void YMsgBox::setTitle(const ustring &title) {
 }
 
 void YMsgBox::setText(const ustring &text) {
-    if (fLabel)
+    if (fLabel) {
         fLabel->setText(text);
+        fLabel->show();
+    }
     autoSize();
 }
 
@@ -129,7 +130,9 @@ void YMsgBox::actionPerformed(YAction action, unsigned int /*modifiers*/) {
         else if (fButtonCancel && action == *fButtonCancel) {
             fListener->handleMsgBox(this, mbCancel);
         }
-        else TLOG(("unknown action %d for msgbox", action.ident()));
+        else {
+            TLOG(("unknown action %d for msgbox", action.ident()));
+        }
     }
 }
 
@@ -137,7 +140,7 @@ void YMsgBox::handleClose() {
     if (fListener)
         fListener->handleMsgBox(this, 0);
     else {
-        manager->unmanageClient(handle());
+        manager->unmanageClient(this);
         manager->focusTopWindow();
     }
 }

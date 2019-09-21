@@ -1,2 +1,6 @@
 PACKAGE=icewm
+<<<<<<< HEAD
 VERSION=1.5.0
+=======
+VERSION=1.6.1
+>>>>>>> upstream/icewm-1-4-BRANCH

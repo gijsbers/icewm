@@ -22,7 +22,7 @@ WindowOption::WindowOption(ustring n_class_instance):
     workspace(WinWorkspaceInvalid),
     layer(WinLayerInvalid),
     tray(WinTrayInvalid),
-    order(0),
+    order(0), opacity(0),
     gflags(0), gx(0), gy(0), gw(0), gh(0)
 {
 }
@@ -78,11 +78,13 @@ void WindowOptions::setWinOption(ustring n_class_instance,
         op->icon = newstr(arg);
     } else if (strcmp(opt, "workspace") == 0) {
         int workspace = atoi(arg);
-        op->workspace = inrange(workspace, 0, MAXWORKSPACES - 1)
-                      ? workspace
-                      : WinWorkspaceInvalid;
+        op->workspace = max(workspace, int(WinWorkspaceInvalid));
     } else if (strcmp(opt, "order") == 0) {
         op->order = atoi(arg);
+    } else if (strcmp(opt, "opacity") == 0) {
+        int opaq = atoi(arg);
+        if (inrange(opaq, 0, 100))
+            op->opacity = opaq;
     } else if (strcmp(opt, "geometry") == 0) {
         int rx, ry;
         unsigned int rw, rh;
@@ -203,6 +205,7 @@ void WindowOptions::setWinOption(ustring n_class_instance,
             { "noFocusOnMap",             YFrameWindow::foNoFocusOnMap },
             { "noIgnoreTaskBar",          YFrameWindow::foNoIgnoreTaskBar },
             { "nonICCCMconfigureRequest", foNonICCCM },
+            { "startClose",               YFrameWindow::foClose },
             { "startFullscreen",          YFrameWindow::foFullscreen },
             { "startMaximized",           foMaximized },
             { "startMaximizedHorz",       YFrameWindow::foMaximizedHorz },
@@ -278,6 +281,8 @@ void WindowOptions::combineOptions(WindowOption &cm, WindowOption &n) {
         cm.tray = n.tray;
     if (n.order)
         cm.order = n.order;
+    if (n.opacity && inrange(n.opacity, 1, 100))
+        cm.opacity = n.opacity;
     if ((n.gflags & XValue) && !(cm.gflags & XValue)) {
         cm.gx = n.gx;
         cm.gflags |= XValue;
@@ -383,8 +388,10 @@ static char *parseWinOptions(char *data, const char* filename) {
 void loadWinOptions(upath optFile) {
     if (optFile.nonempty()) {
         csmart buf(optFile.loadText());
-        if (buf)
+        if (buf) {
+            defOptions = null;
             parseWinOptions(buf, optFile.string());
+        }
     }
 }
 

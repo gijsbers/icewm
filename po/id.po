@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: icewm 1.0.9\n"
 "Report-Msgid-Bugs-To: https://github.com/bbidulock/icewm/issues\n"
-"POT-Creation-Date: 2018-12-17 23:55+0100\n"
+"POT-Creation-Date: 2019-08-17 12:39+0200\n"
 "PO-Revision-Date: 2017-11-03 14:12+0700\n"
 "Last-Translator: Arif Budiman <arifpedia@gmail.com>\n"
 "Language-Team: Indonesian <https://l10n.opensuse.org/projects/icewm/"
@@ -18,27 +18,27 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 2.0.4\n"
 
-#: src/aapm.cc:177 src/aapm.cc:459 src/aapm.cc:681 src/aapm.cc:806
+#: src/aapm.cc:187 src/aapm.cc:469 src/aapm.cc:691 src/aapm.cc:816
 msgid " - Power"
 msgstr " - Daya"
 
-#: src/aapm.cc:179 src/aapm.cc:462 src/aapm.cc:684
+#: src/aapm.cc:189 src/aapm.cc:472 src/aapm.cc:694
 msgid "P"
 msgstr "D"
 
-#: src/aapm.cc:183 src/aapm.cc:436 src/aapm.cc:664 src/aapm.cc:774
+#: src/aapm.cc:193 src/aapm.cc:446 src/aapm.cc:674 src/aapm.cc:784
 msgid " - Charging"
 msgstr " - Mengisi"
 
-#: src/aapm.cc:185 src/aapm.cc:438 src/aapm.cc:666
+#: src/aapm.cc:195 src/aapm.cc:448 src/aapm.cc:676
 msgid "C"
 msgstr "M"
 
-#: src/aapm.cc:440
+#: src/aapm.cc:450
 msgid " - Full"
 msgstr " - Penuh"
 
-#: src/aapm.cc:985
+#: src/aapm.cc:998
 #, c-format
 msgid "power:\t%s"
 msgstr ""
@@ -51,11 +51,11 @@ msgstr ""
 msgid "Date"
 msgstr ""
 
-#: src/aclock.cc:178 src/themes.cc:85
+#: src/aclock.cc:178 src/themes.cc:78
 msgid "Default"
 msgstr "Baku"
 
-#: src/aclock.cc:179 src/acpustatus.cc:862 src/amailbox.cc:938
+#: src/aclock.cc:179 src/acpustatus.cc:862 src/amailbox.cc:952
 #: src/amemstatus.cc:264
 msgid "_Disable"
 msgstr ""
@@ -214,48 +214,48 @@ msgstr "Gagal mengeksekusi sistem(%s) (%d)"
 msgid "Write to socket failed: %s"
 msgstr ""
 
-#: src/amailbox.cc:680
+#: src/amailbox.cc:681
 #, c-format
 msgid "Using MailBox \"%s\"\n"
 msgstr "Menggunakan kotak surat \"%s\"\n"
 
-#: src/amailbox.cc:794
+#: src/amailbox.cc:808
 msgid "Suspended"
 msgstr ""
 
-#: src/amailbox.cc:798
+#: src/amailbox.cc:812
 msgid "Error checking mailbox."
 msgstr "Kesalahan dalam memeriksa kotak surat."
 
-#: src/amailbox.cc:805
+#: src/amailbox.cc:819
 #, fuzzy, c-format
 msgid "%ld mail message, %ld unread."
 msgstr "%ld pesan surat."
 
-#: src/amailbox.cc:806
+#: src/amailbox.cc:820
 #, fuzzy, c-format
 msgid "%ld mail messages, %ld unread."
 msgstr "%ld pesan surat."
 
-#: src/amailbox.cc:812
+#: src/amailbox.cc:826
 #, c-format
 msgid "%ld mail message."
 msgstr "%ld pesan surat."
 
-#: src/amailbox.cc:813
+#: src/amailbox.cc:827
 #, c-format
 msgid "%ld mail messages."
 msgstr "%ld pesan surat."
 
-#: src/amailbox.cc:936
+#: src/amailbox.cc:950
 msgid "MAIL"
 msgstr ""
 
-#: src/amailbox.cc:937
+#: src/amailbox.cc:951
 msgid "_Check"
 msgstr ""
 
-#: src/amailbox.cc:939
+#: src/amailbox.cc:953
 msgid "_Suspend"
 msgstr ""
 
@@ -299,7 +299,7 @@ msgstr "Pengguna: "
 msgid "MEM"
 msgstr ""
 
-#: src/apppstatus.cc:203
+#: src/apppstatus.cc:199
 #, c-format
 msgid ""
 "Interface %s:\n"
@@ -314,7 +314,7 @@ msgstr ""
 "  Tertransfer (in/out):\t%lli %s/%lli %s\n"
 "  Waktu daring:\t%ld:%02ld:%02ld%s%s"
 
-#: src/apppstatus.cc:215
+#: src/apppstatus.cc:211
 msgid ""
 "\n"
 "  Caller id:\t"
@@ -322,132 +322,132 @@ msgstr ""
 "\n"
 "  Id pemanggil:\t"
 
-#: src/apppstatus.cc:717
+#: src/apppstatus.cc:712
 msgid "NET"
 msgstr ""
 
-#: src/aworkspaces.cc:294 src/wmstatus.cc:163
+#: src/aworkspaces.cc:584 src/wmstatus.cc:200
 msgid "Workspace: "
 msgstr "Ruang kerja: "
 
-#: src/icehelp.cc:1201
+#: src/icehelp.cc:1210
 msgid "Back"
 msgstr "Mundur"
 
-#: src/icehelp.cc:1201
+#: src/icehelp.cc:1210
 msgid "Alt+Left"
 msgstr "Alt+Left"
 
-#: src/icehelp.cc:1203
+#: src/icehelp.cc:1212
 msgid "Forward"
 msgstr "Maju"
 
-#: src/icehelp.cc:1203
+#: src/icehelp.cc:1212
 msgid "Alt+Right"
 msgstr "Alt+Right"
 
-#: src/icehelp.cc:1206
+#: src/icehelp.cc:1215
 msgid "Previous"
 msgstr "Sebelumnya"
 
-#: src/icehelp.cc:1207
+#: src/icehelp.cc:1216
 msgid "Next"
 msgstr "Berikutnya"
 
-#: src/icehelp.cc:1209
+#: src/icehelp.cc:1218
 msgid "Contents"
 msgstr "Isi"
 
-#: src/icehelp.cc:1210
+#: src/icehelp.cc:1219
 msgid "Index"
 msgstr "Indeks"
 
-#: src/icehelp.cc:1213 src/icesame.cc:62 src/iceview.cc:74 src/wmtitle.cc:99
+#: src/icehelp.cc:1222 src/icesame.cc:62 src/iceview.cc:74 src/wmtitle.cc:102
 msgid "Close"
 msgstr "Tutup"
 
-#: src/icehelp.cc:1213 src/icesame.cc:62 src/iceview.cc:74
+#: src/icehelp.cc:1222 src/icesame.cc:62 src/iceview.cc:74
 msgid "Ctrl+Q"
 msgstr "Ctrl+Q"
 
-#: src/icehelp.cc:1218
+#: src/icehelp.cc:1227
 msgid "Icewm(1)"
 msgstr ""
 
-#: src/icehelp.cc:1220
+#: src/icehelp.cc:1229
 msgid "Icewmbg(1)"
 msgstr ""
 
-#: src/icehelp.cc:1222
+#: src/icehelp.cc:1231
 msgid "Icesound(1)"
 msgstr ""
 
-#: src/icehelp.cc:1224
+#: src/icehelp.cc:1233
 msgid "FAQ"
 msgstr ""
 
-#: src/icehelp.cc:1226
+#: src/icehelp.cc:1235
 msgid "Manual"
 msgstr ""
 
-#: src/icehelp.cc:1228
+#: src/icehelp.cc:1237
 msgid "Support"
 msgstr ""
 
-#: src/icehelp.cc:1230
+#: src/icehelp.cc:1239
 #, fuzzy
 msgid "Theme Howto"
 msgstr "Pencipta Tema:"
 
-#: src/icehelp.cc:1232
+#: src/icehelp.cc:1241
 msgid "Website"
 msgstr ""
 
-#: src/icehelp.cc:1234
+#: src/icehelp.cc:1243
 msgid "Github"
 msgstr ""
 
-#: src/icehelp.cc:1936
+#: src/icehelp.cc:1944
 msgid "Unsupported protocol."
 msgstr "Protokol tidak didukung."
 
-#: src/icehelp.cc:1961
+#: src/icehelp.cc:1969
 #, c-format
 msgid "Invalid path: %s\n"
 msgstr "Jalur tidak valid: %s\n"
 
-#: src/icehelp.cc:1984
+#: src/icehelp.cc:1992
 msgid "Path does not refer to a file."
 msgstr "Path tidak merujuk ke berkas."
 
-#: src/icehelp.cc:1989
+#: src/icehelp.cc:1997
 msgid "Failed to open file for reading."
 msgstr "Gagal membuka berkas untuk dibaca."
 
-#: src/icehelp.cc:2018
+#: src/icehelp.cc:2026
 #, fuzzy
 msgid "Failed to create a temporary file"
 msgstr "Gagal untuk membuat anonymous pipe: %s"
 
-#: src/icehelp.cc:2110
+#: src/icehelp.cc:2118
 #, c-format
 msgid "Failed to execute system(%s) (%d)"
 msgstr "Gagal mengeksekusi sistem(%s) (%d)"
 
-#: src/icehelp.cc:2133
+#: src/icehelp.cc:2141
 #, fuzzy, c-format
 msgid "Failed to decompress %s"
 msgstr "Gagal memuat tema %s"
 
-#: src/icehelp.cc:2141
+#: src/icehelp.cc:2149
 msgid "Could not locate curl or wget in PATH"
 msgstr "Tidak dapat menemukan curl atau wget pada PATH"
 
-#: src/icehelp.cc:2145
+#: src/icehelp.cc:2153
 msgid "Unsafe characters in URL"
 msgstr "Karakter yang tidak aman di URL"
 
-#: src/icehelp.cc:2182
+#: src/icehelp.cc:2190
 #, c-format
 msgid ""
 "Usage: %s [OPTIONS] [ FILENAME | URL ]\n"
@@ -485,7 +485,7 @@ msgid ""
 "\n"
 msgstr ""
 
-#: src/icehelp.cc:2259
+#: src/icehelp.cc:2267
 #, fuzzy, c-format
 msgid "Ignoring option '%s'"
 msgstr "Opsi tak dikenal '%s'"
@@ -530,242 +530,96 @@ msgstr "Ctrl+R"
 msgid "Same Game"
 msgstr "Permainan Sama"
 
-#: src/icesh.cc:191
-#, c-format
-msgid "Action `%s' requires at least %d arguments."
-msgstr "Perintah `%s' membutuhkan setidaknya %d opsi."
+#: src/icesh.cc:63
+msgid "For help please consult the man page icesh(1).\n"
+msgstr ""
 
-#: src/icesh.cc:198
-#, c-format
-msgid "Invalid expression: `%s'"
-msgstr "Ekpresi tidak benar: `%s'"
-
-#: src/icesh.cc:319
+#: src/icesh.cc:1095
 #, c-format
 msgid "Named symbols of the domain `%s' (numeric range: %ld-%ld):\n"
 msgstr "Domain berisi simbol `%s' (rentang angka: %ld-%ld):\n"
 
-#: src/icesh.cc:435
+#: src/icesh.cc:1232
 #, c-format
 msgid "Invalid workspace name: `%s'"
 msgstr "Nama Ruang Kerja tidak valid: `%s'"
 
-#: src/icesh.cc:440
+#: src/icesh.cc:1236
 #, c-format
 msgid "Workspace out of range: %ld"
 msgstr "Ruang kerja di luar jangkauan: %ld"
 
-#: src/icesh.cc:605
-#, fuzzy, c-format
-#| msgid ""
-#| "Usage: %s [OPTIONS] ACTIONS\n"
-#| "\n"
-#| "Options:\n"
-#| "  -display DISPLAY            Connects to the X server specified by "
-#| "DISPLAY.\n"
-#| "                              Default: $DISPLAY or :0.0 when not set.\n"
-#| "  -window WINDOW_ID           Specifies the window to manipulate. "
-#| "Special\n"
-#| "                              identifiers are `root' for the root window "
-#| "and\n"
-#| "                              `focus' for the currently focused window.\n"
-#| "  -class WM_CLASS             Window management class of the window(s) "
-#| "to\n"
-#| "                              manipulate. If WM_CLASS contains a period, "
-#| "only\n"
-#| "                              windows with exactly the same WM_CLASS "
-#| "property\n"
-#| "                              are matched. If there is no period, windows "
-#| "of\n"
-#| "                              the same class and windows of the same "
-#| "instance\n"
-#| "                              (aka. `-name') are selected.\n"
-#| "\n"
-#| "Actions:\n"
-#| "  setIconTitle   TITLE        Set the icon title.\n"
-#| "  setWindowTitle TITLE        Set the window title.\n"
-#| "  setGeometry    geometry     Set the window geometry\n"
-#| "  setState       MASK STATE   Set the GNOME window state to STATE.\n"
-#| "                              Only the bits selected by MASK are "
-#| "affected.\n"
-#| "                              STATE and MASK are expressions of the "
-#| "domain\n"
-#| "                              `GNOME window state'.\n"
-#| "  toggleState    STATE        Toggle the GNOME window state bits "
-#| "specified by\n"
-#| "                              the STATE expression.\n"
-#| "  setHints       HINTS        Set the GNOME window hints to HINTS.\n"
-#| "  setLayer       LAYER        Moves the window to another GNOME window "
-#| "layer.\n"
-#| "  setWorkspace   WORKSPACE    Moves the window to another workspace. "
-#| "Select\n"
-#| "                              the root window to change the current "
-#| "workspace.\n"
-#| "  listWorkspaces              Lists the names of all workspaces.\n"
-#| "  setTrayOption  TRAYOPTION   Set the IceWM tray option hint.\n"
-#| "\n"
-#| "Expressions:\n"
-#| "  Expressions are list of symbols of one domain concatenated by `+' or "
-#| "`|':\n"
-#| "\n"
-#| "  EXPRESSION ::= SYMBOL | EXPRESSION ( `+' | `|' ) SYMBOL\n"
-#| "\n"
-msgid ""
-"Usage: %s [OPTIONS] ACTIONS\n"
-"\n"
-"Options:\n"
-"  -d, -display DISPLAY        Connects to the X server specified by "
-"DISPLAY.\n"
-"                              Default: $DISPLAY or :0.0 when not set.\n"
-"  -w, -window WINDOW_ID       Specifies the window to manipulate. Special\n"
-"                              identifiers are `root' for the root window "
-"and\n"
-"                              `focus' for the currently focused window.\n"
-"  -c, -class WM_CLASS         Window management class of the window(s) to\n"
-"                              manipulate. If WM_CLASS contains a period, "
-"only\n"
-"                              windows with exactly the same WM_CLASS "
-"property\n"
-"                              are matched. If there is no period, windows "
-"of\n"
-"                              the same class and windows of the same "
-"instance\n"
-"                              (aka. `-name') are selected.\n"
-"\n"
-"Actions:\n"
-"  setIconTitle   TITLE        Set the icon title.\n"
-"  setWindowTitle TITLE        Set the window title.\n"
-"  setGeometry    geometry     Set the window geometry\n"
-"  setState       MASK STATE   Set the GNOME window state to STATE.\n"
-"                              Only the bits selected by MASK are affected.\n"
-"                              STATE and MASK are expressions of the domain\n"
-"                              `GNOME window state'.\n"
-"  toggleState    STATE        Toggle the GNOME window state bits specified "
-"by\n"
-"                              the STATE expression.\n"
-"  setHints       HINTS        Set the GNOME window hints to HINTS.\n"
-"  setLayer       LAYER        Moves the window to another GNOME window "
-"layer.\n"
-"  setWorkspace   WORKSPACE    Moves the window to another workspace. Select\n"
-"                              the root window to change the current "
-"workspace.\n"
-"                              Select 0xFFFFFFFF or \"All\" for all "
-"workspaces.\n"
-"  listWorkspaces              Lists the names of all workspaces.\n"
-"  setTrayOption  TRAYOPTION   Set the IceWM tray option hint.\n"
-"  logout                      Tell IceWM to logout.\n"
-"  reboot                      Tell IceWM to reboot.\n"
-"  shutdown                    Tell IceWM to shutdown.\n"
-"  cancel                      Tell IceWM to cancel the logout/reboot/"
-"shutdown.\n"
-"  about                       Tell IceWM to show the about window.\n"
-"  windowlist                  Tell IceWM to show the window list.\n"
-"  restart                     Tell IceWM to restart.\n"
-"  suspend                     Tell IceWM to suspend.\n"
-"\n"
-"Expressions:\n"
-"  Expressions are list of symbols of one domain concatenated by `+' or `|':\n"
-"\n"
-"  EXPRESSION ::= SYMBOL | EXPRESSION ( `+' | `|' ) SYMBOL\n"
-"\n"
-msgstr ""
-"Penggunaan: %s [OPSI] AKSI\n"
-"\n"
-"Opsi:\n"
-"  -display DISPLAY            Meyambung ke server X yang ditetapkan oleh "
-"DISPLAY.\n"
-"                              Baku: $DISPLAY atau :0.0 saat tidak diatur.\n"
-"  -window WINDOW_ID           Menentukan jendela yang akan dimanipulasi. "
-"Pengenal\n"
-"                              khusus adalah `root' untuk jendela root dan\n"
-"                              `focus' untuk jendela yang saat ini berfokus.\n"
-"  -class WM_CLASS             Kelas manajemen jendela dari jendela yang "
-"akan\n"
-"                              dimanipulasi. Jika WM_CLASS berisi sebuah "
-"periode,\n"
-"                              hanya jendela dengan properti WM_CLASS yang "
-"sama persis\n"
-"                              yang akan cocok. Jika tanpa periode, jendela "
-"dari kelas\n"
-"                              yang sama dan jendela dari intansi yang sama\n"
-"                              (contoh `-name') yang akan dipilih.\n"
-"\n"
-"Aksi:\n"
-"  setIconTitle   TITLE        Menetapkan nama ikon.\n"
-"  setWindowTitle TITLE        Menetapkan nama jendela.\n"
-"  setGeometry    geometry     Menetapkan geometri jendela\n"
-"  setState       MASK STATE   Menetapkan status jendela GNOME pada STATE.\n"
-"                              Hanya bit yang dipilih MASK yang akan "
-"berdampak.\n"
-"                              STATE dan MASK adalah ekspresi dari domain\n"
-"                              `status jendela GNOME'.\n"
-"  toggleState    STATE        Mengganti bit status jendela GNOME yang "
-"ditentukan oleh\n"
-"                              ekspresi STATE.\n"
-"  setHints       HINTS        Menetapkan tips jendela GNOME pada HINTS.\n"
-"  setLayer       LAYER        Memindahkan jendela ke lapisan jendela GNOME "
-"lainnya.\n"
-"  setWorkspace   WORKSPACE    Memindahkan jendela ke ruang kerja lainnya. "
-"Pilih\n"
-"                              jendela akar untuk mengganti ruang kerja saat "
-"ini.\n"
-"  listWorkspaces              Daftar nama dari semua ruang kerja.\n"
-"  setTrayOption  TRAYOPTION   Menetapkan tips opsi tray IceWM.\n"
-"\n"
-"Ekspresi:\n"
-"  Ekspresi adalah daftar simbol dari satu domain diakhiri dengan `+' or "
-"`|':\n"
-"\n"
-"  EXPRESSION ::= SYMBOL | EXPRESSION ( `+' | `|' ) SYMBOL\n"
-"\n"
-
-#: src/icesh.cc:653
+#: src/icesh.cc:1442
 msgid "GNOME window state"
 msgstr "keadaan jendela GNOME"
 
-#: src/icesh.cc:654
+#: src/icesh.cc:1443
 msgid "GNOME window hint"
 msgstr "petunjuk jendela GNOME"
 
-#: src/icesh.cc:655
+#: src/icesh.cc:1444
 msgid "GNOME window layer"
 msgstr "lapisan jendela GNOME"
 
-#: src/icesh.cc:656
+#: src/icesh.cc:1445
 msgid "IceWM tray option"
 msgstr "opsi baki IceWM"
 
-#: src/icesh.cc:661
-msgid "Usage error: "
-msgstr "Kesalahan penggunaan: "
+#: src/icesh.cc:1446
+msgid "Gravity symbols"
+msgstr ""
 
-#: src/icesh.cc:747
+#: src/icesh.cc:1447
+#, fuzzy
+#| msgid "Favorite applications"
+msgid "Motif functions"
+msgstr "Aplikasi favorit"
+
+#: src/icesh.cc:1448
+#, fuzzy
+#| msgid "Favorite applications"
+msgid "Motif decorations"
+msgstr "Aplikasi favorit"
+
+#: src/icesh.cc:1527
 #, c-format
-msgid "Invalid argument: `%s'."
-msgstr "Argumen tidak valid: `%s'."
+msgid "workspace #%d: `%s'\n"
+msgstr "ruang kerja #%d: `%s'\n"
 
-#: src/icesh.cc:753
-msgid "No actions specified."
-msgstr "Tidak ada aksi yang diberikan."
+#: src/icesh.cc:2328
+#, c-format
+msgid "Action `%s' requires at least %d arguments."
+msgstr "Perintah `%s' membutuhkan setidaknya %d opsi."
 
-#: src/icesh.cc:760 src/icesound.cc:945 src/icewmhint.cc:36 src/yxapp.cc:925
+#: src/icesh.cc:2338
+#, c-format
+msgid "Invalid expression: `%s'"
+msgstr "Ekpresi tidak benar: `%s'"
+
+#: src/icesh.cc:2349 src/icesound.cc:801 src/icewmhint.cc:36 src/wmapp.cc:1120
+#: src/yxapp.cc:997
 #, c-format
 msgid "Can't open display: %s. X must be running and $DISPLAY set."
 msgstr ""
 "Tidak dapat membuka display: %s. X harus berjalan dan $DISPLAY harus "
 "ditetapkan."
 
-#: src/icesh.cc:801
+#: src/icesh.cc:2362
+#, fuzzy, c-format
+#| msgid "Invalid argument: `%s'."
+msgid "Invalid argument: `%s'"
+msgstr "Argumen tidak valid: `%s'."
+
+#: src/icesh.cc:2402
+msgid "No actions specified."
+msgstr "Tidak ada aksi yang diberikan."
+
+#: src/icesh.cc:2541
 #, c-format
 msgid "Invalid window identifier: `%s'"
 msgstr "Indentitas jendela tidak valid: `%s'"
 
-#: src/icesh.cc:955
-#, c-format
-msgid "workspace #%d: `%s'\n"
-msgstr "ruang kerja #%d: `%s'\n"
-
-#: src/icesh.cc:974
+#: src/icesh.cc:3039
 #, c-format
 msgid "Unknown action: `%s'"
 msgstr "Aksi tidak diketahui: `%s'"
@@ -782,9 +636,11 @@ msgid ""
 "  -t, --theme=FILE    Let IceWM load the theme from FILE.\n"
 "\n"
 "  -d, --display=NAME  Use NAME to connect to the X server.\n"
+"  -a, --alpha         Use a 32-bit visual for translucency.\n"
 "  --sync              Synchronize communication with X11 server.\n"
 "\n"
 "  -i, --icewm=FILE    Use FILE as the IceWM window manager.\n"
+"  -b, --nobg          Do not start icewmbg.\n"
 "  -n, --notray        Do not start icewmtray.\n"
 "  -s, --sound         Also start icesound.\n"
 msgstr ""
@@ -794,22 +650,28 @@ msgstr ""
 "  --display=NAME      Gunakan NAME untuk menyambung ke server X.\n"
 "  --sync              Sinkronisasikan komunikasi dengan server X11.\n"
 
-#: src/icesm.cc:120
+#: src/icesm.cc:135
 #, c-format
 msgid "Unknown option '%s'"
 msgstr "Opsi tak dikenal '%s'"
 
-#: src/icesm.cc:308
+#: src/icesm.cc:331 src/icesm.cc:449
+#, fuzzy, c-format
+#| msgid "Restart"
+msgid "restart %s."
+msgstr "Jalankan ulang"
+
+#: src/icesm.cc:337
 #, c-format
 msgid "%s exited with status %d."
 msgstr "%s telah dikeluarkan dengan status %d."
 
-#: src/icesm.cc:314
+#: src/icesm.cc:343 src/icesm.cc:455
 #, c-format
 msgid "%s was killed by signal %d."
 msgstr "%s telah dimatikan oleh sinyal %d."
 
-#: src/icesm.cc:348
+#: src/icesm.cc:377
 msgid ""
 " IceWM crashed for the second time in 10 seconds. \n"
 " Do you wish to:\n"
@@ -818,105 +680,81 @@ msgid ""
 "\t2: Abort this session?\n"
 msgstr ""
 
-#: src/icesm.cc:353
+#: src/icesm.cc:382
 #, fuzzy
 #| msgid "IceWM tray option"
 msgid "IceWM crash response"
 msgstr "opsi baki IceWM"
 
-#: src/icesound.cc:219 src/icesound.cc:327 src/icesound.cc:631
+#: src/icesound.cc:216 src/icesound.cc:324 src/icesound.cc:484
 #, c-format
 msgid "Playing sample #%d (%s)"
 msgstr "Memutar sampel #%d (%s)"
 
-#: src/icesound.cc:337
+#: src/icesound.cc:334
 #, c-format
 msgid "%s: Invalid number of channels"
 msgstr "%s: Jumlah saluran tidak valid"
 
-#: src/icesound.cc:343 src/icesound.cc:348
+#: src/icesound.cc:340 src/icesound.cc:345
 msgid "Could not set OSS channels"
 msgstr "Tidak dapat mengatur saluran OSS"
 
-#: src/icesound.cc:353 src/icesound.cc:381
+#: src/icesound.cc:350 src/icesound.cc:378
 msgid "Could not sync OSS"
 msgstr "Tidak dapat menyinkronkan OSS"
 
-#: src/icesound.cc:365
+#: src/icesound.cc:362
 msgid "OSS write failed"
 msgstr "Gagal menulis OSS"
 
-#: src/icesound.cc:369
+#: src/icesound.cc:366
 #, c-format
 msgid "OSS incomplete write (%d/%d)"
 msgstr "OSS ditulis tidak lengkap (%d/%d)"
 
-#: src/icesound.cc:376
+#: src/icesound.cc:373
 #, fuzzy
 msgid "Could not post OSS"
 msgstr "Tidak dapat memuat set fon \"%s\"."
 
-#: src/icesound.cc:405
+#: src/icesound.cc:402
 #, fuzzy, c-format
 msgid "Could not open OSS device %s"
 msgstr "Tidak dapat menemukan gambar %s"
 
-#: src/icesound.cc:410
+#: src/icesound.cc:407
 msgid "Could not set OSS stereo"
 msgstr "Tidak dapat menetapkan stereo OSS"
 
-#: src/icesound.cc:415
+#: src/icesound.cc:412
 msgid "Could not reset OSS DSP"
 msgstr "Tidak dapat mengatur ulang OSS DSP"
 
-#: src/icesound.cc:420
+#: src/icesound.cc:417
 msgid "Could not set OSS format"
 msgstr "Tidak dapat mengatur format OSS"
 
-#: src/icesound.cc:493
-#, c-format
-msgid "Can't connect to ESound daemon: %s"
-msgstr "Tidak dapat tersambung ke ESound daemon: %s"
-
-#: src/icesound.cc:494 src/icewmhint.cc:38 src/yxapp.cc:926
-msgid "<none>"
-msgstr "<tidak ada>"
-
-#: src/icesound.cc:512
-#, c-format
-msgid "Error <%d> while uploading `%s:%s'"
-msgstr "Kesalahan <%d> saat mengunggah `%s:%s'"
-
-#: src/icesound.cc:518
-#, c-format
-msgid "Sample <%d> uploaded as `%s:%s'"
-msgstr "Sampel <%d> diunggah sebagai `%s:%s'"
-
-#: src/icesound.cc:576
-#, fuzzy, c-format
-msgid "Playing sample #%d: %d"
-msgstr "Memutar sampel #%d"
-
-#: src/icesound.cc:651
+#: src/icesound.cc:504
 #, c-format
 msgid "ao_open_live failed with %d"
 msgstr "ao_open_live gagal dengan %d"
 
-#: src/icesound.cc:662
+#: src/icesound.cc:515
 msgid "ao_play failed"
 msgstr "ao_play gagal"
 
-#: src/icesound.cc:824
+#: src/icesound.cc:683
 #, c-format
 msgid "Unrecognized option: %s\n"
 msgstr "Opsi tidak dikenali: %s\n"
 
-#: src/icesound.cc:827 src/icesound.cc:1130
+#: src/icesound.cc:686 src/icesound.cc:979
 #, c-format
 msgid "Unrecognized argument: %s\n"
 msgstr "Argumen tidak dikenali: %s\n"
 
-#: src/icesound.cc:836
+#: src/icesound.cc:695
 #, fuzzy, c-format
 msgid ""
 "Usage: %s [OPTION]...\n"
@@ -941,9 +779,6 @@ msgid ""
 " -O, --oss=DEVICE        Specifies the OSS device (default: \"%s\").\n"
 "\n"
 " -A, --alsa=DEVICE       Specifies the ALSA device (default: \"%s\").\n"
-"\n"
-" -S, --server=ADDR:PORT  Specifies the ESD server address and port number.\n"
-"                         For ESD the default is \"localhost:16001\".\n"
 "\n"
 " -z, --snooze=millisecs  Specifies the snooze interval between sound events\n"
 "                         in milliseconds. Default is 500 milliseconds.\n"
@@ -1014,51 +849,51 @@ msgstr ""
 "3     Kesalahan Subsistem (misal tidak dapat tersambung ke server).\n"
 "\n"
 
-#: src/icesound.cc:930
+#: src/icesound.cc:786
 #, c-format
 msgid "No audio for %s"
 msgstr "Tidak ada audio untuk %s"
 
-#: src/icesound.cc:1007
+#: src/icesound.cc:863
 msgid "Could not get GUI event property"
 msgstr "Tidak bisa mendapatkan properti event GUI dengan benar"
 
-#: src/icesound.cc:1011
+#: src/icesound.cc:867
 #, c-format
 msgid "Received invalid GUI event %d"
 msgstr ""
 
-#: src/icesound.cc:1015
+#: src/icesound.cc:871
 #, c-format
 msgid "Received GUI event %s"
 msgstr ""
 
-#: src/icesound.cc:1029
+#: src/icesound.cc:885
 #, c-format
 msgid "Too quick; ignoring %s."
 msgstr ""
 
-#: src/icesound.cc:1033
+#: src/icesound.cc:889
 #, c-format
 msgid "Support for the %s interface not compiled."
 msgstr "Layanan untuk %s interface tidak dikompile."
 
-#: src/icesound.cc:1073
+#: src/icesound.cc:922
 #, c-format
 msgid "Unsupported interface: %s."
 msgstr "Interface tidak didukung: %s."
 
-#: src/icesound.cc:1082
+#: src/icesound.cc:931
 #, c-format
 msgid "Using %s audio."
 msgstr ""
 
-#: src/icesound.cc:1086
+#: src/icesound.cc:935
 #, fuzzy, c-format
 msgid "Failed to connect to audio interfaces %s."
 msgstr "Gagal memuat tema %s"
 
-#: src/icesound.cc:1098
+#: src/icesound.cc:947
 #, fuzzy, c-format
 msgid "Received signal %s: Terminating..."
 msgstr "Menerima sinyal %d: Menghentikan..."
@@ -1104,12 +939,12 @@ msgstr "Garis Wrap"
 msgid "Ctrl+W"
 msgstr "Ctrl+W"
 
-#: src/icewmbg.cc:78
+#: src/icewmbg.cc:79
 #, fuzzy, c-format
 msgid "Failed to load image '%s'."
 msgstr "Gagal memuat tema %s"
 
-#: src/icewmbg.cc:885
+#: src/icewmbg.cc:886
 #, fuzzy
 msgid ""
 "Usage: icewmbg [OPTIONS]\n"
@@ -1190,25 +1025,25 @@ msgstr ""
 " center:1 scaled:1 = jaga aspek rasio\n"
 "\n"
 
-#: src/icewmbg.cc:1100
+#: src/icewmbg.cc:1101
 msgid "Cannot start, because another icewmbg is still running."
 msgstr ""
 
-#: src/icewmhint.cc:23
+#: src/icewmhint.cc:19
 #, fuzzy
 msgid "Usage: icewmhint class.instance option arg\n"
 msgstr "Penggunaan: icewmhint [class.instance] opsi argumen\n"
 
-#: src/icewmhint.cc:57
+#: src/icewmhint.cc:56
 #, c-format
 msgid "Out of memory (len=%d)."
 msgstr "Kehabisan memori (len=%d)."
 
-#: src/misc.cc:466 src/misc.cc:478
+#: src/misc.cc:559 src/misc.cc:571
 msgid "Warning: "
 msgstr "Peringatan: "
 
-#: src/misc.cc:754
+#: src/misc.cc:847
 #, fuzzy, c-format
 msgid ""
 "Usage: %s [OPTIONS]\n"
@@ -1226,215 +1061,215 @@ msgstr ""
 "  -h, --help          Cetak layar penggunaan ini dan keluar.\n"
 "\n"
 
-#: src/movesize.cc:876
+#: src/movesize.cc:875
 #, c-format
 msgid "Unknown direction in move/resize request: %d"
 msgstr "Arah dalam memindahkan/mengubah ukuran tidak diketahui: %d"
 
-#: src/wmabout.cc:26 src/wmabout.cc:28
+#: src/wmabout.cc:23 src/wmabout.cc:25
 msgid "(C)"
 msgstr "(C)"
 
-#: src/wmabout.cc:34
+#: src/wmabout.cc:31
 msgid "Theme:"
 msgstr "Tema:"
 
-#: src/wmabout.cc:35
+#: src/wmabout.cc:32
 msgid "Theme Description:"
 msgstr "Deskripsi Tema:"
 
-#: src/wmabout.cc:36
+#: src/wmabout.cc:33
 msgid "Theme Author:"
 msgstr "Pencipta Tema:"
 
-#: src/wmabout.cc:40
+#: src/wmabout.cc:37
 msgid "CodeSet:"
 msgstr "SetKode:"
 
-#: src/wmabout.cc:41
+#: src/wmabout.cc:38
 msgid "Language:"
 msgstr "Bahasa:"
 
-#: src/wmabout.cc:67
+#: src/wmabout.cc:64
 msgid "icewm - About"
 msgstr "icewm - Tentang"
 
-#: src/wmapp.cc:90
+#: src/wmapp.cc:83
 #, fuzzy
 msgid "A window manager is already running, use --replace to replace it"
 msgstr "Manajer jendela yang lain sudah berjalan, keluar..."
 
-#: src/wmapp.cc:108
+#: src/wmapp.cc:101
 #, c-format
 msgid "Failed to become the owner of the %s selection"
 msgstr ""
 
-#: src/wmapp.cc:112
+#: src/wmapp.cc:105
 msgid "Waiting to replace the old window manager"
 msgstr ""
 
-#: src/wmapp.cc:117
+#: src/wmapp.cc:110
 msgid "done."
 msgstr ""
 
-#: src/wmapp.cc:403
+#: src/wmapp.cc:415
 msgid "Unable to get current font path."
 msgstr "Tidak dapat mengambil jalur huruf saat ini."
 
-#: src/wmapp.cc:430
+#: src/wmapp.cc:442
 msgid "Unexpected format of ICEWM_FONT_PATH property"
 msgstr "Format properti ICEWM_FONT_PATH tidak valid"
 
-#: src/wmapp.cc:508
+#: src/wmapp.cc:512
 msgid "_Logout"
 msgstr "_Keluar"
 
-#: src/wmapp.cc:509
+#: src/wmapp.cc:513
 msgid "_Cancel logout"
 msgstr "_Batal keluar"
 
-#: src/wmapp.cc:514
+#: src/wmapp.cc:518
 msgid "Lock _Workstation"
 msgstr "Kunci Stasiun Kerja"
 
-#: src/wmapp.cc:516 src/wmdialog.cc:78
+#: src/wmapp.cc:520 src/wmdialog.cc:78
 msgid "Re_boot"
 msgstr "Boot Ulang"
 
-#: src/wmapp.cc:518 src/wmdialog.cc:79
+#: src/wmapp.cc:522 src/wmdialog.cc:79
 msgid "Shut_down"
 msgstr "Matikan"
 
 #. TRANSLATORS: This means "energy saving mode" or "suspended system". Not "interrupt". Not "hibernate".
-#: src/wmapp.cc:520 src/wmdialog.cc:75
+#: src/wmapp.cc:524 src/wmdialog.cc:75
 msgid "_Sleep mode"
 msgstr ""
 
-#: src/wmapp.cc:525
+#: src/wmapp.cc:529
 msgid "Restart _Icewm"
 msgstr "Jalankan Ulang _Icewm"
 
-#: src/wmapp.cc:527
+#: src/wmapp.cc:531
 msgid "Restart _Xterm"
 msgstr "Jalankan Ulang _Xterm"
 
-#: src/wmapp.cc:540
+#: src/wmapp.cc:541
 msgid "_Menu"
 msgstr "_Menu"
 
-#: src/wmapp.cc:541
+#: src/wmapp.cc:542
 msgid "_Above Dock"
 msgstr "_Diatas Dock"
 
-#: src/wmapp.cc:542
+#: src/wmapp.cc:543
 msgid "_Dock"
 msgstr "_Dock"
 
-#: src/wmapp.cc:543
+#: src/wmapp.cc:544
 msgid "_OnTop"
 msgstr "_Paling Atas"
 
-#: src/wmapp.cc:544
+#: src/wmapp.cc:545
 msgid "_Normal"
 msgstr "_Normal"
 
-#: src/wmapp.cc:545
+#: src/wmapp.cc:546
 msgid "_Below"
 msgstr "_Dibawah"
 
-#: src/wmapp.cc:546
+#: src/wmapp.cc:547
 msgid "D_esktop"
 msgstr "D_esktop"
 
-#: src/wmapp.cc:571 src/wmwinlist.cc:349
+#: src/wmapp.cc:582 src/wmwinlist.cc:379
 msgid "_Restore"
 msgstr "_Pulihkan"
 
-#: src/wmapp.cc:573
+#: src/wmapp.cc:584
 msgid "_Move"
 msgstr "_Pindahkan"
 
-#: src/wmapp.cc:575
+#: src/wmapp.cc:586
 msgid "_Size"
 msgstr "_Ukuran"
 
-#: src/wmapp.cc:577 src/wmwinlist.cc:350
+#: src/wmapp.cc:588 src/wmwinlist.cc:380
 msgid "Mi_nimize"
 msgstr "Minimalkan"
 
-#: src/wmapp.cc:579 src/wmwinlist.cc:351
+#: src/wmapp.cc:590 src/wmwinlist.cc:381
 msgid "Ma_ximize"
 msgstr "Maksimalkan"
 
-#: src/wmapp.cc:580 src/wmwinlist.cc:352
+#: src/wmapp.cc:591 src/wmwinlist.cc:382
 #, fuzzy
 #| msgid "Maximize"
 msgid "Maximize_Vert"
 msgstr "Maksimalkan"
 
-#: src/wmapp.cc:581
+#: src/wmapp.cc:592
 #, fuzzy
 #| msgid "Maximize"
 msgid "MaximizeHori_z"
 msgstr "Maksimalkan"
 
-#: src/wmapp.cc:584 src/wmwinlist.cc:353
+#: src/wmapp.cc:595 src/wmwinlist.cc:383
 msgid "_Fullscreen"
 msgstr "_Layarpenuh"
 
-#: src/wmapp.cc:587 src/wmwinlist.cc:355
+#: src/wmapp.cc:598 src/wmwinlist.cc:385
 msgid "_Hide"
 msgstr "_Sembunyi"
 
-#: src/wmapp.cc:589 src/wmwinlist.cc:356
+#: src/wmapp.cc:600 src/wmwinlist.cc:386
 msgid "Roll_up"
 msgstr "Gulung_atas"
 
-#: src/wmapp.cc:596
+#: src/wmapp.cc:607
 msgid "R_aise"
 msgstr "Ke_atas"
 
-#: src/wmapp.cc:598 src/wmwinlist.cc:358
+#: src/wmapp.cc:609 src/wmwinlist.cc:388
 msgid "_Lower"
 msgstr "_Kebawah"
 
-#: src/wmapp.cc:600
+#: src/wmapp.cc:611 src/wmwinlist.cc:389
 msgid "La_yer"
 msgstr "Lapisan"
 
-#: src/wmapp.cc:604 src/wmwinlist.cc:360
+#: src/wmapp.cc:615 src/wmwinlist.cc:391
 msgid "Move _To"
 msgstr "Pindah _Ke"
 
-#: src/wmapp.cc:605 src/wmwinlist.cc:361
+#: src/wmapp.cc:616 src/wmwinlist.cc:392
 msgid "Occupy _All"
 msgstr "Tempati _Semua"
 
-#: src/wmapp.cc:611
+#: src/wmapp.cc:622
 msgid "Limit _Workarea"
 msgstr "Batas _Area kerja"
 
-#: src/wmapp.cc:615 src/wmwinlist.cc:362
+#: src/wmapp.cc:626 src/wmwinlist.cc:393
 msgid "Tray _icon"
 msgstr "Ikon tray"
 
-#: src/wmapp.cc:620 src/wmwinlist.cc:339 src/wmwinlist.cc:373
+#: src/wmapp.cc:631 src/wmwinlist.cc:369 src/wmwinlist.cc:404
 msgid "_Close"
 msgstr "_Tutup"
 
-#: src/wmapp.cc:622 src/wmwinlist.cc:341
+#: src/wmapp.cc:633 src/wmwinlist.cc:371
 msgid "_Kill Client"
 msgstr "_Matikan Klien"
 
-#: src/wmapp.cc:625 src/wmdialog.cc:80 src/wmwinmenu.cc:131
+#: src/wmapp.cc:636 src/wmdialog.cc:80 src/wmwinmenu.cc:134
 msgid "_Window list"
 msgstr "Daftar _jendela"
 
-#: src/wmapp.cc:639
+#: src/wmapp.cc:669
 msgid "Another window manager already running, exiting..."
 msgstr "Manajer jendela yang lain sudah berjalan, keluar..."
 
-#: src/wmapp.cc:724
+#: src/wmapp.cc:743
 #, c-format
 msgid ""
 "Could not restart: %s\n"
@@ -1443,18 +1278,22 @@ msgstr ""
 "Tidak dapat restart: %s\n"
 "Apakah $PATH menuju ke %s?"
 
-#: src/wmapp.cc:849
+#: src/wmapp.cc:871
 msgid "Kill IceWM, replace with Xterm"
 msgstr ""
 
-#: src/wmapp.cc:1394
+#: src/wmapp.cc:1121 src/yxapp.cc:998
+msgid "<none>"
+msgstr "<tidak ada>"
+
+#: src/wmapp.cc:1466
 msgid ""
 "  --client-id=ID      Client id to use when contacting session manager.\n"
 msgstr ""
 "  --client-id=ID      Klien id yang digunakan saat menghubungi manajer "
 "sesi.\n"
 
-#: src/wmapp.cc:1400
+#: src/wmapp.cc:1472
 msgid ""
 "\n"
 "  --debug             Print generic debug messages.\n"
@@ -1464,15 +1303,17 @@ msgstr ""
 "  --debug             Cetak pesan debug umum.\n"
 "  --debug-z           Cetak pesan debug tantang jendela bertumpuk.\n"
 
-#: src/wmapp.cc:1408
+#: src/wmapp.cc:1480
 msgid ""
 "\n"
+"  -a, --alpha         Use a 32-bit visual for translucency.\n"
 "  -c, --config=FILE   Load preferences from FILE.\n"
 "  -t, --theme=FILE    Load theme from FILE.\n"
+"  --splash=IMAGE      Briefly show IMAGE on startup.\n"
 "  --postpreferences   Print preferences after all processing.\n"
 msgstr ""
 
-#: src/wmapp.cc:1413
+#: src/wmapp.cc:1487
 #, fuzzy, c-format
 msgid ""
 "Usage: %s [OPTIONS]\n"
@@ -1534,26 +1375,26 @@ msgstr ""
 "%s\n"
 "\n"
 
-#: src/wmapp.cc:1474
+#: src/wmapp.cc:1548
 #, c-format
 msgid "%s configuration directories:\n"
 msgstr "Direktori konfigurasi %s:\n"
 
-#: src/wmapp.cc:1559
+#: src/wmapp.cc:1633
 #, c-format
 msgid "%s configured options:%s\n"
 msgstr "%s pilihan dikonfigurasi: %s\n"
 
-#: src/wmapp.cc:1612
+#: src/wmapp.cc:1695
 #, fuzzy, c-format
 msgid "Unrecognized option '%s'."
 msgstr "Opsi tidak dikenali: %s\n"
 
-#: src/wmapp.cc:1645
+#: src/wmapp.cc:1767
 msgid "Confirm Logout"
 msgstr "Konfirmasi Keluar"
 
-#: src/wmapp.cc:1646
+#: src/wmapp.cc:1768
 msgid ""
 "Logout will close all active applications.\n"
 "Proceed?"
@@ -1561,27 +1402,27 @@ msgstr ""
 "Keluar akan menutup semua aplikasi aktif.\n"
 "Lanjutkan?"
 
-#: src/wmconfig.cc:40
+#: src/wmconfig.cc:37
 #, c-format
 msgid "Failed to load theme %s"
 msgstr "Gagal memuat tema %s"
 
-#: src/wmconfig.cc:103
+#: src/wmconfig.cc:92
 #, c-format
 msgid "Unknown value '%s' for option '%s'."
 msgstr "Nilai tak dikenal '%s' untuk opsi '%s'."
 
-#: src/wmconfig.cc:111
+#: src/wmconfig.cc:100
 #, c-format
 msgid "Unable to create directory %s"
 msgstr "Tidak dapat membuat direktori %s"
 
-#: src/wmconfig.cc:138 src/wmprog.cc:564 src/wmprog.cc:686 src/wmprog.cc:690
+#: src/wmconfig.cc:127 src/wmprog.cc:569 src/wmprog.cc:691 src/wmprog.cc:695
 #, c-format
 msgid "Unable to write to %s"
 msgstr "Tidak dapat menulis ke %s"
 
-#: src/wmconfig.cc:165 src/wmprog.cc:694
+#: src/wmconfig.cc:154 src/wmprog.cc:699
 #, c-format
 msgid "Unable to rename %s to %s"
 msgstr "Tidak dapat mengganti nama %s menjadi %s"
@@ -1590,12 +1431,12 @@ msgstr "Tidak dapat mengganti nama %s menjadi %s"
 msgid "Loc_k Workstation"
 msgstr "Kunci Stasiun Kerja"
 
-#: src/wmdialog.cc:76 src/ymsgbox.cc:44
+#: src/wmdialog.cc:76 src/ymsgbox.cc:43
 msgid "_Cancel"
 msgstr "_Batal"
 
-#: src/wmdialog.cc:77 src/wmprog.cc:844 src/wmprog.cc:846 src/wmtaskbar.cc:297
-#: src/wmtaskbar.cc:299
+#: src/wmdialog.cc:77 src/wmprog.cc:849 src/wmprog.cc:851 src/wmtaskbar.cc:270
+#: src/wmtaskbar.cc:272
 msgid "_Logout..."
 msgstr "_Keluar..."
 
@@ -1603,16 +1444,15 @@ msgstr "_Keluar..."
 msgid "_Restart icewm"
 msgstr "_Jalankan ulang icewm"
 
-#: src/wmdialog.cc:82 src/wmprog.cc:805 src/wmtaskbar.cc:290
-#: src/wmtaskbar.cc:293
+#: src/wmdialog.cc:82 src/wmprog.cc:810 src/wmtaskbar.cc:266
 msgid "_About"
 msgstr "_Tentang"
 
-#: src/wmframe.cc:1400
+#: src/wmframe.cc:1408
 msgid "Kill Client: "
 msgstr "Matikan Klien: "
 
-#: src/wmframe.cc:1407
+#: src/wmframe.cc:1415
 msgid ""
 "WARNING! All unsaved changes will be lost when\n"
 "this client is killed. Do you wish to proceed?"
@@ -1621,238 +1461,230 @@ msgstr ""
 "akan hilang ketika klien dimatikan. Apakah Anda\n"
 "ingin melanjutkan?"
 
-#: src/wmframe.cc:3001
+#: src/wmframe.cc:3011
 msgid "Restore"
 msgstr "Pulihkan"
 
-#: src/wmframe.cc:3004 src/wmtitle.cc:69
+#: src/wmframe.cc:3014 src/wmtitle.cc:72
 msgid "Maximize"
 msgstr "Maksimalkan"
 
-#: src/wmframe.cc:3034
+#: src/wmframe.cc:3044
 msgid "Rolldown"
 msgstr "Gulung bawah"
 
-#: src/wmframe.cc:3036 src/wmtitle.cc:127
+#: src/wmframe.cc:3046 src/wmtitle.cc:130
 msgid "Rollup"
 msgstr "Gulung atas"
 
-#: src/wmoption.cc:228
+#: src/wmoption.cc:231
 #, c-format
 msgid "Unknown window option: %s"
 msgstr "Video option: %s tidak diketahui"
 
-#: src/wmoption.cc:338
+#: src/wmoption.cc:343
 #, fuzzy, c-format
 msgid "Syntax error in window options on line %d of %s"
 msgstr "Kesalahan sintaks dalam opsi jendela"
 
-#: src/wmprog.cc:392
+#: src/wmprog.cc:397
 msgid "_Click to focus"
 msgstr "_Klik untuk fokus"
 
-#: src/wmprog.cc:393
+#: src/wmprog.cc:398
 #, fuzzy
 msgid "_Explicit focus"
 msgstr "_Klik untuk fokus"
 
-#: src/wmprog.cc:394
+#: src/wmprog.cc:399
 msgid "_Sloppy mouse focus"
 msgstr "Mengikuti tetikus"
 
-#: src/wmprog.cc:395
+#: src/wmprog.cc:400
 #, fuzzy
 msgid "S_trict mouse focus"
 msgstr "Mengikuti tetikus"
 
-#: src/wmprog.cc:396
+#: src/wmprog.cc:401
 #, fuzzy
 msgid "_Quiet sloppy focus"
 msgstr "Mengikuti tetikus"
 
-#: src/wmprog.cc:397
+#: src/wmprog.cc:402
 msgid "Custo_m"
 msgstr "Kostu_m"
 
-#: src/wmprog.cc:484
+#: src/wmprog.cc:489
 #, fuzzy
 #| msgid "Favorite applications"
 msgid "Save Modifications"
 msgstr "Aplikasi favorit"
 
-#: src/wmprog.cc:717
+#: src/wmprog.cc:722
 msgid "_Manual"
 msgstr ""
 
-#: src/wmprog.cc:718
+#: src/wmprog.cc:723
 msgid "_Icewm(1)"
 msgstr ""
 
-#: src/wmprog.cc:719
+#: src/wmprog.cc:724
 msgid "Icewm_Bg(1)"
 msgstr ""
 
-#: src/wmprog.cc:720
+#: src/wmprog.cc:725
 msgid "Ice_Sound(1)"
 msgstr ""
 
-#: src/wmprog.cc:782
+#: src/wmprog.cc:787
 msgid "Programs"
 msgstr "Program"
 
-#: src/wmprog.cc:787
+#: src/wmprog.cc:792
 msgid "_Run..."
 msgstr "_Jalan..."
 
-#: src/wmprog.cc:792 src/wmtaskbar.cc:280
+#: src/wmprog.cc:797 src/wmtaskbar.cc:263
 msgid "_Windows"
 msgstr "_Jendela"
 
-#: src/wmprog.cc:811
+#: src/wmprog.cc:816
 msgid "_Help"
 msgstr "_Bantuan"
 
-#: src/wmprog.cc:822
+#: src/wmprog.cc:827
 msgid "_Focus"
 msgstr "_Fokus"
 
-#: src/wmprog.cc:827
+#: src/wmprog.cc:832
 msgid "_Preferences"
 msgstr ""
 
-#: src/wmprog.cc:833
+#: src/wmprog.cc:838
 msgid "_Themes"
 msgstr "_Tema"
 
-#: src/wmprog.cc:838
+#: src/wmprog.cc:843
 msgid "Se_ttings"
 msgstr "Se_telan"
 
-#: src/wmsession.cc:225 src/wmsession.cc:241 src/wmsession.cc:251
+#: src/wmsession.cc:220 src/wmsession.cc:236 src/wmsession.cc:246
 #, c-format
 msgid "Session Manager: Unknown line %s"
 msgstr "Manajer Sesi: Baris %s tidak diketahui"
 
-#: src/wmtaskbar.cc:168 src/wmtaskbar.cc:169
-msgid "Task Bar"
-msgstr "Bilah tugas"
-
-#: src/wmtaskbar.cc:270 src/wmwinlist.cc:364 src/wmwinlist.cc:377
+#: src/wmtaskbar.cc:253 src/wmwinlist.cc:395 src/wmwinlist.cc:415
 msgid "Tile _Vertically"
 msgstr "Menata Vertikal"
 
-#: src/wmtaskbar.cc:271 src/wmwinlist.cc:365 src/wmwinlist.cc:378
+#: src/wmtaskbar.cc:254 src/wmwinlist.cc:396 src/wmwinlist.cc:416
 msgid "T_ile Horizontally"
 msgstr "Menata Horizontal"
 
-#: src/wmtaskbar.cc:272 src/wmwinlist.cc:366 src/wmwinlist.cc:379
+#: src/wmtaskbar.cc:255 src/wmwinlist.cc:397 src/wmwinlist.cc:417
 msgid "Ca_scade"
 msgstr "Bertingkat"
 
-#: src/wmtaskbar.cc:273 src/wmwinlist.cc:367 src/wmwinlist.cc:380
+#: src/wmtaskbar.cc:256 src/wmwinlist.cc:398 src/wmwinlist.cc:418
 msgid "_Arrange"
 msgstr "_Atur"
 
-#: src/wmtaskbar.cc:274 src/wmwinlist.cc:369 src/wmwinlist.cc:381
+#: src/wmtaskbar.cc:257 src/wmwinlist.cc:400 src/wmwinlist.cc:419
 msgid "_Minimize All"
 msgstr "_Minimalkan Semua"
 
-#: src/wmtaskbar.cc:275 src/wmwinlist.cc:370 src/wmwinlist.cc:382
+#: src/wmtaskbar.cc:258 src/wmwinlist.cc:401 src/wmwinlist.cc:420
 msgid "_Hide All"
 msgstr "_Sembunyikan Semua"
 
-#: src/wmtaskbar.cc:276 src/wmwinlist.cc:371 src/wmwinlist.cc:383
+#: src/wmtaskbar.cc:259 src/wmwinlist.cc:402 src/wmwinlist.cc:421
 msgid "_Undo"
 msgstr "_Urungkan"
 
-#: src/wmtaskbar.cc:278
+#: src/wmtaskbar.cc:261
 msgid "Arrange _Icons"
 msgstr "Atur _Ikon"
 
-#: src/wmtaskbar.cc:282
+#: src/wmtaskbar.cc:265
 msgid "_Refresh"
 msgstr "_Segarkan"
 
-#: src/wmtaskbar.cc:288
-msgid "_License"
-msgstr "_Lisensi"
-
-#: src/wmtaskbar.cc:356 src/wmtaskbar.cc:975
+#: src/wmtaskbar.cc:336 src/wmtaskbar.cc:966
 #, fuzzy
 #| msgid "Task Bar"
 msgid "Hide Taskbar"
 msgstr "Bilah tugas"
 
-#: src/wmtaskbar.cc:371
+#: src/wmtaskbar.cc:354
 #, fuzzy
 #| msgid "Favorite applications"
 msgid "Favorite Applications"
 msgstr "Aplikasi favorit"
 
-#: src/wmtaskbar.cc:389
+#: src/wmtaskbar.cc:375
 #, fuzzy
 #| msgid "Window list menu"
 msgid "Window List Menu"
 msgstr "Menu daftar jendela"
 
-#: src/wmtaskbar.cc:398
+#: src/wmtaskbar.cc:384
 msgid "Show Desktop"
 msgstr "Lihat Desktop"
 
-#: src/wmtaskbar.cc:975
+#: src/wmtaskbar.cc:966
 #, fuzzy
 #| msgid "Task Bar"
 msgid "Show Taskbar"
 msgstr "Bilah tugas"
 
-#: src/wmtitle.cc:85
+#: src/wmtitle.cc:88
 msgid "Minimize"
 msgstr "Minimalkan"
 
-#: src/wmtitle.cc:113
+#: src/wmtitle.cc:116
 msgid "Hide"
 msgstr "Sembunyikan"
 
-#: src/wmtitle.cc:141
+#: src/wmtitle.cc:144
 msgid "Raise/Lower"
 msgstr "Naikkan/Turunkan"
 
-#: src/wmwinlist.cc:50
+#: src/wmwinlist.cc:51
 msgid "All Workspaces"
 msgstr "Semua Ruang Kerja"
 
-#: src/wmwinlist.cc:339
+#: src/wmwinlist.cc:369
 msgid "Del"
 msgstr "Hapus"
 
-#: src/wmwinlist.cc:343
+#: src/wmwinlist.cc:373
 msgid "_Terminate Process"
 msgstr "_Hentikan Proses"
 
-#: src/wmwinlist.cc:344
+#: src/wmwinlist.cc:374
 msgid "Kill _Process"
 msgstr "Matikan _Proses"
 
-#: src/wmwinlist.cc:354
+#: src/wmwinlist.cc:384
 msgid "_Show"
 msgstr "_Tampilkan"
 
-#: src/wmwinlist.cc:357
+#: src/wmwinlist.cc:387
 #, fuzzy
 #| msgid "R_aise"
 msgid "_Raise"
 msgstr "Ke_atas"
 
-#: src/wmwinlist.cc:396 src/wmwinlist.cc:397
+#: src/wmwinlist.cc:437 src/wmwinlist.cc:438
 msgid "Window list"
 msgstr "Daftar jendela"
 
-#: src/wmwinmenu.cc:122
+#: src/wmwinmenu.cc:125
 #, c-format
 msgid "%lu. Workspace %-.32s"
 msgstr "%lu. Ruang kerja %-.32s"
 
-#: src/yapp.cc:277
+#: src/yapp.cc:279
 #, c-format
 msgid "%s: select failed"
 msgstr ""
@@ -1909,64 +1741,64 @@ msgstr ""
 msgid "BUG? Unexpected character but Imlib was able to parse \"%s\""
 msgstr "KEKUTU? Karakter tidak valid tapi Imlib dapat menguraikan \"%s\""
 
-#: src/yfontcore.cc:71 src/yfontxft.cc:158
+#: src/yfontcore.cc:72 src/yfontxft.cc:158
 #, c-format
 msgid "Could not load font \"%s\"."
 msgstr "Tidak dapat memuat \"%s\" depan."
 
-#: src/yfontcore.cc:74 src/yfontcore.cc:121 src/yfontxft.cc:181
+#: src/yfontcore.cc:75 src/yfontcore.cc:124 src/yfontxft.cc:181
 #, c-format
 msgid "Loading of fallback font \"%s\" failed."
 msgstr "Gagal memuat fallback \"%s\" depan."
 
-#: src/yfontcore.cc:114
+#: src/yfontcore.cc:117
 #, c-format
 msgid "Could not load fontset \"%s\"."
 msgstr "Tidak dapat memuat set fon \"%s\"."
 
-#: src/yfontcore.cc:126
+#: src/yfontcore.cc:129
 #, c-format
 msgid "Missing codesets for fontset \"%s\":"
 msgstr "SetKode tidak ada pada set fon \"%s\":"
 
-#: src/yinput.cc:38
+#: src/yinput.cc:18
 msgid "_Copy"
 msgstr "_Salin"
 
-#: src/yinput.cc:38
+#: src/yinput.cc:18
 msgid "Ctrl+C"
 msgstr "Ctrl+C"
 
-#: src/yinput.cc:40
+#: src/yinput.cc:19
 msgid "Cu_t"
 msgstr "Pot_ong"
 
-#: src/yinput.cc:40
+#: src/yinput.cc:19
 msgid "Ctrl+X"
 msgstr "Ctrl+X"
 
-#: src/yinput.cc:42
+#: src/yinput.cc:20
 msgid "_Paste"
 msgstr "_Tempel"
 
-#: src/yinput.cc:42
+#: src/yinput.cc:20
 msgid "Ctrl+V"
 msgstr "Ctrl+V"
 
-#: src/yinput.cc:44
+#: src/yinput.cc:21
 msgid "Paste _Selection"
 msgstr "Tempel _Pilihan"
 
-#: src/yinput.cc:44
+#: src/yinput.cc:21
 #, fuzzy
 msgid "Ctrl+P"
 msgstr "Ctrl+Q"
 
-#: src/yinput.cc:47
+#: src/yinput.cc:23
 msgid "Select _All"
 msgstr "Pilih _Semua"
 
-#: src/yinput.cc:47
+#: src/yinput.cc:23
 msgid "Ctrl+A"
 msgstr "Ctrl+A"
 
@@ -1990,7 +1822,7 @@ msgstr "iconv tidak disediakan (cukup) %s ke konverter %s."
 msgid "Invalid multibyte string \"%s\": %s"
 msgstr "String multibyte tidak valid \"%s\": %s"
 
-#: src/ymsgbox.cc:36
+#: src/ymsgbox.cc:35
 msgid "_OK"
 msgstr "_Ya"
 
@@ -2023,7 +1855,7 @@ msgstr ""
 msgid "Invalid hex escape in URL at position %d."
 msgstr ""
 
-#: src/yxapp.cc:885
+#: src/yxapp.cc:958
 #, fuzzy
 msgid ""
 "  -d, --display=NAME  NAME of the X server to use.\n"
@@ -2757,6 +2589,202 @@ msgstr "Pengembangan"
 #: src/fdospecgen.h:319
 msgid "WordProcessor"
 msgstr ""
+
+#~ msgid "Task Bar"
+#~ msgstr "Bilah tugas"
+
+#~ msgid "_License"
+#~ msgstr "_Lisensi"
+
+#, fuzzy
+#~| msgid ""
+#~| "Usage: %s [OPTIONS] ACTIONS\n"
+#~| "\n"
+#~| "Options:\n"
+#~| "  -display DISPLAY            Connects to the X server specified by "
+#~| "DISPLAY.\n"
+#~| "                              Default: $DISPLAY or :0.0 when not set.\n"
+#~| "  -window WINDOW_ID           Specifies the window to manipulate. "
+#~| "Special\n"
+#~| "                              identifiers are `root' for the root window "
+#~| "and\n"
+#~| "                              `focus' for the currently focused window.\n"
+#~| "  -class WM_CLASS             Window management class of the window(s) "
+#~| "to\n"
+#~| "                              manipulate. If WM_CLASS contains a period, "
+#~| "only\n"
+#~| "                              windows with exactly the same WM_CLASS "
+#~| "property\n"
+#~| "                              are matched. If there is no period, "
+#~| "windows of\n"
+#~| "                              the same class and windows of the same "
+#~| "instance\n"
+#~| "                              (aka. `-name') are selected.\n"
+#~| "\n"
+#~| "Actions:\n"
+#~| "  setIconTitle   TITLE        Set the icon title.\n"
+#~| "  setWindowTitle TITLE        Set the window title.\n"
+#~| "  setGeometry    geometry     Set the window geometry\n"
+#~| "  setState       MASK STATE   Set the GNOME window state to STATE.\n"
+#~| "                              Only the bits selected by MASK are "
+#~| "affected.\n"
+#~| "                              STATE and MASK are expressions of the "
+#~| "domain\n"
+#~| "                              `GNOME window state'.\n"
+#~| "  toggleState    STATE        Toggle the GNOME window state bits "
+#~| "specified by\n"
+#~| "                              the STATE expression.\n"
+#~| "  setHints       HINTS        Set the GNOME window hints to HINTS.\n"
+#~| "  setLayer       LAYER        Moves the window to another GNOME window "
+#~| "layer.\n"
+#~| "  setWorkspace   WORKSPACE    Moves the window to another workspace. "
+#~| "Select\n"
+#~| "                              the root window to change the current "
+#~| "workspace.\n"
+#~| "  listWorkspaces              Lists the names of all workspaces.\n"
+#~| "  setTrayOption  TRAYOPTION   Set the IceWM tray option hint.\n"
+#~| "\n"
+#~| "Expressions:\n"
+#~| "  Expressions are list of symbols of one domain concatenated by `+' or "
+#~| "`|':\n"
+#~| "\n"
+#~| "  EXPRESSION ::= SYMBOL | EXPRESSION ( `+' | `|' ) SYMBOL\n"
+#~| "\n"
+#~ msgid ""
+#~ "Usage: %s [OPTIONS] ACTIONS\n"
+#~ "\n"
+#~ "Options:\n"
+#~ "  -d, -display DISPLAY        Connects to the X server specified by "
+#~ "DISPLAY.\n"
+#~ "                              Default: $DISPLAY or :0.0 when not set.\n"
+#~ "  -w, -window WINDOW_ID       Specifies the window to manipulate. "
+#~ "Special\n"
+#~ "                              identifiers are `root' for the root window "
+#~ "and\n"
+#~ "                              `focus' for the currently focused window.\n"
+#~ "  -c, -class WM_CLASS         Window management class of the window(s) "
+#~ "to\n"
+#~ "                              manipulate. If WM_CLASS contains a period, "
+#~ "only\n"
+#~ "                              windows with exactly the same WM_CLASS "
+#~ "property\n"
+#~ "                              are matched. If there is no period, windows "
+#~ "of\n"
+#~ "                              the same class and windows of the same "
+#~ "instance\n"
+#~ "                              (aka. `-name') are selected.\n"
+#~ "\n"
+#~ "Actions:\n"
+#~ "  setIconTitle   TITLE        Set the icon title.\n"
+#~ "  setWindowTitle TITLE        Set the window title.\n"
+#~ "  setGeometry    geometry     Set the window geometry\n"
+#~ "  setState       MASK STATE   Set the GNOME window state to STATE.\n"
+#~ "                              Only the bits selected by MASK are "
+#~ "affected.\n"
+#~ "                              STATE and MASK are expressions of the "
+#~ "domain\n"
+#~ "                              `GNOME window state'.\n"
+#~ "  toggleState    STATE        Toggle the GNOME window state bits "
+#~ "specified by\n"
+#~ "                              the STATE expression.\n"
+#~ "  setHints       HINTS        Set the GNOME window hints to HINTS.\n"
+#~ "  setLayer       LAYER        Moves the window to another GNOME window "
+#~ "layer.\n"
+#~ "  setWorkspace   WORKSPACE    Moves the window to another workspace. "
+#~ "Select\n"
+#~ "                              the root window to change the current "
+#~ "workspace.\n"
+#~ "                              Select 0xFFFFFFFF or \"All\" for all "
+#~ "workspaces.\n"
+#~ "  listWorkspaces              Lists the names of all workspaces.\n"
+#~ "  setTrayOption  TRAYOPTION   Set the IceWM tray option hint.\n"
+#~ "  logout                      Tell IceWM to logout.\n"
+#~ "  reboot                      Tell IceWM to reboot.\n"
+#~ "  shutdown                    Tell IceWM to shutdown.\n"
+#~ "  cancel                      Tell IceWM to cancel the logout/reboot/"
+#~ "shutdown.\n"
+#~ "  about                       Tell IceWM to show the about window.\n"
+#~ "  windowlist                  Tell IceWM to show the window list.\n"
+#~ "  restart                     Tell IceWM to restart.\n"
+#~ "  suspend                     Tell IceWM to suspend.\n"
+#~ "\n"
+#~ "Expressions:\n"
+#~ "  Expressions are list of symbols of one domain concatenated by `+' or "
+#~ "`|':\n"
+#~ "\n"
+#~ "  EXPRESSION ::= SYMBOL | EXPRESSION ( `+' | `|' ) SYMBOL\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Penggunaan: %s [OPSI] AKSI\n"
+#~ "\n"
+#~ "Opsi:\n"
+#~ "  -display DISPLAY            Meyambung ke server X yang ditetapkan oleh "
+#~ "DISPLAY.\n"
+#~ "                              Baku: $DISPLAY atau :0.0 saat tidak "
+#~ "diatur.\n"
+#~ "  -window WINDOW_ID           Menentukan jendela yang akan dimanipulasi. "
+#~ "Pengenal\n"
+#~ "                              khusus adalah `root' untuk jendela root "
+#~ "dan\n"
+#~ "                              `focus' untuk jendela yang saat ini "
+#~ "berfokus.\n"
+#~ "  -class WM_CLASS             Kelas manajemen jendela dari jendela yang "
+#~ "akan\n"
+#~ "                              dimanipulasi. Jika WM_CLASS berisi sebuah "
+#~ "periode,\n"
+#~ "                              hanya jendela dengan properti WM_CLASS yang "
+#~ "sama persis\n"
+#~ "                              yang akan cocok. Jika tanpa periode, "
+#~ "jendela dari kelas\n"
+#~ "                              yang sama dan jendela dari intansi yang "
+#~ "sama\n"
+#~ "                              (contoh `-name') yang akan dipilih.\n"
+#~ "\n"
+#~ "Aksi:\n"
+#~ "  setIconTitle   TITLE        Menetapkan nama ikon.\n"
+#~ "  setWindowTitle TITLE        Menetapkan nama jendela.\n"
+#~ "  setGeometry    geometry     Menetapkan geometri jendela\n"
+#~ "  setState       MASK STATE   Menetapkan status jendela GNOME pada "
+#~ "STATE.\n"
+#~ "                              Hanya bit yang dipilih MASK yang akan "
+#~ "berdampak.\n"
+#~ "                              STATE dan MASK adalah ekspresi dari domain\n"
+#~ "                              `status jendela GNOME'.\n"
+#~ "  toggleState    STATE        Mengganti bit status jendela GNOME yang "
+#~ "ditentukan oleh\n"
+#~ "                              ekspresi STATE.\n"
+#~ "  setHints       HINTS        Menetapkan tips jendela GNOME pada HINTS.\n"
+#~ "  setLayer       LAYER        Memindahkan jendela ke lapisan jendela "
+#~ "GNOME lainnya.\n"
+#~ "  setWorkspace   WORKSPACE    Memindahkan jendela ke ruang kerja lainnya. "
+#~ "Pilih\n"
+#~ "                              jendela akar untuk mengganti ruang kerja "
+#~ "saat ini.\n"
+#~ "  listWorkspaces              Daftar nama dari semua ruang kerja.\n"
+#~ "  setTrayOption  TRAYOPTION   Menetapkan tips opsi tray IceWM.\n"
+#~ "\n"
+#~ "Ekspresi:\n"
+#~ "  Ekspresi adalah daftar simbol dari satu domain diakhiri dengan `+' or "
+#~ "`|':\n"
+#~ "\n"
+#~ "  EXPRESSION ::= SYMBOL | EXPRESSION ( `+' | `|' ) SYMBOL\n"
+#~ "\n"
+
+#~ msgid "Can't connect to ESound daemon: %s"
+#~ msgstr "Tidak dapat tersambung ke ESound daemon: %s"
+
+#~ msgid "Error <%d> while uploading `%s:%s'"
+#~ msgstr "Kesalahan <%d> saat mengunggah `%s:%s'"
+
+#~ msgid "Sample <%d> uploaded as `%s:%s'"
+#~ msgstr "Sampel <%d> diunggah sebagai `%s:%s'"
+
+#, fuzzy
+#~ msgid "Playing sample #%d: %d"
+#~ msgstr "Memutar sampel #%d"
+
+#~ msgid "Usage error: "
+#~ msgstr "Kesalahan penggunaan: "
 
 #~ msgid "Out of memory for image %s"
 #~ msgstr "Kehabisan memori untuk gambar %s"

@@ -13,6 +13,11 @@
 #else
 #define OVERRIDE override
 #endif
+#if __cplusplus == 199711L
+#define nullptr NULL
+#define override
+#define final
+#endif
 
 /*** Essential Arithmetic Functions *******************************************/
 
@@ -60,7 +65,7 @@ inline T Elvis(T a, T b) {
 
 template <class T>
 inline T non_zero(T x) {
-    return Elvis(x, (T) 1);
+    return Elvis(x, static_cast<T>(1));
 }
 
 template <class L, class R>
@@ -103,7 +108,7 @@ void msg(char const *msg, ...) __attribute__((format(printf, 1, 2) ));
 void tlog(char const *msg, ...) __attribute__((format(printf, 1, 2) ));
 void precondition(const char *expr, const char *file, int line);
 char* path_lookup(const char* name);
-char* progpath(void);
+char* progpath();
 void show_backtrace(const int limit = 0);
 
 #define DEPRECATE(x) \
@@ -114,8 +119,6 @@ void show_backtrace(const int limit = 0);
 /*** Misc Stuff (clean up!!!) *************************************************/
 
 #define ACOUNT(x) (sizeof(x)/sizeof(x[0]))
-
-#define REDIR_ROOT(path) (path)
 
 //!!! clean these up
 #define KEY_MODMASK(x) ((x) & (xapp->KeyMask))
@@ -168,17 +171,17 @@ bool testOnce(const char* file, const int line);
 
 template <class M, class B>
 inline bool hasbit(M mask, B bits) {
-    return (mask & bits) != 0;
+    return (mask & static_cast<M>(bits)) != 0;
 }
 
 template <class M, class B>
 inline bool hasbits(M mask, B bits) {
-    return (mask & bits) == (M) bits;
+    return (mask & static_cast<M>(bits)) == static_cast<M>(bits);
 }
 
 template <class M, class B>
 inline bool notbit(M mask, B bits) {
-    return (mask & bits) == 0;
+    return (mask & static_cast<M>(bits)) == 0;
 }
 
 /*
@@ -192,7 +195,7 @@ inline unsigned lowbit(T mask) {
     asm ("bsf %1,%0" : "=r" (bit) : "r" (mask));
 #else
     unsigned bit(0);
-    while (!(mask & (((T) 1) << bit)) && bit < sizeof(mask) * 8) ++bit;
+    while (!(mask & ((static_cast<T>(1)) << bit)) && bit < sizeof(mask) * 8) ++bit;
 #endif
 
     return bit;
@@ -209,7 +212,7 @@ inline unsigned highbit(T mask) {
     asm ("bsr %1,%0" : "=r" (bit) : "r" (mask));
 #else
     unsigned bit(sizeof(mask) * 8 - 1);
-    while (!(mask & (((T) 1) << bit)) && bit > 0) --bit;
+    while (!(mask & ((static_cast<T>(1)) << bit)) && bit > 0) --bit;
 #endif
 
     return bit;
@@ -252,6 +255,9 @@ char* load_text_file(const char *filename);
 
 #include "debug.h"
 
+extern bool loggingEvents;
+extern bool initLogEvents();
+
 void logAny(const union _XEvent& xev);
 void logButton(const union _XEvent& xev);
 void logClientMessage(const union _XEvent& xev);
@@ -271,10 +277,14 @@ void logUnmap(const union _XEvent& xev);
 void logMotion(const union _XEvent& xev);
 void logProperty(const union _XEvent& xev);
 void logReparent(const union _XEvent& xev);
+void logRandrScreen(const union _XEvent& xev);
+void logRandrNotify(const union _XEvent& xev);
 void logShape(const union _XEvent& xev);
 void logVisibility(const union _XEvent& xev);
 void logEvent(const union _XEvent& xev);
 
+typedef const char* (*AtomNameFunc)(unsigned long atom);
+void setAtomName(AtomNameFunc atomNameFunc);
 void setLogEvent(int evtype, bool enable);
 bool toggleLogEvents();
 const char* eventName(int eventType);

@@ -100,9 +100,6 @@ static const char audio_interfaces[] =
 #ifdef ENABLE_AO
     "AO,"
 #endif
-#ifdef ENABLE_ESD
-    "ESD,"
-#endif
 #ifdef ENABLE_ALSA
     "ALSA,"
 #endif
@@ -278,7 +275,7 @@ bool YALSAAudio::play(int sound) {
         const int N = 8*1024;
         short sbuf[N]; // period_size * channels * snd_pcm_format_width(format)) / 8
         for (int n; (n = sf_readf_short(sf, sbuf, N / 2)) > 0; ) {
-            if ((err = snd_pcm_writei(playback_handle, sbuf, n) != n)) {
+            if ((err = snd_pcm_writei(playback_handle, sbuf, n)) != n) {
                 warn("write to audio interface failed (%s) %zd %d\n",
                          snd_strerror(err), sizeof(short), n);
                 goto done;
@@ -440,150 +437,6 @@ YOSSAudio::~YOSSAudio() {
 #endif /* ENABLE_OSS */
 
 /******************************************************************************
- * Enlightenment Sound Daemon audio interface
- ******************************************************************************/
-
-#ifdef ENABLE_ESD
-
-#include <esd.h>
-
-class YESDAudio : public YAudioInterface {
-public:
-    YESDAudio():
-        socket(-1)
-    {
-        for (unsigned i = 0; i < ACOUNT(sample); ++i) sample[i] = -1;
-    }
-
-    virtual ~YESDAudio() {
-        unloadSamples();
-        if (socket > -1) {
-            esd_close(socket);
-            socket = -1;
-        }
-    }
-
-    virtual bool play(int sound);
-
-    virtual void reload() {
-        unloadSamples();
-        uploadSamples();
-    }
-
-    virtual int init(SoundConf* conf);
-
-private:
-    int uploadSamples();
-    int unloadSamples();
-
-    int uploadSample(int sound, char const * path);
-
-protected:
-    SoundConf* conf;
-    int sample[NUM_GUI_EVENTS];     // cache audio samples
-    int socket;                     // socket to ESound Daemon
-};
-
-int YESDAudio::init(SoundConf* conf) {
-    this->conf = conf;
-
-    const char* server = conf->esdServer();
-    if ((socket = esd_open_sound(server)) == -1) {
-        if (conf->verbose())
-            warn(_("Can't connect to ESound daemon: %s"),
-                 server ? server : _("<none>"));
-        return ICESOUND_IF_ERROR;
-    }
-
-    uploadSamples();
-    return ICESOUND_SUCCESS;
-}
-
-/**
- * Upload a sample in the ESounD server.
- * Returns sample ID or negative on error.
- */
-int YESDAudio::uploadSample(int sound, char const * path) {
-    if (socket < 0) return -1;
-
-    int rc(esd_file_cache(socket, ApplicationName, path));
-
-    if (rc < 0)
-        msg(_("Error <%d> while uploading `%s:%s'"), rc,
-            ApplicationName, path);
-    else {
-        sample[sound] = rc;
-
-        if (conf->verbose())
-            tlog(_("Sample <%d> uploaded as `%s:%s'"), rc,
-                ApplicationName, path);
-    }
-
-    return rc;
-}
-
-/**
- * Unload all samples from the ESounD server.
- * Returns number of samples catched.
- */
-
-int YESDAudio::unloadSamples() {
-    if (socket < 0) return 0;
-
-    int cnt(0);
-    for (int i(0); i < NUM_GUI_EVENTS; ++i)
-        if (sample[i] > 0) {
-            esd_sample_free(socket, sample[i]);
-            cnt++;
-        }
-
-    return cnt;
-}
-
-/**
- * Upload all samples into the EsounD server.
- * Returns the number of loaded samples.
- */
-
-int YESDAudio::uploadSamples() {
-    if (socket < 0) return 0;
-
-    int cnt(0);
-    for (int i(0); i < NUM_GUI_EVENTS; i++) {
-        csmart samplefile(conf->findSample(i));
-
-        if (samplefile != NULL) {
-            if (uploadSample(i, samplefile) >= 0) ++cnt;
-        }
-    }
-
-    if (soundAsync.reload)
-        soundAsync.reload = false;
-
-    return cnt;
-}
-
-/**
- * Play a cached sound sample using ESounD.
- */
-bool YESDAudio::play(int sound) {
-    if (socket < 0) return false;
-
-    if (soundAsync.reload)
-        reload();
-
-    if (conf->verbose())
-        tlog(_("Playing sample #%d: %d"), sound, sample[sound]);
-
-    if (sample[sound] > 0)
-        esd_sample_play(socket, sample[sound]);
-
-    return true;
-}
-
-#endif /* ENABLE_ESD */
-
-/******************************************************************************
  * LibAO cross-platform audio output library version 1.2.0 or later.
  ******************************************************************************/
 
@@ -681,8 +534,10 @@ done:
 
 class IceSound : public SoundConf {
 public:
-    IceSound(int argc, char** argv);
+    IceSound();
     virtual ~IceSound() {}
+
+    void parseArgs(int argc, char** argv);
 
     virtual bool verbose() const { return verbosity; }
     virtual const char* alsaDevice() const {
@@ -736,7 +591,7 @@ private:
     static void hup(int sig);
 };
 
-IceSound::IceSound(int argc, char** argv) :
+IceSound::IceSound() :
     verbosity(false),
     sampleDir(0),
     deviceFile(0),
@@ -757,6 +612,10 @@ IceSound::IceSound(int argc, char** argv) :
 #endif
     initPaths();
     initSignals();
+}
+
+void IceSound::parseArgs(int argc, char** argv)
+{
     for (char **arg = argv + 1; arg < argv + argc; ++arg) {
         if (**arg == '-') {
             char* value(0);
@@ -856,9 +715,6 @@ Options:\n\
  -O, --oss=DEVICE        Specifies the OSS device (default: \"%s\").\n\
 \n\
  -A, --alsa=DEVICE       Specifies the ALSA device (default: \"%s\").\n\
-\n\
- -S, --server=ADDR:PORT  Specifies the ESD server address and port number.\n\
-                         For ESD the default is \"localhost:16001\".\n\
 \n\
  -z, --snooze=millisecs  Specifies the snooze interval between sound events\n\
                          in milliseconds. Default is 500 milliseconds.\n\
@@ -1062,13 +918,6 @@ int IceSound::chooseInterface() {
             nosupport(val);
 #endif
         }
-        else if (name == "ESD" || name == "ESOUND") {
-#ifdef ENABLE_ESD
-            audio = new YESDAudio();
-#else
-            nosupport(val);
-#endif
-        }
         else {
             warn(_("Unsupported interface: %s."), val);
         }
@@ -1137,7 +986,10 @@ int main(int argc, char *argv[]) {
     textdomain(PACKAGE);
 
     ApplicationName = my_basename(argv[0]);
-    return IceSound(argc, argv).run();
+
+    IceSound icesound;
+    icesound.parseArgs(argc, argv);
+    return icesound.run();
 }
 
 
